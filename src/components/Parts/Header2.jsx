@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "../Parts/Navigation";
 import { NavLink } from "react-router-dom";
+import logo1 from "./../../images/organics.png";
 
 var bnr = require("./../../images/background/bg-7.jpg");
 var bnr2 = require("./../../images/background/bg-map2.png");
@@ -8,7 +9,7 @@ var bnr2 = require("./../../images/background/bg-map2.png");
 class Header2 extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { logo: require("./../../images/logo-9.png") };
+    this.state = { logo: require("./../../images/organics.png") };
   }
 
   state = { isSearchActive: false, isQuoteActive: false };
@@ -99,7 +100,7 @@ class Header2 extends React.Component {
                 <div className="logo-header">
                   <div className="logo-header-inner logo-header-one">
                     <NavLink to={"./"}>
-                      <img src={this.state.logo.default} alt="Industro" />
+                      <img src={logo1} alt="Organics" />
                     </NavLink>
                   </div>
                 </div>
@@ -116,8 +117,11 @@ class Header2 extends React.Component {
                   <span className="icon-bar icon-bar-two" />
                   <span className="icon-bar icon-bar-three" />{" "}
                 </button>
-                <div className="extra-nav header-2-nav">
-                  <div className="extra-cell">
+                <div
+                  className="extra-nav header-2-nav"
+                  style={{ marginTop: "2%" }}
+                >
+                  <div>
                     <div className="header-search">
                       <NavLink
                         to={"#"}

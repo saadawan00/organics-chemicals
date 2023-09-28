@@ -9490,8 +9490,8 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .header-style-2 .is-fixed.color-fill .main-bar {background:#fff;}
 
 .header-style-2 .header-nav .nav > li {font-weight: 500;   position: relative;   margin: 0px 0px;   padding: 10px 0px;}
-.header-style-2 .logo-header{padding-top:20px;}
-.header-style-2 .header-2-nav{padding-top:20px;}
+/* .header-style-2 .logo-header{padding-top:20px;}
+.header-style-2 .header-2-nav{padding-top:20px;} */
 
 @media only screen and (max-width:991px){
 	.header-style-2 .header-2-nav{padding-top:0px;}
