@@ -34,7 +34,7 @@ class Navigation extends React.Component {
               <NavLink to={""}>Industrial Chemicals</NavLink>
               <ul className="sub-menu">
                 <li>
-                  <NavLink to={"/services-1"}>Services one</NavLink>
+                  <NavLink to={"/services-1"}>Chemicals 2</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/services-2"}>Services Two</NavLink>
