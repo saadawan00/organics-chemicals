@@ -57,8 +57,8 @@ class Header2 extends React.Component {
                 <div className="wt-topbar-left d-flex flex-wrap align-content-start">
                   <ul className="wt-topbar-info e-p-bx text-white">
                     <li>
-                      <span> Monday - Saturday</span>
-                      <span>8AM -7PM</span>
+                      <span> Chemicals, Equipment & Engineering</span>
+                      <span>| Your Partner For Sucess!</span>
                     </li>
                   </ul>
                 </div>
