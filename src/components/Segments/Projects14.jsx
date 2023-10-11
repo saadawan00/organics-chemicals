@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
 const filters = [
     { label: "Chemical", filter: ".cat-1" },
     { label: "Construction", filter: ".cat-2" },
@@ -11,61 +10,52 @@ const filters = [
 
 const projects = [
     {
-        image: require('./../../images/gallery/thumb/pic1.jpg'),
-        title: 'Metal Industry',
-        description: 'Committed to delivering high quality projects and innovate business.',
-        filter: 'cat-1'
+        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Industrial Surveillance Equipment.jpg'),
+        title: 'Pressure & Temperature Control',
+        description: 'Will Be Provided By Ali Zia CEO',
+        filter: 'cat-2'
     },
     {
-        image: require('./../../images/gallery/pic1.jpg'),
-        title: 'Alternative Energy',
-        description: 'High Performance Services For Multiple Insdustries And Technologies!',
+        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Optic Flame Detection.jpg'),
+        title: 'Pressure & Temperature Control',
+        description: 'Will Be Provided By Ali Zia CEO',
+        filter: 'cat-2'
+    },
 
+    {
+        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Toxic Gas Detection.jpg'),
+        title: 'Pressure & Temperature Control',
+        description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/gallery/thumb/pic4.jpg'),
-        title: 'Areb Oil Rigs',
-        description: 'Committed to delivering high quality projects and innovate business.',
-        filter: 'cat-3'
-    },
-    {
-        image: require('./../../images/gallery/thumb/pic3.jpg'),
-        title: 'Warehouse Industry',
-        description: 'High Performance Services For Multiple Insdustries And Technologies!',
-        filter: 'cat-4'
-    },
-    {
-        image: require('./../../images/gallery/pic5.jpg'),
-        title: 'Gothia Mining Factory',
-        description: 'Committed to delivering high quality projects and innovate business.',
-        filter: 'cat-5'
-    },
-    {
-        image: require('./../../images/gallery/thumb/pic6.jpg'),
-        title: 'Machine Engineering',
-        description: 'High Performance Services For Multiple Insdustries And Technologies!',
-        filter: 'cat-4'
-    },
-    {
-        image: require('./../../images/gallery/thumb/pic7.jpg'),
-        title: 'Gear Manufacturing',
-        description: 'Committed to delivering high quality projects and innovate business.',
-        filter: 'cat-3'
-    },
-    {
-        image: require('./../../images/gallery/pic4.jpg'),
-        title: 'Gear Manufacturing',
-        description: 'High Performance Services For Multiple Insdustries And Technologies!',
+        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Gas Leak Detectors.jpg'),
+        title: 'Pressure & Temperature Panel Meter',
+        description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/gallery/pic2.jpg'),
-        title: 'Oil Pipeline Project',
-        description: 'Committed to delivering high quality projects and innovate business.',
-        filter: 'cat-1'
-    }
+        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Flue Gas Analyzers.jpg'),
+        title: 'Pressure & Temperature Transmitters',
+        description: 'Will Be Provided By Ali Zia CEO',
+        filter: 'cat-2'
+    },
+    {
+        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Flame Safeguard & Combustion Controls.jpg'),
+        title: 'Pressure & Temperature Switches',
+        description: 'Will Be Provided By Ali Zia CEO',
+        filter: 'cat-2'
+    },
+    {
+        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Combustible Gas Detection.jpg'),
+        title: 'Pressure & Temperature Transducers',
+        description: 'Will Be Provided By Ali Zia CEO',
+        filter: 'cat-2'
+    },
+   
+   
 ];
+
 
 class Projects14 extends React.Component {
     
@@ -76,12 +66,7 @@ class Projects14 extends React.Component {
                     <div className="container">
                         {/* PAGINATION START */}
                         <div className="filter-wrap work-grid p-b30 text-center">
-                            <ul className="masonry-filter link-style ">
-                                <li className="active"><NavLink to={"#"} data-filter="*">All Cases</NavLink></li>
-                                {filters.map((item, index) => (
-                                    <li key={index}><NavLink to={"#"} data-filter={item.filter}>{item.label}</NavLink></li>
-                                ))}
-                            </ul>
+                            
                         </div>
                         {/* PAGINATION END */}
                         {/* GALLERY CONTENT START */}
@@ -89,13 +74,12 @@ class Projects14 extends React.Component {
                             {projects.map((item, index) => (
                                 <div key={index} className={`${item.filter} masonry-item col-lg-4 col-md-6 col-sm-6 m-b30`}>
                                     <div className="project-img-effect-1">
-                                        <img src={item.image.default} alt="" />
+                                        <img src={item.image} alt="" />
                                         <div className="wt-info">
                                             <h3 className="wt-tilte m-b10 m-t0">{item.title}</h3>
                                             <p>{item.description}</p>
-                                            <NavLink to={"/project-detail"} className="site-button-link">Read More</NavLink>
+                                            <NavLink to={"/project-detail"} className="site-button-link">Request For Price</NavLink>
                                         </div>
-                                        <a href={item.image.default} className="mfp-link"><i className="fa fa-search-plus" /></a>
                                     </div>
                                 </div>
                             ))}

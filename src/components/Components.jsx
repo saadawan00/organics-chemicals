@@ -27,7 +27,27 @@ import ProjectGrid from "./Pages/ProjectGrid";
 import ProjectMasonry from "./Pages/ProjectMasonry";
 import ProjectCarousel from "./Pages/ProjectCarousel";
 import ProjectDetail from "./Pages/ProjectDetail";
-import Shop from "./Pages/Shop";
+import Pressureandtemp from "./Pages/Pressureandtemp.jsx";
+import Actuatorspositioner from "./Pages/Actuatorspositioner.jsx";
+import Pressuresafetyvalves from "./Pages/Pressuresafetyvalves.jsx";
+import Dcsdata from "./Pages/Dcsdata.jsx";
+import Beltscoupling from "./Pages/Beltscoupling.jsx";
+import Burnercontroligniters from "./Pages/Burnercontroligniters.jsx";
+import Burners from "./Pages/Burners.jsx";
+import Filterspulsationdampeners from "./Pages/Filterspulsationdampeners.jsx";
+import Heatexchangeequipment from "./Pages/Heatexchangeequipment.jsx";
+import Gasketandpacking from "./Pages/Gasketandpacking.jsx";
+import Dieselgeneratorparts from "./Pages/Dieselgeneratorparts.jsx";
+import Compressorparts from "./Pages/Compressorparts.jsx";
+import Valveandactutors from "./Pages/Valveandactutors.jsx";
+import Oilcountry from "./Pages/Oilcountry.jsx";
+import Wellheadsystem from "./Pages/Wellheadsystem.jsx";
+import Expansionjoints from "./Pages/Expansionjoints.jsx";
+import Sightglass from "./Pages/Sightglass.jsx";
+import Strainers from "./Pages/Strainers.jsx";
+import Stemtraps from "./Pages/Stemtraps.jsx";
+
+import Levelandflow from "./Pages/Levelandflow.jsx";
 import ShopDetail from "./Pages/ShopDetail";
 import ShoppingCart from "./Pages/ShoppingCart";
 import Checkout from "./Pages/Checkout";
@@ -106,7 +126,31 @@ class Components extends React.Component {
             <Route path="/project-carousel" exact component={ProjectCarousel} />
             <Route path="/project-detail" exact component={ProjectDetail} />
 
-            <Route path="/shop" exact component={Shop} />
+            <Route path="/pressureandtemp" exact component={Pressureandtemp} />
+            <Route path="/levelandflow" exact component={Levelandflow} />
+            <Route path="/actuatorspositioner" exact component={Actuatorspositioner} />
+            <Route path="/pressuresafetyvalves" exact component={Pressuresafetyvalves} />
+            <Route path="/dcsdata" exact component={Dcsdata} />
+            <Route path="/beltscoupling" exact component={Beltscoupling} />
+            <Route path="/burnercontroligniters" exact component={Burnercontroligniters} />
+            <Route path="/burners" exact component={Burners} />
+            <Route path="/filterspulsationdampeners" exact component={Filterspulsationdampeners} />
+            <Route path="/heatexchangeequipment" exact component={Heatexchangeequipment} />
+            <Route path="/gasketandpacking" exact component={Gasketandpacking} />
+            <Route path="/dieselgeneratorparts" exact component={Dieselgeneratorparts} />
+            <Route path="/compressorparts" exact component={Compressorparts} />
+            <Route path="/valveandactutors" exact component={Valveandactutors} />
+            <Route path="/oilcountry" exact component={Oilcountry} />
+            <Route path="/wellheadsystem" exact component={Wellheadsystem} />
+            <Route path="/expansionjoints" exact component={Expansionjoints} />
+            <Route path="/sightglass" exact component={Sightglass} />
+            <Route path="/strainers" exact component={Strainers} />
+            <Route path="/stemtraps" exact component={Stemtraps} />
+
+
+
+
+
             <Route path="/shop-detail" exact component={ShopDetail} />
             <Route path="/shopping-cart" exact component={ShoppingCart} />
             <Route path="/checkout" exact component={Checkout} />
