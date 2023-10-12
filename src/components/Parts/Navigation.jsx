@@ -124,11 +124,7 @@ class Navigation extends React.Component {
                     Actuators, Positioner & Valve Monitors
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink to={"/pressuresafetyvalves"}>
-                    Pressure Safety, Valves & Regulators
-                  </NavLink>
-                </li>
+                
                 <li>
                   <NavLink to={"/dcsdata"}>DCS, Data Acquisation</NavLink>
                 </li>
