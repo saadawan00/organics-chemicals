@@ -10,27 +10,27 @@ const filters = [
 
 const projects = [
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Industrial Surveillance Equipment.jpg'),
-        title: 'Pressure & Temperature Control',
+        image: require('./../../images/product_images/Compressor Part & Accessories/Gauge and Valves.jpeg'),
+        title: 'Gauge and Valves',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Optic Flame Detection.jpg'),
-        title: 'Pressure & Temperature Control',
+        image: require('./../../images/product_images/Compressor Part & Accessories/Piston and Bearing Kit.jpeg'),
+        title: 'Piston and Bearing',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
 
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Toxic Gas Detection.jpg'),
-        title: 'Pressure & Temperature Control',
+        image: require('./../../images/product_images/Compressor Part & Accessories/Seperator Element.jpg'),
+        title: 'Seperator Element',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Gas Leak Detectors.jpg'),
-        title: 'Pressure & Temperature Panel Meter',
+        image: require('./../../images/product_images/Compressor Part & Accessories/Shaft Seal Kit.jpg'),
+        title: 'Shaft Seal Kit',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
