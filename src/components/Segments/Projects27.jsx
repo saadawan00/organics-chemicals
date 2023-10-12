@@ -10,45 +10,45 @@ const filters = [
 
 const projects = [
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Industrial Surveillance Equipment.jpg'),
-        title: 'Pressure & Temperature Control',
+        image: require('./../../images/product_images/Filters & Pulsation Dampeners/Bellow Type.jpg'),
+        title: 'Bellow Type',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Optic Flame Detection.jpg'),
-        title: 'Pressure & Temperature Control',
+        image: require('./../../images/product_images/Filters & Pulsation Dampeners/Bladder Kts, Cartidges.jpg'),
+        title: 'Bladder Kts',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
 
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Toxic Gas Detection.jpg'),
-        title: 'Pressure & Temperature Control',
+        image: require('./../../images/product_images/Filters & Pulsation Dampeners/Bladder Memberane Type.jpg'),
+        title: 'Bladder Memberane Type',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Gas Leak Detectors.jpg'),
-        title: 'Pressure & Temperature Panel Meter',
+        image: require('./../../images/product_images/Filters & Pulsation Dampeners/Duplex Filters.jpg'),
+        title: 'Duplex Filters',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Flue Gas Analyzers.jpg'),
-        title: 'Pressure & Temperature Transmitters',
+        image: require('./../../images/product_images/Filters & Pulsation Dampeners/Inline Filters.jpeg'),
+        title: 'Inline Filters',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Flame Safeguard & Combustion Controls.jpg'),
-        title: 'Pressure & Temperature Switches',
+        image: require('./../../images/product_images/Filters & Pulsation Dampeners/Tank, Return Line Filters.jpg'),
+        title: 'Return Line Filters',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Combustible Gas Detection.jpg'),
-        title: 'Pressure & Temperature Transducers',
+        image: require('./../../images/product_images/Filters & Pulsation Dampeners/Ventilation Filters.jpg'),
+        title: 'Ventilation Filters',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
@@ -73,12 +73,27 @@ class Projects27 extends React.Component {
                             {projects.map((item, index) => (
                                 <div key={index} className={`${item.filter} masonry-item col-lg-4 col-md-6 col-sm-6 m-b30`}>
                                     <div className="project-img-effect-1">
-                                        <img src={item.image} alt="" />
+                                        <img src={item.image} alt="" style={{
+                                            padding: '42px',
+                                            background: 'white'
+                                        }}/>
                                         <div className="wt-info">
                                             <h3 className="wt-tilte m-b10 m-t0">{item.title}</h3>
                                             <p>{item.description}</p>
-                                            <NavLink to={"/project-detail"} className="site-button-link">Request For Price</NavLink>
-                                        </div>
+                                            <button style={{ backgroundColor: "#1c63b8", /* Blue */
+  border: '1px',
+  borderRadius: "5px",
+  color: "white",
+  padding: "15px 32px",
+  textAlign: "center",
+  textDecoration: "none",
+  display: "inline-block",
+  fontSize: "16px",
+  margin: "4px 2px",
+  cursor: "pointer",
+  transitionduration: "0.4s"}}>
+                                            <NavLink to={"/project-detail"} className="site-button-link" style={{color:"white"}}>Request For Price</NavLink>
+                                            </button>                                        </div>
                                     </div>
                                 </div>
                             ))}

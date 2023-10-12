@@ -10,49 +10,30 @@ const filters = [
 
 const projects = [
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Industrial Surveillance Equipment.jpg'),
-        title: 'Pressure & Temperature Control',
+        image: require('./../../images/product_images/Diesel Generator Parts and Accessorie/Gas Kits and Timer.jpeg'),
+        title: 'Gas Kits',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Optic Flame Detection.jpg'),
-        title: 'Pressure & Temperature Control',
+        image: require('./../../images/product_images/Diesel Generator Parts and Accessorie/Inlet and Exhaust Valves.jpeg'),
+        title: 'Inlet and Exhaust Valves',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
 
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Toxic Gas Detection.jpg'),
-        title: 'Pressure & Temperature Control',
+        image: require('./../../images/product_images/Diesel Generator Parts and Accessorie/Powe Supply.jpg'),
+        title: 'Power Supply',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Gas Leak Detectors.jpg'),
-        title: 'Pressure & Temperature Panel Meter',
+        image: require('./../../images/product_images/Diesel Generator Parts and Accessorie/Transformer, Filter Elements.jpg'),
+        title: 'Filter Elements',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
-    {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Flue Gas Analyzers.jpg'),
-        title: 'Pressure & Temperature Transmitters',
-        description: 'Will Be Provided By Ali Zia CEO',
-        filter: 'cat-2'
-    },
-    {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Flame Safeguard & Combustion Controls.jpg'),
-        title: 'Pressure & Temperature Switches',
-        description: 'Will Be Provided By Ali Zia CEO',
-        filter: 'cat-2'
-    },
-    {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Combustible Gas Detection.jpg'),
-        title: 'Pressure & Temperature Transducers',
-        description: 'Will Be Provided By Ali Zia CEO',
-        filter: 'cat-2'
-    },
-   
    
 ];
 
@@ -77,8 +58,20 @@ class Projects30 extends React.Component {
                                         <div className="wt-info">
                                             <h3 className="wt-tilte m-b10 m-t0">{item.title}</h3>
                                             <p>{item.description}</p>
-                                            <NavLink to={"/project-detail"} className="site-button-link">Request For Price</NavLink>
-                                        </div>
+                                            <button style={{ backgroundColor: "#1c63b8", /* Blue */
+  border: '1px',
+  borderRadius: "5px",
+  color: "white",
+  padding: "15px 32px",
+  textAlign: "center",
+  textDecoration: "none",
+  display: "inline-block",
+  fontSize: "16px",
+  margin: "4px 2px",
+  cursor: "pointer",
+  transitionduration: "0.4s"}}>
+                                            <NavLink to={"/project-detail"} className="site-button-link" style={{color:"white"}}>Request For Price</NavLink>
+                                            </button>                                        </div>
                                     </div>
                                 </div>
                             ))}

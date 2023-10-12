@@ -11,38 +11,38 @@ const filters = [
 const projects = [
     {
         image: require('./../../images/product_images/DCS, Data Acquistion/Calibrators, Clampmeters.jpg'),
-        title: 'Pressure & Temperature Control',
+        title: 'Calibrators',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
         image: require('./../../images/product_images/DCS, Data Acquistion/Controllers & Indicators.jpg'),
-        title: 'Pressure & Temperature Control',
+        title: 'Controllers & Indicators',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
 
     {
         image: require('./../../images/product_images/DCS, Data Acquistion/Gas Analyzers, Dust Monitors.jpg'),
-        title: 'Pressure & Temperature Control',
+        title: 'Dust Monitors',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
         image: require('./../../images/product_images/DCS, Data Acquistion/Liquid, pH, ORP Analyzers.jpg'),
-        title: 'Pressure & Temperature Panel Meter',
+        title: 'ORP Analyzers',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
         image: require('./../../images/product_images/DCS, Data Acquistion/Product Control Systems.jpg'),
-        title: 'Pressure & Temperature Transmitters',
+        title: 'Product Control Systems',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
         image: require('./../../images/product_images/DCS, Data Acquistion/Scanners & Thermal Imagers.jpg'),
-        title: 'Pressure & Temperature Switches',
+        title: 'Thermal Imagers',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
@@ -67,12 +67,27 @@ class Projects23 extends React.Component {
                             {projects.map((item, index) => (
                                 <div key={index} className={`${item.filter} masonry-item col-lg-4 col-md-6 col-sm-6 m-b30`}>
                                     <div className="project-img-effect-1">
-                                        <img src={item.image} alt="" />
+                                        <img src={item.image} alt="" style={{
+                                            padding: '42px',
+                                            background: 'white'
+                                        }}/>
                                         <div className="wt-info">
                                             <h3 className="wt-tilte m-b10 m-t0">{item.title}</h3>
                                             <p>{item.description}</p>
-                                            <NavLink to={"/project-detail"} className="site-button-link">Request For Price</NavLink>
-                                        </div>
+                                            <button style={{ backgroundColor: "#1c63b8", /* Blue */
+  border: '1px',
+  borderRadius: "5px",
+  color: "white",
+  padding: "15px 32px",
+  textAlign: "center",
+  textDecoration: "none",
+  display: "inline-block",
+  fontSize: "16px",
+  margin: "4px 2px",
+  cursor: "pointer",
+  transitionduration: "0.4s"}}>
+                                            <NavLink to={"/project-detail"} className="site-button-link" style={{color:"white"}}>Request For Price</NavLink>
+                                            </button>                                        </div>
                                     </div>
                                 </div>
                             ))}

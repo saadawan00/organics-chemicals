@@ -77,8 +77,20 @@ class Projects36 extends React.Component {
                                         <div className="wt-info">
                                             <h3 className="wt-tilte m-b10 m-t0">{item.title}</h3>
                                             <p>{item.description}</p>
-                                            <NavLink to={"/project-detail"} className="site-button-link">Request For Price</NavLink>
-                                        </div>
+                                            <button style={{ backgroundColor: "#1c63b8", /* Blue */
+  border: '1px',
+  borderRadius: "5px",
+  color: "white",
+  padding: "15px 32px",
+  textAlign: "center",
+  textDecoration: "none",
+  display: "inline-block",
+  fontSize: "16px",
+  margin: "4px 2px",
+  cursor: "pointer",
+  transitionduration: "0.4s"}}>
+                                            <NavLink to={"/project-detail"} className="site-button-link" style={{color:"white"}}>Request For Price</NavLink>
+                                            </button>                                        </div>
                                     </div>
                                 </div>
                             ))}

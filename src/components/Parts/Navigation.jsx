@@ -180,37 +180,8 @@ class Navigation extends React.Component {
                   </ul>
                 </li>
                 <li>
-                  <NavLink to={""}>More</NavLink>
-                  <ul className="sub-menu">
-                    <li>
-                      <NavLink to={"/valveandactutors"}>
-                        Valves and Actuators
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={"/oilcountry"}>
-                        {" "}
-                        Oil Country Tubular Goods
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={"/wellheadsystem"}>Wellhead Systems</NavLink>
-                    </li>{" "}
-                    <li>
-                      <NavLink to={"/expansionjoints"}>
-                        Expansion Joints
-                      </NavLink>
-                    </li>{" "}
-                    <li>
-                      <NavLink to={"/sightglass"}>Sight Glass</NavLink>
-                    </li>{" "}
-                    <li>
-                      <NavLink to={"/strainers"}>Strainers</NavLink>
-                    </li>{" "}
-                    <li>
-                      <NavLink to={"/stemtraps"}> Stem Traps</NavLink>
-                    </li>
-                  </ul>
+                  <NavLink to={"/moreproducts"}>More</NavLink>
+                
                 </li>
               </ul>
             </li>
