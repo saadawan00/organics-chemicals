@@ -10,45 +10,39 @@ const filters = [
 
 const projects = [
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Industrial Surveillance Equipment.jpg'),
-        title: 'Pressure & Temperature Control',
+        image: require('./../../images/product_images/More/Expansion Joints.jpeg'),
+        title: 'Expansion Joints',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Optic Flame Detection.jpg'),
-        title: 'Pressure & Temperature Control',
+        image: require('./../../images/product_images/More/Sight Glass.jpeg'),
+        title: 'Sight Glass',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
 
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Toxic Gas Detection.jpg'),
-        title: 'Pressure & Temperature Control',
+        image: require('./../../images/product_images/More/Stam Traps.jpeg'),
+        title: 'Stam Traps',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Gas Leak Detectors.jpg'),
-        title: 'Pressure & Temperature Panel Meter',
+        image: require('./../../images/product_images/More/Strainers.jpeg'),
+        title: 'Strainers',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Flue Gas Analyzers.jpg'),
-        title: 'Pressure & Temperature Transmitters',
+        image: require('./../../images/product_images/More/Valves and Actuators.jpeg'),
+        title: 'Valves and Actuators',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Flame Safeguard & Combustion Controls.jpg'),
-        title: 'Pressure & Temperature Switches',
-        description: 'Will Be Provided By Ali Zia CEO',
-        filter: 'cat-2'
-    },
-    {
-        image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors/Combustible Gas Detection.jpg'),
-        title: 'Pressure & Temperature Transducers',
+        image: require('./../../images/product_images/More/Wellhead Systems.jpg'),
+        title: 'Wellhead Systems',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
