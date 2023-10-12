@@ -16723,8 +16723,9 @@ textarea.form-control2 {
 }
 
 .project-img-effect-1:hover .wt-info {
-  position: relative;
-  bottom: 60px;
+  /* position: relative; */
+  /* bottom: 60px; */
+  cursor: pointer;
 
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -16736,10 +16737,12 @@ textarea.form-control2 {
 }
 
 .project-img-effect-1:hover img {
-  zoom: 1;
-  filter: alpha(opacity=30);
-  -webkit-opacity: 0.3;
-  opacity: 0.3;
+  cursor: pointer;
+  zoom: 0.05;
+  /* filter: alpha(opacity=70);
+  -webkit-opacity: 0.8;
+  opacity: 0.8; */
+  
 }
 
 .project-detail-right p:last-child {

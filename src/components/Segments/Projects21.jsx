@@ -11,32 +11,32 @@ const filters = [
 const projects = [
     {
         image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors 2/Gearboxes and Accessories.jpg'),
-        title: 'Pressure & Temperature Control',
+        title: 'Gearboxes and Accessories',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
         image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors 2/Linear & Rotary Valve Monitors.jpg'),
-        title: 'Pressure & Temperature Control',
+        title: 'Linear & Rotary Valve',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
 
     {
         image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors 2/Multiport Flow Sectors.jpg'),
-        title: 'Pressure & Temperature Control',
+        title: 'Multiport Flow Sectors',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
         image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors 2/Precision Control Instruments.jpg'),
-        title: 'Pressure & Temperature Panel Meter',
+        title: 'Precision Control',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
         image: require('./../../images/product_images/Actuators, Positioners, Valve Monitors 2/Valve Actuators.jpg'),
-        title: 'Pressure & Temperature Transmitters',
+        title: 'Valve Actuators',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
@@ -62,12 +62,27 @@ class Projects21 extends React.Component {
                             {projects.map((item, index) => (
                                 <div key={index} className={`${item.filter} masonry-item col-lg-4 col-md-6 col-sm-6 m-b30`}>
                                     <div className="project-img-effect-1">
-                                        <img src={item.image} alt="" />
+                                        <img src={item.image} alt="" style={{
+                                            padding: '42px',
+                                            background: 'white'
+                                        }}/>
                                         <div className="wt-info">
                                             <h3 className="wt-tilte m-b10 m-t0">{item.title}</h3>
                                             <p>{item.description}</p>
-                                            <NavLink to={"/project-detail"} className="site-button-link">Request For Price</NavLink>
-                                        </div>
+                                            <button style={{ backgroundColor: "#1c63b8", /* Blue */
+  border: '1px',
+  borderRadius: "5px",
+  color: "white",
+  padding: "15px 32px",
+  textAlign: "center",
+  textDecoration: "none",
+  display: "inline-block",
+  fontSize: "16px",
+  margin: "4px 2px",
+  cursor: "pointer",
+  transitionduration: "0.4s"}}>
+                                            <NavLink to={"/project-detail"} className="site-button-link" style={{color:"white"}}>Request For Price</NavLink>
+                                            </button>                                        </div>
                                     </div>
                                 </div>
                             ))}

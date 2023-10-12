@@ -39,6 +39,7 @@ import Heatexchangeequipment from "./Pages/Heatexchangeequipment.jsx";
 import Gasketandpacking from "./Pages/Gasketandpacking.jsx";
 import Dieselgeneratorparts from "./Pages/Dieselgeneratorparts.jsx";
 import Compressorparts from "./Pages/Compressorparts.jsx";
+import MoreProducts from "./Pages/MoreProducts.jsx";
 import Valveandactutors from "./Pages/Valveandactutors.jsx";
 import Oilcountry from "./Pages/Oilcountry.jsx";
 import Wellheadsystem from "./Pages/Wellheadsystem.jsx";
@@ -139,13 +140,14 @@ class Components extends React.Component {
             <Route path="/gasketandpacking" exact component={Gasketandpacking} />
             <Route path="/dieselgeneratorparts" exact component={Dieselgeneratorparts} />
             <Route path="/compressorparts" exact component={Compressorparts} />
-            <Route path="/valveandactutors" exact component={Valveandactutors} />
+            <Route path="/moreproducts" exact component={MoreProducts} />
+            {/* <Route path="/valveandactutors" exact component={Valveandactutors} />
             <Route path="/oilcountry" exact component={Oilcountry} />
             <Route path="/wellheadsystem" exact component={Wellheadsystem} />
             <Route path="/expansionjoints" exact component={Expansionjoints} />
             <Route path="/sightglass" exact component={Sightglass} />
             <Route path="/strainers" exact component={Strainers} />
-            <Route path="/stemtraps" exact component={Stemtraps} />
+            <Route path="/stemtraps" exact component={Stemtraps} /> */}
 
 
 

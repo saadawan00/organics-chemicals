@@ -11,44 +11,63 @@ const filters = [
 const projects = [
     {
         image: require('./../../images/product_images/V Belts, Coupling & Bearings/Ball Bearings.jpg'),
-        title: 'Pressure & Temperature Control',
+        title: 'Ball Bearings',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
         image: require('./../../images/product_images/V Belts, Coupling & Bearings/Conveyor Belt.jpg'),
-        title: 'Pressure & Temperature Control',
+        title: 'Conveyor Belt',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
 
     {
         image: require('./../../images/product_images/V Belts, Coupling & Bearings/Cylinderical Roller Bearing.jpg'),
-        title: 'Pressure & Temperature Control',
+        title: 'Cylinderical Roller',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
         image: require('./../../images/product_images/V Belts, Coupling & Bearings/Disc & Fluid Coupling.jpg'),
-        title: 'Pressure & Temperature Panel Meter',
+        title: 'Fluid Coupling',
+        description: 'Will Be Provided By Ali Zia CEO',
+        filter: 'cat-2'
+    },
+    {
+        image: require('./../../images/product_images/V Belts, Coupling & Bearings/Gear & Rigid Coupling.jpg'),
+        title: 'Rigid Coupling',
+        description: 'Will Be Provided By Ali Zia CEO',
+        filter: 'cat-2'
+    },
+    {
+        image: require('./../../images/product_images/V Belts, Coupling & Bearings/Sleeve Bearing.jpg'),
+        title: 'Sleeve Bearing',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
         image: require('./../../images/product_images/V Belts, Coupling & Bearings/Thrust Bearings.jpg'),
-        title: 'Pressure & Temperature Transmitters',
+        title: 'Thrust Bearings',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
+
     {
         image: require('./../../images/product_images/V Belts, Coupling & Bearings/Timing Belts.jpg'),
-        title: 'Pressure & Temperature Switches',
+        title: 'Timing Belts',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
     {
         image: require('./../../images/product_images/V Belts, Coupling & Bearings/Torsionally Soft, Stiff Coupling.jpg'),
-        title: 'Pressure & Temperature Transducers',
+        title: 'Stiff Coupling',
+        description: 'Will Be Provided By Ali Zia CEO',
+        filter: 'cat-2'
+    },
+    {
+        image: require('./../../images/product_images/V Belts, Coupling & Bearings/V Belts.jpg'),
+        title: 'V Belts',
         description: 'Will Be Provided By Ali Zia CEO',
         filter: 'cat-2'
     },
@@ -72,13 +91,28 @@ class Projects24 extends React.Component {
                         <div className="masonry-wrap mfp-gallery  row clearfix d-flex justify-content-center flex-wrap">
                             {projects.map((item, index) => (
                                 <div key={index} className={`${item.filter} masonry-item col-lg-4 col-md-6 col-sm-6 m-b30`}>
-                                    <div className="project-img-effect-1">
-                                        <img src={item.image} alt="" />
+                                    <div className="project-img-effect-1" style={{}}>
+                                        <img src={item.image} alt="" style={{
+                                            padding: '42px',
+                                            background: 'white'
+                                        }} />
                                         <div className="wt-info">
                                             <h3 className="wt-tilte m-b10 m-t0">{item.title}</h3>
                                             <p>{item.description}</p>
-                                            <NavLink to={"/project-detail"} className="site-button-link">Request For Price</NavLink>
-                                        </div>
+                                            <button style={{ backgroundColor: "#1c63b8", /* Blue */
+  border: '1px',
+  borderRadius: "5px",
+  color: "white",
+  padding: "15px 32px",
+  textAlign: "center",
+  textDecoration: "none",
+  display: "inline-block",
+  fontSize: "16px",
+  margin: "4px 2px",
+  cursor: "pointer",
+  transitionduration: "0.4s"}}>
+                                            <NavLink to={"/project-detail"} className="site-button-link" style={{color:"white"}}>Request For Price</NavLink>
+                                            </button>                                        </div>
                                     </div>
                                 </div>
                             ))}
