@@ -42,18 +42,24 @@ class Navigation extends React.Component {
                   </NavLink>
                 </li> */}
                 <li>
-                  <NavLink to={"/services-agricultural"}>
-                    {" "}
-                    Food and Beverage Industry
-                  </NavLink>
-                </li>
-                <li>
                   <NavLink to={"/services-agricultural"}>Power Plants</NavLink>
                 </li>
+
                 <li>
                   <NavLink to={"/services-agricultural"}>
                     Textile Industry
                   </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to={"/services-chemical"}>Sugar Industry</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/services-civil"}>Cement Industry</NavLink>
+                </li>
+
+                <li>
+                  <NavLink to={"/services-oilgas"}>Fertiliser Industry</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/services-automotive"}>
@@ -61,24 +67,22 @@ class Navigation extends React.Component {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/services-chemical"}>Sugar Industry</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/services-civil"}>Cement Industry</NavLink>
+                  <NavLink to={"/services-agricultural"}>
+                    {" "}
+                    Food and Beverage Industry
+                  </NavLink>
                 </li>
                 <li>
                   <NavLink to={"/services-mechanical"}>
                     Water Treatment Chemicals
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink to={"/services-oilgas"}>Fertiliser Industry</NavLink>
-                </li>
-                <li>
+
+                {/* <li>
                   <NavLink to={"/services-powerenergy"}>
                     Power &amp; Energy Sector
                   </NavLink>
-                </li>
+                </li> */}
               </ul>
             </li>
             <li>
