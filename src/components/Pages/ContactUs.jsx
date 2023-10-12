@@ -1,6 +1,6 @@
 import React from "react";
 // import GoogleMaps from "simple-react-google-maps"
-import Header from "./../Parts/Header";
+import Header2 from "./../Parts/Header2";
 import Footer from "./../Parts/Footer";
 import Banner from "./../Segments/Banner";
 
@@ -12,7 +12,7 @@ class ContactUs extends React.Component {
   render() {
     return (
       <>
-        <Header />
+        <Header2 />
         <div className="page-content">
           {/* INNER PAGE BANNER */}
           <Banner

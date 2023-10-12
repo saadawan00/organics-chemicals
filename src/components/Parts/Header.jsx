@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 var bnr = require("./../../images/background/bg-7.jpg");
 var bnr2 = require("./../../images/background/bg-map2.png");
 
-class Header extends React.Component {
+class Header2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = { logo: require("./../../images/logo-dark.png") };
@@ -337,4 +337,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default Header2;

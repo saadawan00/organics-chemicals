@@ -34,36 +34,45 @@ class Navigation extends React.Component {
               <NavLink to={""}>Industrial Chemicals</NavLink>
               <ul className="sub-menu">
                 <li>
-                  <NavLink to={"/services-1"}>Chemicals 2</NavLink>
+                  <NavLink to={"/services-1"}>All services</NavLink>
+                </li>
+                {/* <li>
+                  <NavLink to={"/services-2"}>
+                    Food and Beverage Industry
+                  </NavLink>
+                </li> */}
+                <li>
+                  <NavLink to={"/services-agricultural"}>
+                    {" "}
+                    Food and Beverage Industry
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/services-2"}>Services Two</NavLink>
+                  <NavLink to={"/services-agricultural"}>Power Plants</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/services-agricultural"}>
-                    Agricultural Automation
+                    Textile Industry
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to={"/services-automotive"}>
-                    Automotive Manufacturing
+                    Pulp and Paper Industry
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/services-chemical"}>Chemical Research</NavLink>
+                  <NavLink to={"/services-chemical"}>Sugar Industry</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/services-civil"}>Civil Engineering</NavLink>
+                  <NavLink to={"/services-civil"}>Cement Industry</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/services-mechanical"}>
-                    Mechanical Engineering
+                    Water Treatment Chemicals
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/services-oilgas"}>
-                    Oil &amp; Gas Engineering
-                  </NavLink>
+                  <NavLink to={"/services-oilgas"}>Fertiliser Industry</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/services-powerenergy"}>
@@ -91,82 +100,113 @@ class Navigation extends React.Component {
             </li>
             <li>
               <NavLink to={""}>Controls & Automation</NavLink>
-              
+
               <ul className="sub-menu">
                 <li>
                   <NavLink to={""}>Measurement Controls</NavLink>
                   <ul className="sub-menu">
-                  <li>
-                  <NavLink to={"/pressureandtemp"}>Pressure & Temperature</NavLink>
-                </li><li>
-                  <NavLink to={"/levelandflow"}>Level & Flow</NavLink>
-                </li>
-                    </ul>
+                    <li>
+                      <NavLink to={"/pressureandtemp"}>
+                        Pressure & Temperature
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/levelandflow"}>Level & Flow</NavLink>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <NavLink to={"/actuatorspositioner"}>Actuators, Positioner & Valve Monitors</NavLink>
+                  <NavLink to={"/actuatorspositioner"}>
+                    Actuators, Positioner & Valve Monitors
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/pressuresafetyvalves"}>Pressure Safety, Valves & Regulators</NavLink>
+                  <NavLink to={"/pressuresafetyvalves"}>
+                    Pressure Safety, Valves & Regulators
+                  </NavLink>
                 </li>
                 <li>
                   <NavLink to={"/dcsdata"}>DCS, Data Acquisation</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/beltscoupling"}>V Belts, Coupling & Bearings</NavLink>
+                  <NavLink to={"/beltscoupling"}>
+                    V Belts, Coupling & Bearings
+                  </NavLink>
                 </li>
                 <li>
                   <NavLink to={""}>Gas & Flame Detection</NavLink>
                   <ul className="sub-menu">
-                  <li>
-                  <NavLink to={"/burnercontroligniters"}>Burner Controls, Igniters</NavLink>
-                </li><li>
-                  <NavLink to={"/burners"}>Burners</NavLink>
-                </li>
-                    </ul>
+                    <li>
+                      <NavLink to={"/burnercontroligniters"}>
+                        Burner Controls, Igniters
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/burners"}>Burners</NavLink>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <NavLink to={"/filterspulsationdampeners"}>Filters & Pulsation Dampeners</NavLink>
+                  <NavLink to={"/filterspulsationdampeners"}>
+                    Filters & Pulsation Dampeners
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/heatexchangeequipment"}>Heat Exchange Equipment</NavLink>
+                  <NavLink to={"/heatexchangeequipment"}>
+                    Heat Exchange Equipment
+                  </NavLink>
                 </li>
                 <li>
                   <NavLink to={"/gasketandpacking"}>Gasket & Packing</NavLink>
                 </li>
-                
 
                 <li>
                   <NavLink to={""}>Generator & Compressors</NavLink>
                   <ul className="sub-menu">
-                  <li>
-                  <NavLink to={"/dieselgeneratorparts"}>Diesel Generator Parts</NavLink>
-                </li><li>
-                  <NavLink to={"/compressorparts"}>Compressor Parts & Accessories</NavLink>
+                    <li>
+                      <NavLink to={"/dieselgeneratorparts"}>
+                        Diesel Generator Parts
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/compressorparts"}>
+                        Compressor Parts & Accessories
+                      </NavLink>
+                    </li>
+                  </ul>
                 </li>
-                    </ul>
-                </li> 
                 <li>
                   <NavLink to={""}>More</NavLink>
                   <ul className="sub-menu">
-                  <li>
-                  <NavLink to={"/valveandactutors"}>Valves and Actuators</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/oilcountry"}> Oil Country Tubular Goods</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/wellheadsystem"}>Wellhead Systems</NavLink>
-                </li> <li>
-                  <NavLink to={"/expansionjoints"}>Expansion Joints</NavLink>
-                </li> <li>
-                  <NavLink to={"/sightglass"}>Sight Glass</NavLink>
-                </li> <li>
-                  <NavLink to={"/strainers"}>Strainers</NavLink>
-                </li> <li>
-                  <NavLink to={"/stemtraps"}> Stem Traps</NavLink>
-                </li>
-                    </ul>
+                    <li>
+                      <NavLink to={"/valveandactutors"}>
+                        Valves and Actuators
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/oilcountry"}>
+                        {" "}
+                        Oil Country Tubular Goods
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/wellheadsystem"}>Wellhead Systems</NavLink>
+                    </li>{" "}
+                    <li>
+                      <NavLink to={"/expansionjoints"}>
+                        Expansion Joints
+                      </NavLink>
+                    </li>{" "}
+                    <li>
+                      <NavLink to={"/sightglass"}>Sight Glass</NavLink>
+                    </li>{" "}
+                    <li>
+                      <NavLink to={"/strainers"}>Strainers</NavLink>
+                    </li>{" "}
+                    <li>
+                      <NavLink to={"/stemtraps"}> Stem Traps</NavLink>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
