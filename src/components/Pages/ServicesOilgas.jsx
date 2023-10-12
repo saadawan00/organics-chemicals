@@ -14,8 +14,8 @@ class ServicesOilgas extends React.Component {
         <div className="page-content">
           {/* INNER PAGE BANNER */}
           <Banner
-            title="Service Detail"
-            pagename="Service Detail"
+            title="Power Plants"
+            pagename="Power Plants"
             bgimage={bnrimg.default}
           />
           {/* INNER PAGE BANNER END */}
