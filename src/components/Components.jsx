@@ -65,6 +65,17 @@ import Error403 from "./Pages/Error403";
 import Error404 from "./Pages/Error404";
 import Error405 from "./Pages/Error405";
 import ContactUs from "./Pages/ContactUs";
+import {
+  BufferVolumetric,
+  Chemicals,
+  Glassware,
+  Instruments,
+  Chromatography,
+  Consumables,
+  CorrosionCoupons,
+  Filtration,
+  Plasticware,
+} from './Pages/LabScientific/index';
 
 class Components extends React.Component {
   render() {
@@ -122,10 +133,15 @@ class Components extends React.Component {
               component={ServicesPowerEnergy}
             />
 
-            <Route path="/project-grid" exact component={ProjectGrid} />
-            <Route path="/project-masonry" exact component={ProjectMasonry} />
-            <Route path="/project-carousel" exact component={ProjectCarousel} />
-            <Route path="/project-detail" exact component={ProjectDetail} />
+            <Route path="/chemicals" exact component={Chemicals} />
+            <Route path="/glassware" exact component={Glassware} />
+            <Route path="/instruments" exact component={Instruments} />
+            <Route path="/plasticware" exact component={Plasticware} />
+            <Route path="/consumables" exact component={Consumables} />
+            <Route path="/filtration" exact component={Filtration} />
+            <Route path="/buffer-volumatric" exact component={BufferVolumetric} />
+            <Route path="/corrosian-coupons" exact component={CorrosionCoupons} />
+            <Route path="/chromatography" exact component={Chromatography} />
 
             <Route path="/pressureandtemp" exact component={Pressureandtemp} />
             <Route path="/levelandflow" exact component={Levelandflow} />
