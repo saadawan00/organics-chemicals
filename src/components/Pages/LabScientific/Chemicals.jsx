@@ -47,9 +47,8 @@ export class Chemicals extends React.Component {
                         </div>
                         <div className="row">
                           {picturesData.map(({label, imageName}) => (
-                            <div key={imageName} className="col-lg-3 col-xs-3 p-l4 p-r-4">
+                            <div key={imageName} className="col-lg-3 col-xs-3 p-l4 p-r4 p-t10 p-b10">
                               <div className="d-flex align-items-center flex-column">
-
                                 <img width={80} src={require(`./../../../images/lab-scientific/chemicals/${imageName}.png`)} />
                                 <p className="p-t20 text-center">{label}</p>
                               </div>
