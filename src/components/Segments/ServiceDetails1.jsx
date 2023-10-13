@@ -5,7 +5,7 @@ class ServiceDetails1 extends React.Component {
   render() {
     return (
       <>
-        <div className="section-full small-device  p-t80 p-b50 bg-white">
+        <div className="section-full small-device p-t80 p-b50 bg-white">
           <div className="section-content">
             <div className="container">
               <div className="row">

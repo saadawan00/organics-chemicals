@@ -1,3 +1,16 @@
+//Sidebar Items 
+export const sidebarItems = [
+  { label: "Chemicals", route: "/chemicals" },
+  { label: "Glassware", route: "/glassware" },
+  { label: "Instruments", route: "/instruments" },
+  { label: "Plasticware", route: "/plasticware" },
+  { label: "Consumables", route: "/consumables" },
+  { label: "Filtration", route: "/filtration" },
+  { label: "Buffer & Volumatric", route: "/buffer-volumatric" },
+  { label: "Corrosion Coupons", route: "/corrosian-coupons" },
+  { label: "Chromatography", route: "/chromatography" },
+];
+
 export * from './BufferVolumetric';
 export * from './Chemicals';
 export * from './Glassware';
