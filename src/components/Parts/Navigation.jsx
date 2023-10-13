@@ -89,16 +89,31 @@ class Navigation extends React.Component {
               <NavLink to={""}>Lab Scientific</NavLink>
               <ul className="sub-menu">
                 <li>
-                  <NavLink to={"/project-grid"}>Project Grid</NavLink>
+                  <NavLink to={"/chemicals"}>Chemicals</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/project-masonry"}>Project Masonry</NavLink>
+                  <NavLink to={"/glassware"}>Glassware</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/project-carousel"}>Project Carousel</NavLink>
+                  <NavLink to={"/instruments"}>Instruments</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/project-detail"}>Project Detail</NavLink>
+                  <NavLink to={"/plasticware"}>Plasticware</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/consumables"}>Consumables</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/Filtration"}>Filtration</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/buffer-volumatric"}>Buffer & Volumatric</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/corrosian-coupons"}>Corrosion Coupons</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/chromatography"}>Chromatography</NavLink>
                 </li>
               </ul>
             </li>
