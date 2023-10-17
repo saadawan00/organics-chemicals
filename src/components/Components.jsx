@@ -24,31 +24,24 @@ import ServicesMechanical from "./Pages/ServicesMechanical";
 import ServicesOilgas from "./Pages/ServicesOilgas";
 import ServicesPowerEnergy from "./Pages/ServicesPowerEnergy";
 import ProjectGrid from "./Pages/ProjectGrid";
-import ProjectMasonry from "./Pages/ProjectMasonry";
+import ProjectMasonry from "./Pages/ControlsandAutomation/ProjectMasonry";
 import ProjectCarousel from "./Pages/ProjectCarousel";
 import ProjectDetail from "./Pages/ProjectDetail";
-import Pressureandtemp from "./Pages/Pressureandtemp.jsx";
-import Actuatorspositioner from "./Pages/Actuatorspositioner.jsx";
-import Pressuresafetyvalves from "./Pages/Pressuresafetyvalves.jsx";
-import Dcsdata from "./Pages/Dcsdata.jsx";
-import Beltscoupling from "./Pages/Beltscoupling.jsx";
-import Burnercontroligniters from "./Pages/Burnercontroligniters.jsx";
-import Burners from "./Pages/Burners.jsx";
-import Filterspulsationdampeners from "./Pages/Filterspulsationdampeners.jsx";
-import Heatexchangeequipment from "./Pages/Heatexchangeequipment.jsx";
-import Gasketandpacking from "./Pages/Gasketandpacking.jsx";
-import Dieselgeneratorparts from "./Pages/Dieselgeneratorparts.jsx";
-import Compressorparts from "./Pages/Compressorparts.jsx";
-import MoreProducts from "./Pages/MoreProducts.jsx";
-import Valveandactutors from "./Pages/Valveandactutors.jsx";
-import Oilcountry from "./Pages/Oilcountry.jsx";
-import Wellheadsystem from "./Pages/Wellheadsystem.jsx";
-import Expansionjoints from "./Pages/Expansionjoints.jsx";
-import Sightglass from "./Pages/Sightglass.jsx";
-import Strainers from "./Pages/Strainers.jsx";
-import Stemtraps from "./Pages/Stemtraps.jsx";
+import Pressureandtemp from "./Pages/ControlsandAutomation/Pressureandtemp";
+import Actuatorspositioner from "./Pages/ControlsandAutomation/Actuatorspositioner.jsx";
+import Pressuresafetyvalves from "./Pages/ControlsandAutomation/Pressuresafetyvalves.jsx";
+import Dcsdata from "./Pages/ControlsandAutomation/Dcsdata.jsx";
+import Beltscoupling from "./Pages/ControlsandAutomation/Beltscoupling.jsx";
+import Burnercontroligniters from "./Pages/ControlsandAutomation/Burnercontroligniters.jsx";
+import Burners from "./Pages/ControlsandAutomation/Burners.jsx";
+import Filterspulsationdampeners from "./Pages/ControlsandAutomation/Filterspulsationdampeners.jsx";
+import Heatexchangeequipment from "./Pages/ControlsandAutomation/Heatexchangeequipment.jsx";
+import Gasketandpacking from "./Pages/ControlsandAutomation/Gasketandpacking.jsx";
+import Dieselgeneratorparts from "./Pages/ControlsandAutomation/Dieselgeneratorparts.jsx";
+import Compressorparts from "./Pages/ControlsandAutomation/Compressorparts.jsx";
+import MoreProducts from "./Pages/ControlsandAutomation/MoreProducts";
 
-import Levelandflow from "./Pages/Levelandflow.jsx";
+import Levelandflow from "./Pages/ControlsandAutomation/Levelandflow.jsx";
 import ShopDetail from "./Pages/ShopDetail";
 import ShoppingCart from "./Pages/ShoppingCart";
 import Checkout from "./Pages/Checkout";
@@ -76,6 +69,7 @@ import {
   Filtration,
   Plasticware,
 } from './Pages/LabScientific/index';
+import RequestForm from "./Pages/ControlsandAutomation/RequestForm";
 
 class Components extends React.Component {
   render() {
@@ -157,6 +151,8 @@ class Components extends React.Component {
             <Route path="/dieselgeneratorparts" exact component={Dieselgeneratorparts} />
             <Route path="/compressorparts" exact component={Compressorparts} />
             <Route path="/moreproducts" exact component={MoreProducts} />
+            <Route path="/requestqoute" exact component={RequestForm} />
+
             {/* <Route path="/valveandactutors" exact component={Valveandactutors} />
             <Route path="/oilcountry" exact component={Oilcountry} />
             <Route path="/wellheadsystem" exact component={Wellheadsystem} />

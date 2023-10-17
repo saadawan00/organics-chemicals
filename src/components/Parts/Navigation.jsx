@@ -121,32 +121,26 @@ class Navigation extends React.Component {
               <NavLink to={""}>Controls & Automation</NavLink>
 
               <ul className="sub-menu">
-                <li>
-                  <NavLink to={""}>Measurement Controls</NavLink>
-                  <ul className="sub-menu">
-                    <li>
-                      <NavLink to={"/pressureandtemp"}>
-                        Pressure & Temperature
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={"/levelandflow"}>Level & Flow</NavLink>
-                    </li>
-                  </ul>
-                </li>
-                <li>
+              <li>
                   <NavLink to={"/actuatorspositioner"}>
                     Actuators, Positioner & Valve Monitors
                   </NavLink>
                 </li>
-                
+                <li>
+                  <NavLink to={"/beltscoupling"}>
+                  Bearings V Belts & Coupling 
+                  </NavLink>
+                </li>
                 <li>
                   <NavLink to={"/dcsdata"}>DCS, Data Acquisation</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/beltscoupling"}>
-                    V Belts, Coupling & Bearings
+                  <NavLink to={"/filterspulsationdampeners"}>
+                    Filters & Pulsation Dampeners
                   </NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/gasketandpacking"}>Gasket & Packing</NavLink>
                 </li>
                 <li>
                   <NavLink to={""}>Gas & Flame Detection</NavLink>
@@ -162,20 +156,6 @@ class Navigation extends React.Component {
                   </ul>
                 </li>
                 <li>
-                  <NavLink to={"/filterspulsationdampeners"}>
-                    Filters & Pulsation Dampeners
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/heatexchangeequipment"}>
-                    Heat Exchange Equipment
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/gasketandpacking"}>Gasket & Packing</NavLink>
-                </li>
-
-                <li>
                   <NavLink to={""}>Generator & Compressors</NavLink>
                   <ul className="sub-menu">
                     <li>
@@ -190,6 +170,25 @@ class Navigation extends React.Component {
                     </li>
                   </ul>
                 </li>
+                <li>
+                  <NavLink to={"/heatexchangeequipment"}>
+                    Heat Exchange Equipment
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to={""}>Measurement Controls</NavLink>
+                  <ul className="sub-menu">
+                    <li>
+                      <NavLink to={"/pressureandtemp"}>
+                        Pressure & Temperature
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/levelandflow"}>Level & Flow</NavLink>
+                    </li>
+                  </ul>
+                </li>
+               
                 <li>
                   <NavLink to={"/moreproducts"}>More</NavLink>
                 
