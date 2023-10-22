@@ -14,8 +14,8 @@ class Actuatorspositioner extends React.Component {
         <div className="page-content">
           {/* INNER PAGE BANNER */}
           <Banner
-            title="Actuators,Positioner & Valve Monitors"
-            pagename="Actuators,Positioner & Valve Monitors"
+            title="Actuators Positioners"
+            pagename="Actuators Positioners"
             bgimage={bnrimg.default}
           />
           {/* INNER PAGE BANNER END */}

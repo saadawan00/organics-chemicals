@@ -118,12 +118,12 @@ class Navigation extends React.Component {
               </ul>
             </li>
             <li>
-              <NavLink to={""}>Controls & Automation</NavLink>
+              <NavLink to={""}>Instrumentation</NavLink>
 
               <ul className="sub-menu">
               <li>
                   <NavLink to={"/actuatorspositioner"}>
-                    Actuators, Positioner & Valve Monitors
+                  Actuators Positioners
                   </NavLink>
                 </li>
                 <li>
