@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 // import GoogleMaps from "simple-react-google-maps"
 import Header2 from "./../../Parts/Header2";
 import Footer from "./../../Parts/Footer";
 import Banner from "./../../Segments/Banner";
 import { useLocation } from 'react-router-dom'
+import emailjs from 'emailjs-com';
 
 var bnrimg = require("./../../../images/banner/5.jpg");
 var bnr1 = require("./../../../images/background/bg-7.jpg");
@@ -11,9 +12,44 @@ var bgimg = require("./../../../images/background/bg-map2.png");
 
 
 const RequestForm = (props) => {
-    
-    const location = useLocation()
+  const location = useLocation()
     console.log(location.state);
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    phone: '',
+    subject: location.state, // This might be coming from your router or state
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_mi8v00d", // Replace with your Service ID
+        "template_dioh9jq", // Replace with your Template ID
+        e.target,
+        "S-lGK0mdGoBqizHzu" // Replace with your User ID
+      )
+      .then(
+        (result) => {
+          console.log('Email sent:', result.text);
+          alert('Email sent successfully!');
+        },
+        (error) => {
+          console.error('Email send error:', error);
+          alert('Error sending email.');
+        }
+      );
+  };
+ 
+    
+    
   
 
     return (
@@ -40,9 +76,8 @@ const RequestForm = (props) => {
                   <div className="row  d-flex justify-content-center flex-wrap">
                     <div className="col-lg-6 col-md-6 m-b30">
                       <form
+                      onSubmit={handleSubmit}
                         className="cons-contact-form"
-                        method="post"
-                        action="#"
                       >
                         {/* TITLE START */}
                         <div className="section-head left wt-small-separator-outer">
@@ -112,7 +147,7 @@ const RequestForm = (props) => {
                           </div>
                           <div className="col-md-12">
                             <button
-                              type="button"
+                              type="submit"
                               className="site-button site-btn-effect"
                             >
                               Submit Now
@@ -120,7 +155,7 @@ const RequestForm = (props) => {
                           </div>
                         </div>
                       </form>
-                    </div>
+                      </div>
                     <div className="col-lg-6 col-md-6 m-b30">
                       <div className="contact-info">
                         <div className="contact-info-inner">
