@@ -58,7 +58,7 @@ class Header2 extends React.Component {
                   <ul className="wt-topbar-info e-p-bx text-white">
                     <li>
                       <span> Chemicals, Equipment & Engineering</span>
-                      <span>| Your Partner For Sucess!</span>
+                      <span>| Your Complete Business Solution!</span>
                     </li>
                   </ul>
                 </div>
