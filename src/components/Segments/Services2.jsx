@@ -4,24 +4,24 @@ import { NavLink } from 'react-router-dom';
 const services = [
     {
         count: '01',
-        title1: 'Oil &amp;',
-        title2: 'Gas Engineering',
+        title1: 'Industrial',
+        title2: 'Chemicals',
         flaticon: 'flaticon-industry',
-        description: 'Progressively maintain extensive infomediaries via extensible nich. Capitalize on low hanging fruit.',
+        description: 'Organics provides an extensive range of speciality, organic & inorganic chemicals to cater the unique requirements of various industries & associates.',
     },
     {
         count: '02',
-        title1: 'Mechanical',
-        title2: 'Engineering',
+        title1: 'Lab Scientific',
+        title2: 'Products',
         flaticon: 'flaticon-conveyor',
-        description: 'Progressively maintain extensive infomediaries via extensible nich. Capitalize on low hanging fruit.',
+        description: 'We are a trusted supplier of high quality laboratory products. Our commitment to excellence has made us a prefered scientific partner for our valued customers.',
     },
     {
         count: '03',
-        title1: 'Automotive',
-        title2: 'Manufacturing',
+        title1: 'Industrial',
+        title2: 'Instrumentation',
         flaticon: 'flaticon-robotic-arm',
-        description: 'Progressively maintain extensive infomediaries via extensible nich. Capitalize on low hanging fruit.',
+        description: 'We are proud to introduce industrial instruments as part of our offerings. Our commitment to providing you with the holistic range of solutions to cater your needs more comprehensively.',
     }
 ]
 

@@ -25,9 +25,10 @@ class Home2 extends React.Component {
           <Statistics2 />
           <ClientsLogo2 />
           <Testimonials2 />
-          <Team2 />
-          <SelfIntro1 />
-          <Blog2 />
+          {/* <Team2 /> */}
+          <br />
+          {/* <SelfIntro1 /> */}
+          {/* <Blog2 /> */}
         </div>
         <Footer2 />
       </>
