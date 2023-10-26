@@ -49,26 +49,35 @@ class About2 extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6 col-md-12 m-b30">
+                <div
+                  className="col-lg-6 col-md-12 m-b30"
+                  style={{ margin: "auto", left: "5%" }}
+                >
                   <div className="img-colarge2">
-                    <div className="colarge-2 slide-right">
+                    <div className=" slide-right">
                       <img
-                        src={require("./../../images/colarge/s2.jpg").default}
+                        src={require("./../../images/organics.png")}
                         alt=""
                       />
+                      <div className="since-year2 ">
+                        <span>
+                          Since <strong>2008</strong>
+                        </span>
+                        {/* <strong>2008</strong> */}
+                      </div>
                     </div>
-                    <div className="colarge-2-1">
-                      <img
-                        src={require("./../../images/colarge/s1.jpg").default}
+                    <div className="vertical-image">
+                      {/* <img
+                        src={require("./../../images/organics.png")}
                         alt=""
-                      />
+                      /> */}
                     </div>
-                    <div className="since-year-outer2">
-                      <div className="since-year2">
+                    {/* <div className="since-year-outer2">
+                      <div className="since-year2 ">
                         <span>Since</span>
                         <strong>2008</strong>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

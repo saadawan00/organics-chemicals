@@ -52,42 +52,74 @@ class Header2 extends React.Component {
       <>
         <header className="site-header header-style-2 mobile-sider-drawer-menu">
           <div className="top-bar site-bg-secondry">
-            <div className="container">
+            <div
+              style={{
+                width: "100%",
+                margin: "0 1% 0 3%",
+              }}
+            >
               <div className="d-flex justify-content-between">
                 <div className="wt-topbar-left d-flex flex-wrap align-content-start">
                   <ul className="wt-topbar-info e-p-bx text-white">
                     <li>
                       <span> Chemicals, Equipment & Engineering</span>
-                      <span>| Your Complete Business Solution!</span>
+                      <span>| &nbsp;Your Complete Business Solution</span>
                     </li>
                   </ul>
                 </div>
                 <div className="wt-topbar-right d-flex flex-wrap align-content-center">
                   <ul className="wt-topbar-info-2 e-p-bx text-white">
                     <li>
-                      <i className="fa fa-phone" />
-                      +41 43 542 6591
+                      <img
+                        src={require("./1.png")}
+                        style={{
+                          width: "25px",
+                          height: "25px",
+                        }}
+                      />{" "}
+                      &nbsp; +1 773 870 1288
+                    </li>
+                    <li>
+                      <img
+                        src={require("./pakistan.png")}
+                        style={{
+                          width: "25px",
+                          height: "25px",
+                        }}
+                      />{" "}
+                      &nbsp; +92-423-541-0051-53
                     </li>
                     <li>
                       <i className="fa fa-envelope" />
-                      thewebmaxhelp@gmail.com
+                      info@organics.com.co
                     </li>
                   </ul>
                   <ul className="social-icons">
                     <li>
-                      <NavLink to={"#"} className="fa fa-google" />
+                      <a
+                        href={
+                          "https://www.google.com/maps/place/ORGANICS/@31.4986581,74.2734893,17z/data=!3m1!4b1!4m6!3m5!1s0x391903b0030320cf:0x5148bfd97758a9c5!8m2!3d31.4986536!4d74.2760642!16s%2Fg%2F11cs6b6mdx?entry=ttu"
+                        }
+                        className="fa fa-google"
+                        target="_blank"
+                      />
+                    </li>
+
+                    <li>
+                      <a
+                        href={"https://www.facebook.com/Organics.solutions"}
+                        target="_blank"
+                        className="fa fa-facebook"
+                      />
                     </li>
                     <li>
-                      <NavLink to={"#"} className="fa fa-rss" />
-                    </li>
-                    <li>
-                      <NavLink to={"#"} className="fa fa-facebook" />
-                    </li>
-                    <li>
-                      <NavLink to={"#"} className="fa fa-twitter" />
-                    </li>
-                    <li>
-                      <NavLink to={"#"} className="fa fa-linkedin" />
+                      <a
+                        href={
+                          "https://www.linkedin.com/company/organicspakllc/"
+                        }
+                        target="_blank"
+                        className="fa fa-linkedin"
+                      />
                     </li>
                   </ul>
                 </div>
@@ -96,7 +128,10 @@ class Header2 extends React.Component {
           </div>
           <div className="sticky-header main-bar-wraper  navbar-expand-lg">
             <div className="main-bar">
-              <div className="container clearfix">
+              <div
+                className=" clearfix"
+                style={{ maxWidth: "100%", padding: "0 4% 0 4%" }}
+              >
                 <div className="logo-header">
                   <div className="logo-header-inner logo-header-one">
                     <NavLink to={"./"}>
