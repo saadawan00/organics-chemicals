@@ -9,14 +9,9 @@ import { NavLink } from "react-router-dom";
 var bnrimg = require("./../../../images/banner/2.jpg");
 
 const PlasticwareCard = ({ label, imageName }) => {
-  const [hover, setHover] = useState(false);
   return (
     <div key={imageName} className="col-lg-3 col-xs-3 p-60 p-r2 p-t10 p-b30">
-      <div
-        className="wt-icon-card shadow d-flex align-items-center flex-column border p-b10 p-t10 p-r4 p-l4 hover-opacity-dim pointer hover-border-blue"
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-      >
+      <div className="wt-icon-card shadow d-flex align-items-center flex-column border p-b10 p-t10 p-r4 p-l4 hover-opacity-dim pointer hover-border-blue">
         <img width={80} src={require(`./../../../images/lab-scientific/plasticware/${imageName}.jpg`)} alt="" />
         <p className="p-t20 text-center" style={{ height: 50, fontSize: 14 }}>{label}</p>
         <div style={{ position: "absolute", top: 80 }}>
