@@ -107,7 +107,7 @@ class Navigation extends React.Component {
                   <NavLink to={"/filtration"}>Filtration</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/buffer-volumatric"}>Buffer & Volumatric</NavLink>
+                  <NavLink to={"/buffer-volumetric"}>Buffer & Volumetric</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/corrosian-coupons"}>Corrosion Coupons</NavLink>

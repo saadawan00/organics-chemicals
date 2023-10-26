@@ -7,7 +7,7 @@ export const sidebarItems = [
   { label: "Plasticware", route: "/plasticware" },
   { label: "Consumables", route: "/consumables" },
   { label: "Filtration", route: "/filtration" },
-  { label: "Buffer & Volumatric", route: "/buffer-volumatric" },
+  { label: "Buffer & Volumetric", route: "/buffer-volumetric" },
   { label: "Corrosion Coupons", route: "/corrosian-coupons" },
   { label: "Chromatography", route: "/chromatography" },
 ];

@@ -133,7 +133,7 @@ class Components extends React.Component {
             <Route path="/plasticware" exact component={Plasticware} />
             <Route path="/consumables" exact component={Consumables} />
             <Route path="/filtration" exact component={Filtration} />
-            <Route path="/buffer-volumatric" exact component={BufferVolumetric} />
+            <Route path="/buffer-volumetric" exact component={BufferVolumetric} />
             <Route path="/corrosian-coupons" exact component={CorrosionCoupons} />
             <Route path="/chromatography" exact component={Chromatography} />
 
