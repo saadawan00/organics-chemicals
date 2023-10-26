@@ -70,6 +70,7 @@ import {
   Plasticware,
 } from './Pages/LabScientific/index';
 import RequestForm from "./Pages/ControlsandAutomation/RequestForm";
+import Clients from './Pages/Clients/ClientsContainer'
 
 class Components extends React.Component {
   render() {
@@ -184,6 +185,7 @@ class Components extends React.Component {
             <Route path="/error405" exact component={Error405} />
 
             <Route path="/contactus" exact component={ContactUs} />
+            <Route path="/clients" exact component={Clients} />
 
             <Route component={Error} />
           </Switch>
