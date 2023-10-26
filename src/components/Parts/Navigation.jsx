@@ -315,20 +315,9 @@ class Navigation extends React.Component {
               </ul>
             </li>
             <li>
-              <NavLink to={""} style={{ fontSize: "130%" }}>
+              <NavLink to={"/clients"} style={{ fontSize: "130%" }}>
                 Clients
               </NavLink>
-              <ul className="sub-menu">
-                <li>
-                  <NavLink to={"/blog-grid"}>Blog Grid</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/blog-list"}>Blog List</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/blog-post"}>Blog Post</NavLink>
-                </li>
-              </ul>
             </li>
 
             <li>
