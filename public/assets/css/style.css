@@ -23069,6 +23069,7 @@ ol.commentlist li .star-rating {
 
 .hover-opacity-dim:hover img {
   opacity: 0.4;
+  transition: all 0.2s linear;
 }
 
 .hover-opacity-dim:hover a {
@@ -23077,4 +23078,29 @@ ol.commentlist li .star-rating {
 
 .pointer {
   cursor: pointer;
+}
+
+.hover-border-blue:hover {
+  border-color: #2063b8 !important;
+  transition: all 0.2s linear;
+}
+
+.get-quote-sm-btn {
+  outline: none;
+  color: #fff;
+  padding: 7.5px 20px;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #2063b8;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;background
+}
+
+.get-quote-sm-btn:hover {
+  color: #fff;
+  background-color: #0053bc;
 }
