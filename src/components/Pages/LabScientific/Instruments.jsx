@@ -13,7 +13,7 @@ const InstrumentCard = ({ label, imageName }) => {
   return (
     <div key={imageName} className="col-lg-3 col-xs-3 p-60 p-r2 p-t10 p-b30">
       <div
-        className="d-flex align-items-center flex-column border p-b10 p-t10 p-r4 p-l4 hover-opacity-dim pointer hover-border-blue"
+        className="wt-icon-card shadow d-flex align-items-center flex-column border p-b10 p-t10 p-r4 p-l4 hover-opacity-dim pointer hover-border-blue"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
