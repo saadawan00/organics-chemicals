@@ -18,7 +18,7 @@ const InstrumentCard = ({ label, imageName }) => {
         onMouseLeave={() => setHover(false)}
       >
         <img width={80} src={require(`./../../../images/lab-scientific/instruments/${imageName}.jpg`)} alt="" />
-        <p className="p-t20 text-center" style={{ height: 50 }}>{label}</p>
+        <p className="p-t20 text-center" style={{ height: 50, fontSize: 14 }}>{label}</p>
         <div style={{ position: "absolute", top: 80 }}>
           <NavLink
             to={"#"}
