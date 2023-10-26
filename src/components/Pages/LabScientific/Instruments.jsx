@@ -64,19 +64,19 @@ export class Instruments extends React.Component {
                           <h2 className="wt-title">Instruments</h2>
                         </div>
                         <div className="container">
-                          <div className="row" >
+                          <div className="row">
                             {picturesData.map(({label, imageName}) => (
-                              <div key={imageName} className="col-lg-6 col-xs-6 p-60 p-r4 p-t10 p-b30">
-                                <div className="d-flex align-items-center flex-column">
+                              <div key={imageName} className="col-lg-4 col-xs-4 p-60 p-r4 p-t10 p-b30">
+                                <div className="d-flex align-items-center flex-column border p-b10 p-t10">
                                   <img src={require(`./../../../images/lab-scientific/instruments/${imageName}.jpg`)} alt="" />
                                   <p className="p-t20 text-center">{label}</p>
-                                    <NavLink
+                                    {/* <NavLink
                                       to={"#"}
-                                      className="contact-slide-show p-14 site-button m-t10"
+                                      className="contact-slide-show p-8 site-button m-t10"
                                       onClick={this.handleQuoteToggle}
                                     >
-                                      Request a Quote <i className="fa fa-angle-right" />
-                                    </NavLink>
+                                      Request a Quote
+                                    </NavLink> */}
                                 </div>
                               </div>
                             ))}
