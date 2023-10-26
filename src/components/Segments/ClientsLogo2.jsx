@@ -40,7 +40,10 @@ class ClientsLogo2 extends React.Component {
       nav: false,
       dots: false,
       margin: 30,
-      autoplay: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: false,
+      //   autoplaySpeed: 1,
       navText: [
         '<i class="fa fa-angle-left"></i>',
         '<i class="fa fa-angle-right"></i>',
@@ -77,7 +80,7 @@ class ClientsLogo2 extends React.Component {
                         <div className="ow-client-logo">
                           <div
                             className="client-logo client-logo-media"
-                            style={{ height: "255px" }}
+                            style={{ height: "155px" }}
                           >
                             <NavLink to={"#"}>
                               <img

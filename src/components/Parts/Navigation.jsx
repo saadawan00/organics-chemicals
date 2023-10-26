@@ -27,14 +27,20 @@ class Navigation extends React.Component {
         <div className="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center">
           <ul className=" nav navbar-nav">
             <li>
-              <NavLink to={"./"}>Home</NavLink>
+              <NavLink to={"./"} style={{ fontSize: "130%" }}>
+                Home
+              </NavLink>
             </li>
 
             <li>
-              <NavLink to={""}>Industrial Chemicals</NavLink>
+              <NavLink to={""} style={{ fontSize: "130%" }}>
+                Industrial Chemicals
+              </NavLink>
               <ul className="sub-menu">
                 <li>
-                  <NavLink to={"/services-1"}>All services</NavLink>
+                  <NavLink to={"/services-1"} style={{ fontSize: "100%" }}>
+                    All services
+                  </NavLink>
                 </li>
                 {/* <li>
                   <NavLink to={"/services-2"}>
@@ -42,38 +48,64 @@ class Navigation extends React.Component {
                   </NavLink>
                 </li> */}
                 <li>
-                  <NavLink to={"/services-agricultural"}>Power Plants</NavLink>
+                  <NavLink
+                    to={"/services-agricultural"}
+                    style={{ fontSize: "100%" }}
+                  >
+                    Power Plants
+                  </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to={"/services-agricultural"}>
+                  <NavLink
+                    to={"/services-agricultural"}
+                    style={{ fontSize: "100%" }}
+                  >
                     Textile Industry
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to={"/services-chemical"}>Sugar Industry</NavLink>
+                  <NavLink
+                    to={"/services-chemical"}
+                    style={{ fontSize: "100%" }}
+                  >
+                    Sugar Industry
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/services-civil"}>Cement Industry</NavLink>
+                  <NavLink to={"/services-civil"} style={{ fontSize: "100%" }}>
+                    Cement Industry
+                  </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to={"/services-oilgas"}>Fertiliser Industry</NavLink>
+                  <NavLink to={"/services-oilgas"} style={{ fontSize: "100%" }}>
+                    Fertiliser Industry
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/services-automotive"}>
+                  <NavLink
+                    to={"/services-automotive"}
+                    style={{ fontSize: "100%" }}
+                  >
                     Pulp and Paper Industry
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/services-agricultural"}>
+                  <NavLink
+                    to={"/services-agricultural"}
+                    style={{ fontSize: "100%" }}
+                  >
                     {" "}
                     Food and Beverage Industry
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/services-mechanical"}>
+                  <NavLink
+                    to={"/services-mechanical"}
+                    style={{ fontSize: "100%" }}
+                  >
                     Water Treatment Chemicals
                   </NavLink>
                 </li>
@@ -86,117 +118,206 @@ class Navigation extends React.Component {
               </ul>
             </li>
             <li>
-              <NavLink to={""}>Lab Scientific</NavLink>
+              <NavLink to={""} style={{ fontSize: "130%" }}>
+                Lab Scientific
+              </NavLink>
               <ul className="sub-menu">
                 <li>
-                  <NavLink to={"/chemicals"}>Chemicals</NavLink>
+                  <NavLink to={"/chemicals"} style={{ fontSize: "100%" }}>
+                    Chemicals
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/glassware"}>Glassware</NavLink>
+                  <NavLink to={"/glassware"} style={{ fontSize: "100%" }}>
+                    Glassware
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/instruments"}>Instruments</NavLink>
+                  <NavLink to={"/instruments"} style={{ fontSize: "100%" }}>
+                    Instruments
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/plasticware"}>Plasticware</NavLink>
+                  <NavLink to={"/plasticware"} style={{ fontSize: "100%" }}>
+                    Plasticware
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/consumables"}>Consumables</NavLink>
+                  <NavLink to={"/consumables"} style={{ fontSize: "100%" }}>
+                    Consumables
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/filtration"}>Filtration</NavLink>
+                  <NavLink to={"/filtration"} style={{ fontSize: "100%" }}>
+                    Filtration
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/buffer-volumetric"}>Buffer & Volumetric</NavLink>
+                  <NavLink
+                    to={"/buffer-volumetric"}
+                    style={{ fontSize: "100%" }}
+                  >
+                    Buffer & Volumetric
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/corrosian-coupons"}>Corrosion Coupons</NavLink>
+                  <NavLink
+                    to={"/corrosian-coupons"}
+                    style={{ fontSize: "100%" }}
+                  >
+                    Corrosion Coupons
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/chromatography"}>Chromatography</NavLink>
+                  <NavLink to={"/chromatography"} style={{ fontSize: "100%" }}>
+                    Chromatography
+                  </NavLink>
                 </li>
               </ul>
             </li>
             <li>
-              <NavLink to={""}>Instrumentation</NavLink>
+              <NavLink to={""} style={{ fontSize: "130%" }}>
+                Instrumentation
+              </NavLink>
 
               <ul className="sub-menu">
-              <li>
-                  <NavLink to={"/actuatorspositioner"}>
-                  Actuators Positioners
+                <li>
+                  <NavLink
+                    to={"/actuatorspositioner"}
+                    style={{ fontSize: "100%" }}
+                  >
+                    Actuators Positioners
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/beltscoupling"}>
-                  Bearings V Belts & Coupling 
+                  <NavLink to={"/beltscoupling"} style={{ fontSize: "100%" }}>
+                    Bearings V Belts & Coupling
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/dcsdata"}>DCS, Data Acquisation</NavLink>
+                  <NavLink to={"/dcsdata"} style={{ fontSize: "100%" }}>
+                    DCS, Data Acquisation
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/filterspulsationdampeners"}>
+                  <NavLink
+                    to={"/filterspulsationdampeners"}
+                    style={{ fontSize: "100%" }}
+                  >
                     Filters & Pulsation Dampeners
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/gasketandpacking"}>Gasket & Packing</NavLink>
+                  <NavLink
+                    to={"/gasketandpacking"}
+                    style={{ fontSize: "100%" }}
+                  >
+                    Gasket & Packing
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to={""}>Gas & Flame Detection</NavLink>
+                  <NavLink to={""} style={{ fontSize: "100%" }}>
+                    Gas & Flame Detection
+                  </NavLink>
                   <ul className="sub-menu">
                     <li>
-                      <NavLink to={"/burnercontroligniters"}>
+                      <NavLink
+                        to={"/burnercontroligniters"}
+                        style={{ fontSize: "100%" }}
+                      >
                         Burner Controls, Igniters
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to={"/burners"}>Burners</NavLink>
+                      <NavLink to={"/burners"} style={{ fontSize: "100%" }}>
+                        Burners
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <NavLink to={""}>Generator & Compressors</NavLink>
+                  <NavLink to={""} style={{ fontSize: "100%" }}>
+                    Generator & Compressors
+                  </NavLink>
                   <ul className="sub-menu">
                     <li>
-                      <NavLink to={"/dieselgeneratorparts"}>
+                      <NavLink
+                        to={"/dieselgeneratorparts"}
+                        style={{ fontSize: "100%" }}
+                      >
                         Diesel Generator Parts
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to={"/compressorparts"}>
+                      <NavLink
+                        to={"/compressorparts"}
+                        style={{ fontSize: "100%" }}
+                      >
                         Compressor Parts & Accessories
                       </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <NavLink to={"/heatexchangeequipment"}>
+                  <NavLink
+                    to={"/heatexchangeequipment"}
+                    style={{ fontSize: "100%" }}
+                  >
                     Heat Exchange Equipment
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={""}>Measurement Controls</NavLink>
+                  <NavLink to={""} style={{ fontSize: "100%" }}>
+                    Measurement Controls
+                  </NavLink>
                   <ul className="sub-menu">
                     <li>
-                      <NavLink to={"/pressureandtemp"}>
+                      <NavLink
+                        to={"/pressureandtemp"}
+                        style={{ fontSize: "100%" }}
+                      >
                         Pressure & Temperature
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to={"/levelandflow"}>Level & Flow</NavLink>
+                      <NavLink
+                        to={"/levelandflow"}
+                        style={{ fontSize: "100%" }}
+                      >
+                        Level & Flow
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
-               
+
                 <li>
-                  <NavLink to={"/moreproducts"}>More</NavLink>
-                
+                  <NavLink to={"/moreproducts"} style={{ fontSize: "100%" }}>
+                    More
+                  </NavLink>
                 </li>
               </ul>
             </li>
             <li>
-              <NavLink to={""}>Clients</NavLink>
+              <NavLink to={""} style={{ fontSize: "130%" }}>
+                Services
+              </NavLink>
+              <ul className="sub-menu">
+                <li>
+                  <NavLink to={"/about-1"} style={{ fontSize: "100%" }}>
+                    About 1
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/about-2"} style={{ fontSize: "100%" }}>
+                    About 2
+                  </NavLink>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <NavLink to={""} style={{ fontSize: "130%" }}>
+                Clients
+              </NavLink>
               <ul className="sub-menu">
                 <li>
                   <NavLink to={"/blog-grid"}>Blog Grid</NavLink>
@@ -209,48 +330,11 @@ class Navigation extends React.Component {
                 </li>
               </ul>
             </li>
-            {/* <li>
-              <NavLink to={""}>Pages</NavLink>
-              <ul className="sub-menu">
-                <li>
-                  <NavLink to={"/pricing-plan"}>Pricing Plan</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/icon-font"}>Icon Font</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/team"}>Team</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/team-single"}>Team Single</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/faq"}>FAQ</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/error403"}>Error 403</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/error404"}>Error 404</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/error405"}>Error 405</NavLink>
-                </li>
-              </ul>
-            </li> */}
+
             <li>
-              <NavLink to={""}>About</NavLink>
-              <ul className="sub-menu">
-                <li>
-                  <NavLink to={"/about-1"}>About 1</NavLink>
-                </li>
-                <li>
-                  <NavLink to={"/about-2"}>About 2</NavLink>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <NavLink to={"/contactus"}>Contact us</NavLink>
+              <NavLink to={"/contactus"} style={{ fontSize: "130%" }}>
+                Contact us
+              </NavLink>
             </li>
           </ul>
         </div>
