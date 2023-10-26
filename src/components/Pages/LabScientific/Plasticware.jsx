@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header2 from "../../Parts/Header2";
 import Footer from "../../Parts/Footer";
 import Banner from "./../../Segments/Banner";
