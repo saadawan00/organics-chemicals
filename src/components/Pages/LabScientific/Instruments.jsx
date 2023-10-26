@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header2 from "../../Parts/Header2";
 import Footer from "../../Parts/Footer";
 import Banner from "./../../Segments/Banner";
@@ -7,6 +7,31 @@ import { sidebarItems } from '.';
 import { NavLink } from "react-router-dom";
 
 var bnrimg = require("./../../../images/banner/2.jpg");
+
+const InstrumentCard = ({ label, imageName }) => {
+  const [hover, setHover] = useState(false);
+  return (
+    <div key={imageName} className="col-lg-4 col-xs-4 p-60 p-r4 p-t10 p-b30">
+      <div
+        className="d-flex align-items-center flex-column border p-b10 p-t10 hover-opacity-dim pointer"
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
+        <img src={require(`./../../../images/lab-scientific/instruments/${imageName}.jpg`)} alt="" />
+        <p className="p-t20 text-center">{label}</p>
+        <div style={{ position: "absolute", top: 100 }}>
+          <NavLink
+            to={"#"}
+            className="contact-slide-show site-button m-t10"
+            style={{ opacity: 0 }}
+          >
+            Request a Quote
+          </NavLink>
+        </div>
+      </div>
+    </div>
+  )
+};
 
 export class Instruments extends React.Component {
   render() {
@@ -65,20 +90,8 @@ export class Instruments extends React.Component {
                         </div>
                         <div className="container">
                           <div className="row">
-                            {picturesData.map(({label, imageName}) => (
-                              <div key={imageName} className="col-lg-4 col-xs-4 p-60 p-r4 p-t10 p-b30">
-                                <div className="d-flex align-items-center flex-column border p-b10 p-t10">
-                                  <img src={require(`./../../../images/lab-scientific/instruments/${imageName}.jpg`)} alt="" />
-                                  <p className="p-t20 text-center">{label}</p>
-                                    {/* <NavLink
-                                      to={"#"}
-                                      className="contact-slide-show p-8 site-button m-t10"
-                                      onClick={this.handleQuoteToggle}
-                                    >
-                                      Request a Quote
-                                    </NavLink> */}
-                                </div>
-                              </div>
+                            {picturesData.map((item, idx) => (
+                              <InstrumentCard key={idx} {...item} />
                             ))}
                         </div>
                         </div>

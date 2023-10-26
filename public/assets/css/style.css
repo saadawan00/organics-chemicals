@@ -23066,3 +23066,15 @@ ol.commentlist li .star-rating {
 .image-gallery-thumbnail:hover {
   border: 4px solid #ddd !important;
 }
+
+.hover-opacity-dim:hover img {
+  opacity: 0.4;
+}
+
+.hover-opacity-dim:hover a {
+  opacity: 1 !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
