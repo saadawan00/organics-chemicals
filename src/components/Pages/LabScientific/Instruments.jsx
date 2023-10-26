@@ -11,21 +11,21 @@ var bnrimg = require("./../../../images/banner/2.jpg");
 const InstrumentCard = ({ label, imageName }) => {
   const [hover, setHover] = useState(false);
   return (
-    <div key={imageName} className="col-lg-4 col-xs-4 p-60 p-r4 p-t10 p-b30">
+    <div key={imageName} className="col-lg-3 col-xs-3 p-60 p-r2 p-t10 p-b30">
       <div
-        className="d-flex align-items-center flex-column border p-b10 p-t10 hover-opacity-dim pointer"
+        className="d-flex align-items-center flex-column border p-b10 p-t10 p-r4 p-l4 hover-opacity-dim pointer hover-border-blue"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
-        <img src={require(`./../../../images/lab-scientific/instruments/${imageName}.jpg`)} alt="" />
-        <p className="p-t20 text-center">{label}</p>
-        <div style={{ position: "absolute", top: 100 }}>
+        <img width={80} src={require(`./../../../images/lab-scientific/instruments/${imageName}.jpg`)} alt="" />
+        <p className="p-t20 text-center" style={{ height: 50 }}>{label}</p>
+        <div style={{ position: "absolute", top: 80 }}>
           <NavLink
             to={"#"}
-            className="contact-slide-show site-button m-t10"
+            className="contact-slide-show get-quote-sm-btn m-t10 "
             style={{ opacity: 0 }}
           >
-            Request a Quote
+            Get Quote
           </NavLink>
         </div>
       </div>
@@ -50,7 +50,7 @@ export class Instruments extends React.Component {
       { label: "Heating Mantles", imageName: "heating-mantles" },
       { label: "Hotplate Stirrers", imageName: "hotplate-stirrers" },
       { label: "Incubators", imageName: "incubators" },
-      { label: "indicators", imageName: "indicators" },
+      { label: "Indicators", imageName: "indicators" },
       { label: "Magnetic Stirrers", imageName: "magnetic-stirrers" },
       { label: "Melting Point", imageName: "melting-point" },
       { label: "Microscope Camera", imageName: "microscope-camera" },
