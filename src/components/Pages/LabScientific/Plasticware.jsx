@@ -5,6 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Sidebar from "./../../Segments/Sidebar";
 import { sidebarItems } from '.';
 import { NavLink } from "react-router-dom";
+import { BrandsImagesSlider } from "./../../Parts/BrandsImagesSlider/BrandsImagesSlider";
 
 var bnrimg = require("./../../../images/banner/2.jpg");
 
@@ -71,6 +72,7 @@ export class Plasticware extends React.Component {
             bgimage={bnrimg.default}
           />
           {/* INNER PAGE BANNER END */}
+          <BrandsImagesSlider />
           <>
             <div className="section-full small-device p-t80 p-b50 bg-white">
               <div className="section-content">
