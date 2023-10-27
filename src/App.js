@@ -9,7 +9,8 @@ const App = () => {
     <div className="App">
       <Components />
       <ScrolToTop/>
-      <Loader/>
+      {/* TODO: implement loader within react instead of Jquery
+      <Loader/> */}
     </div>
   );
 }

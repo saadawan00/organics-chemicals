@@ -3,7 +3,7 @@ All JavaScript fuctions Start
 ======================================*/
 (function ($) {
 	
-    'use strict';
+    
 /*--------------------------------------------------------------------------------------------
 	document.ready ALL FUNCTION START
 ---------------------------------------------------------------------------------------------*/	
@@ -550,9 +550,7 @@ jQuery(window).on('load', function () {
 	// > Nav submenu show hide on mobile by = custom.js
 	mobile_nav_2(),	
 	// Mobile side drawer function by = custom.js
-	mobile_side_drawer(),
-	
-	page_loader();
+	mobile_side_drawer();
 });
 
 /*--------------------------------------------------------------------------------------------
