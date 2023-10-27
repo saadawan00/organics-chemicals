@@ -6,6 +6,7 @@ import Banner from "./../../Segments/Banner";
 import Sidebar from "./../../Segments/Sidebar";
 import { sidebarItems } from '.';
 import { NavLink } from "react-router-dom";
+import { BrandsImagesSlider } from "./../../Parts/BrandsImagesSlider/BrandsImagesSlider";
 
 var bnrimg = require("./../../../images/banner/2.jpg");
 
@@ -42,8 +43,8 @@ export class Chemicals extends React.Component {
       { label: "Organic Reagents", imageName: "organicreagents" },
       { label: "Titrating Agents", imageName: "titratingagents" },
       { label: "Reference Standards", imageName: "refstandards" },
-
     ];
+  
     return (
       <>
         <Header2 />
@@ -53,8 +54,10 @@ export class Chemicals extends React.Component {
             title="Chemicals"
             pagename="Chemicals"
             bgimage={bnrimg.default}
-          />
+          >
+          </Banner>
           {/* INNER PAGE BANNER END */}
+          <BrandsImagesSlider />
           <>
             <div className="section-full small-device p-t80 p-b50 bg-white">
               <div className="section-content">

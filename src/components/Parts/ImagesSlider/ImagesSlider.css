@@ -1,0 +1,38 @@
+.image img {
+    height: 3rem;
+    padding: 0 15px;
+    margin: 0 25px;
+    max-width: max-content;
+}
+
+.image img:last-of-type {
+    padding-left: 0;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 5rem;
+}
+
+.wrapper {
+    position: absolute;
+    display: flex;
+}
+
+section {
+    display: flex;
+    animation: swipe var(--speed) linear infinite backwards;
+    width: 100%;
+}
+
+@keyframes swipe {
+0% {
+    transform: translate(0);
+}
+
+100% {
+    transform: translate(-100%);
+}
+}
