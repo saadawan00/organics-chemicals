@@ -81,6 +81,7 @@ class Slider2 extends React.Component {
                   data-description
                 >
                   {/* MAIN IMAGE */}
+
                   <img
                     src={require("./../../images/main-slider/slider2/slide3.jpg")}
                     alt=""
@@ -88,7 +89,7 @@ class Slider2 extends React.Component {
                     data-bgposition="center center"
                     data-bgfit="cover"
                     data-bgparallax={4}
-                    className="rev-slidebg"
+                    className="rev-slidebg "
                     data-no-retina
                   />
                   {/* LAYERS */}
@@ -635,6 +636,7 @@ class Slider2 extends React.Component {
                   data-description
                 >
                   {/* MAIN IMAGE */}
+                  {/* <div className=""> */}
                   <img
                     src={require("./../../images/main-slider/slider2/slide2.jpg")}
                     alt=""
@@ -642,9 +644,10 @@ class Slider2 extends React.Component {
                     data-bgposition="center center"
                     data-bgfit="cover"
                     data-bgparallax={4}
-                    className="rev-slidebg"
+                    className="rev-slidebg opacity-07"
                     data-no-retina
                   />
+                  {/* </div> */}
                   {/* LAYERS */}
                   {/* LAYER NR. 1 [ for overlay ] */}
                   <div
@@ -707,6 +710,7 @@ class Slider2 extends React.Component {
                       fontWeight: 300,
                       fontFamily: '"Teko", sans-serif',
                       borderLeft: "8px solid #00173c",
+                      color: "#15294a",
                     }}
                   >
                     Where Quality Meets Innovation
@@ -739,7 +743,8 @@ class Slider2 extends React.Component {
                       zIndex: 13,
                       whiteSpace: "normal",
                       fontWeight: 300,
-                      color: "#00173c",
+                      //   color: "#00173c",
+                      color: "white",
                       borderWidth: 0,
                       fontFamily: '"Teko", sans-serif',
                       textTransform: "uppercase",
@@ -779,8 +784,12 @@ class Slider2 extends React.Component {
                       fontFamily: '"Poppins", sans-serif',
                     }}
                   >
-                    We offer a wide range of chemicals, reagents, consumables,
-                    equipment & instruments...
+                    <span style={{ color: "#ffffff" }}>We offer a wide</span>{" "}
+                    <span style={{ color: "#000000" }}>
+                      {" "}
+                      range of chemicals, reagents, consumables, &nbsp;
+                      equipment & instruments...
+                    </span>
                   </div>
                   {/* LAYER NR. 5 [ for see all service botton ] */}
                   <div

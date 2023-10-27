@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 import ModalVideo from "react-modal-video";
 import "../../../node_modules/react-modal-video/css/modal-video.min.css";
 
-var bnr1 = require("./../../images/background/bg-2.jpg");
+var bnr1 = require("./../../images/background/bg-128.jpg");
 
 class Statistics2 extends React.Component {
   constructor() {
@@ -23,7 +23,7 @@ class Statistics2 extends React.Component {
       <>
         <div
           className="section-full video2-counter-section p-t80 p-b40  overlay-wraper bg-cover bg-no-repeat"
-          style={{ backgroundImage: "url(" + bnr1.default + ")" }}
+          style={{ backgroundImage: `url(${bnr1})` }}
         >
           <div className="overlay-main bg-black opacity-02" />
           <div className="container">
@@ -31,50 +31,108 @@ class Statistics2 extends React.Component {
             <div className="section-head center wt-small-separator-outer text-center text-white">
               <div className="wt-small-separator site-text-primary">
                 <div className="sep-leaf-left" />
-                <div>Why Us?</div>
+                <div style={{ fontSize: "58px" }}>Why Us?</div>
                 <div className="sep-leaf-right" />
               </div>
-              <h2>Unlocking Industrial Solution With Organics</h2>
+              <h2 style={{ marginTop: "15px" }}>
+                Unlocking Industrial Solution With Organics
+              </h2>
             </div>
             {/* TITLE END*/}
             <div className="counter2-section-outer-top">
               <div className="row justify-content-center">
-                <div className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 ">
+                <div
+                  className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 "
+                  style={{
+                    borderRadius: "35px",
+                    border: "3px solid",
+                    borderColor: "#004597",
+                  }}
+                >
                   <h3 className="wt-tilte mt-3 site-text-secondry">
                     Flexible Payment Terms
                   </h3>
                 </div>
-                <div className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 ">
+                <div
+                  className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 "
+                  style={{
+                    borderRadius: "35px",
+                    border: "3px solid",
+                    borderColor: "#004597",
+                  }}
+                >
                   <h3 className="wt-tilte mt-3 site-text-secondry">
                     Timely Delivery, Everytime
                   </h3>
                 </div>
-                <div className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 ">
+                <div
+                  className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 "
+                  style={{
+                    borderRadius: "35px",
+                    border: "3px solid",
+                    borderColor: "#004597",
+                  }}
+                >
                   <h3 className="wt-tilte mt-3 site-text-secondry">
                     Competitive Pricing
                   </h3>
                 </div>
-                <div className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 ">
+                <div
+                  className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 "
+                  style={{
+                    borderRadius: "35px",
+                    border: "3px solid",
+                    borderColor: "#004597",
+                  }}
+                >
                   <h3 className="wt-tilte mt-3 site-text-secondry">
                     Customer Centric Commitment
                   </h3>
                 </div>
-                <div className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 ">
+                <div
+                  className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 "
+                  style={{
+                    borderRadius: "35px",
+                    border: "3px solid",
+                    borderColor: "#004597",
+                  }}
+                >
                   <h3 className="wt-tilte mt-3 site-text-secondry">
                     Global Reach, Local Care
                   </h3>
                 </div>
-                <div className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 ">
+                <div
+                  className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 "
+                  style={{
+                    borderRadius: "35px",
+                    border: "3px solid",
+                    borderColor: "#004597",
+                  }}
+                >
                   <h3 className="wt-tilte mt-3 site-text-secondry">
                     Uncompromising Quality
                   </h3>
                 </div>
-                <div className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 ">
+                <div
+                  className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 "
+                  style={{
+                    borderRadius: "35px",
+                    border: "3px solid",
+                    borderColor: "#004597",
+                  }}
+                >
                   <h3 className="wt-tilte mt-3 site-text-secondry">
                     Relaibility Redfined
                   </h3>
                 </div>
-                <div className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 ">
+                <div
+                  className="col-lg-4 bg-white text-center m-4 col-md-10 m-b30 "
+                  style={{
+                    borderRadius: "35px",
+                    border: "3px solid",
+                    borderColor: "#004597",
+                  }}
+                >
                   <h3 className="wt-tilte mt-3 site-text-secondry">
                     Innovative Solutions
                   </h3>

@@ -33,7 +33,7 @@ const projects = [
   },
   {
     image: require("./../../images/project/square/4.jpg"),
-    title: "Textile",
+    title: "Textile Industry",
     filter: "cat-4",
   },
   {
@@ -44,12 +44,17 @@ const projects = [
   {
     image: require("./../../images/project/square/6.jpg"),
     title: "Power Plants",
-    filter: "cat-3",
+    filter: "cat-6",
   },
   {
     image: require("./../../images/project/square/7.jpg"),
-    title: "Fertilisers",
-    filter: "cat-1",
+    title: "Fertilizer Industry",
+    filter: "cat-7",
+  },
+  {
+    image: require("./../../images/project/square/8.jpg"),
+    title: "Chemical Industry",
+    filter: "cat-8",
   },
 ];
 
@@ -60,24 +65,32 @@ class Projects2 extends React.Component {
       <>
         <div
           className="section-full p-t80 p-b50  overlay-wraper bg-cover bg-no-repeat"
-          style={{ backgroundImage: { imgBg } }}
+          style={{
+            backgroundImage: `url(
+              ${imgBg}
+            )`,
+          }}
         >
-          <div className="overlay-main site-bg-secondry opacity-07" />
+          <div className="overlay-main site-bg-secondry opacity-06" />
           <div className="container">
             {/* TITLE START*/}
             <div className="section-head center wt-small-separator-outer text-center text-white">
               <div className="wt-small-separator site-text-primary">
                 <div className="sep-leaf-left" />
-                <div>Explore Recent Work</div>
+                <div style={{ color: "#327ef9", fontSize: "48px" }}>
+                  Our Products, Your Industry
+                </div>
                 <div className="sep-leaf-right" />
               </div>
-              <h2>We've Done Lot's Projects Let's Check Some Here</h2>
+              <h2 style={{ marginTop: "15px" }}>
+                Our Product Line Caters to a Range of Industries
+              </h2>
             </div>
             {/* TITLE END*/}
             <div className="section-content">
               <div className="masonry-wrap row mfp-gallery project-stamp clearfix d-flex justify-content-center">
                 {/* COLUMNS 1 */}
-                <div className="stamp col-xl-3 col-lg-4 col-md-6 col-sm-12 m-b30">
+                {/* <div className="stamp col-xl-3 col-lg-4 col-md-6 col-sm-12 m-b30">
                   <div className="project-stamp-list bg-white">
                     <div className="filter-wrap">
                       <ul className="filter-navigation masonry-filter text-uppercase">
@@ -102,7 +115,7 @@ class Projects2 extends React.Component {
                       </ul>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* COLUMNS 2 */}
                 {projects.map((item, index) => (
                   <div
@@ -111,7 +124,13 @@ class Projects2 extends React.Component {
                   >
                     <div className="wt-box bg-white  p-a10 project-2-block">
                       <div className="wt-thum-bx">
-                        <img src={item.image.default} alt="" />
+                        <img
+                          src={item.image}
+                          alt=""
+                          style={{
+                            height: "235px",
+                          }}
+                        />
                       </div>
                       <div className="wt-info">
                         <h4 className="wt-title m-b0 m-t15">
