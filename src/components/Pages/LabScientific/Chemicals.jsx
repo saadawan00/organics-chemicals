@@ -54,8 +54,7 @@ export class Chemicals extends React.Component {
             title="Chemicals"
             pagename="Chemicals"
             bgimage={bnrimg.default}
-          >
-          </Banner>
+          />
           {/* INNER PAGE BANNER END */}
           <BrandsImagesSlider />
           <>
