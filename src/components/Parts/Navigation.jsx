@@ -3,22 +3,21 @@ import { NavLink } from "react-router-dom";
 
 class Navigation extends React.Component {
   componentDidMount() {
-    function loadScript(src) {
-      return new Promise(function (resolve, reject) {
-        var script = document.createElement("script");
-        script.src = src;
-        script.addEventListener("load", function () {
-          resolve();
-        });
-        script.addEventListener("error", function (e) {
-          reject(e);
-        });
-        document.body.appendChild(script);
-        document.body.removeChild(script);
-      });
-    }
+    const script = document.createElement('script');
+    script.src = './assets/js/custom.js';
+    script.async = true;
+    document.body.appendChild(script);
 
-    loadScript("./assets/js/custom.js");
+    script.onload = () => {
+      document.body.removeChild(script);
+    };
+  }
+
+  componentWillUnmount() {
+    const script = document.querySelector('script[src="./assets/js/custom.js"]');
+    if (script) {
+      script.parentNode.removeChild(script);
+    }
   }
 
   render() {

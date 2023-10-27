@@ -1,59 +1,5 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home1 from "./Pages/Home1";
-import Home2 from "./Pages/Home2";
-import Home3 from "./Pages/Home3";
-import Home4 from "./Pages/Home4";
-import Home5 from "./Pages/Home5";
-import Home6 from "./Pages/Home6";
-import Home7 from "./Pages/Home7";
-import Home8 from "./Pages/Home8";
-import Home9 from "./Pages/Home9";
-import Home10 from "./Pages/Home10";
-import Home11 from "./Pages/Home11";
-import Home12 from "./Pages/Home12";
-import About1 from "./Pages/About1";
-import About2 from "./Pages/About2";
-import Services1 from "./Pages/Services1";
-import Services2 from "./Pages/Services2";
-import ServicesAgricultural from "./Pages/ServicesAgricultural";
-import ServicesAutomotive from "./Pages/ServicesAutomotive";
-import ServicesChemical from "./Pages/ServicesChemical";
-import ServicesCivil from "./Pages/ServicesCivil";
-import ServicesMechanical from "./Pages/ServicesMechanical";
-import ServicesOilgas from "./Pages/ServicesOilgas";
-import ServicesPowerEnergy from "./Pages/ServicesPowerEnergy";
-import Pressureandtemp from "./Pages/ControlsandAutomation/Pressureandtemp";
-import Actuatorspositioner from "./Pages/ControlsandAutomation/Actuatorspositioner.jsx";
-import Pressuresafetyvalves from "./Pages/ControlsandAutomation/Pressuresafetyvalves.jsx";
-import Dcsdata from "./Pages/ControlsandAutomation/Dcsdata.jsx";
-import Beltscoupling from "./Pages/ControlsandAutomation/Beltscoupling.jsx";
-import Burnercontroligniters from "./Pages/ControlsandAutomation/Burnercontroligniters.jsx";
-import Burners from "./Pages/ControlsandAutomation/Burners.jsx";
-import Filterspulsationdampeners from "./Pages/ControlsandAutomation/Filterspulsationdampeners.jsx";
-import Heatexchangeequipment from "./Pages/ControlsandAutomation/Heatexchangeequipment.jsx";
-import Gasketandpacking from "./Pages/ControlsandAutomation/Gasketandpacking.jsx";
-import Dieselgeneratorparts from "./Pages/ControlsandAutomation/Dieselgeneratorparts.jsx";
-import Compressorparts from "./Pages/ControlsandAutomation/Compressorparts.jsx";
-import MoreProducts from "./Pages/ControlsandAutomation/MoreProducts";
-
-import Levelandflow from "./Pages/ControlsandAutomation/Levelandflow.jsx";
-import ShopDetail from "./Pages/ShopDetail";
-import ShoppingCart from "./Pages/ShoppingCart";
-import Checkout from "./Pages/Checkout";
-import Wishlist from "./Pages/Wishlist";
-import BlogGrid from "./Pages/BlogGrid";
-import BlogList from "./Pages/BlogList";
-import BlogPost from "./Pages/BlogPost";
-import PricingPlan from "./Pages/PricingPlan";
-import IconFont from "./Pages/IconFont";
-import Team from "./Pages/Team";
-import TeamSingle from "./Pages/TeamSingle";
-import Faq from "./Pages/Faq";
-import Error403 from "./Pages/Error403";
-import Error404 from "./Pages/Error404";
-import Error405 from "./Pages/Error405";
-import ContactUs from "./Pages/ContactUs";
 import {
   BufferVolumetric,
   Chemicals,
@@ -64,14 +10,72 @@ import {
   CorrosionCoupons,
   Filtration,
   Plasticware,
-} from './Pages/LabScientific/index';
-import RequestForm from "./Pages/ControlsandAutomation/RequestForm";
-import Clients from './Pages/Clients/ClientsContainer'
+} from './Pages/LabScientific';
+
+const Home1 = lazy(() => import('./Pages/Home1'));
+const Home2 = lazy(() => import('./Pages/Home2'));
+const Home3 = lazy(() => import('./Pages/Home3'));
+const Home4 = lazy(() => import('./Pages/Home4'));
+const Home5 = lazy(() => import('./Pages/Home5'));
+const Home6 = lazy(() => import('./Pages/Home6'));
+const Home7 = lazy(() => import('./Pages/Home7'));
+const Home8 = lazy(() => import('./Pages/Home8'));
+const Home9 = lazy(() => import('./Pages/Home9'));
+const Home10 = lazy(() => import('./Pages/Home10'));
+const Home11 = lazy(() => import('./Pages/Home11'));
+const Home12 = lazy(() => import('./Pages/Home12'));
+const About1 = lazy(() => import('./Pages/About1'));
+const About2 = lazy(() => import('./Pages/About2'));
+const Services1 = lazy(() => import('./Pages/Services1'));
+const Services2 = lazy(() => import('./Pages/Services2'));
+const ServicesAgricultural = lazy(() => import('./Pages/ServicesAgricultural'));
+const ServicesAutomotive = lazy(() => import('./Pages/ServicesAutomotive'));
+const ServicesChemical = lazy(() => import('./Pages/ServicesChemical'));
+const ServicesCivil = lazy(() => import('./Pages/ServicesCivil'));
+const ServicesMechanical = lazy(() => import('./Pages/ServicesMechanical'));
+const ServicesOilgas = lazy(() => import('./Pages/ServicesOilgas'));
+const ServicesPowerEnergy = lazy(() => import('./Pages/ServicesPowerEnergy'));
+const Pressureandtemp = lazy(() => import('./Pages/ControlsandAutomation/Pressureandtemp'));
+const Actuatorspositioner = lazy(() => import('./Pages/ControlsandAutomation/Actuatorspositioner'));
+const Pressuresafetyvalves = lazy(() => import('./Pages/ControlsandAutomation/Pressuresafetyvalves'));
+const Dcsdata = lazy(() => import('./Pages/ControlsandAutomation/Dcsdata'));
+const Beltscoupling = lazy(() => import('./Pages/ControlsandAutomation/Beltscoupling'));
+const Burnercontroligniters = lazy(() => import('./Pages/ControlsandAutomation/Burnercontroligniters'));
+const Burners = lazy(() => import('./Pages/ControlsandAutomation/Burners'));
+const Filterspulsationdampeners = lazy(() => import('./Pages/ControlsandAutomation/Filterspulsationdampeners'));
+const Heatexchangeequipment = lazy(() => import('./Pages/ControlsandAutomation/Heatexchangeequipment'));
+const Gasketandpacking = lazy(() => import('./Pages/ControlsandAutomation/Gasketandpacking'));
+const Dieselgeneratorparts = lazy(() => import('./Pages/ControlsandAutomation/Dieselgeneratorparts'));
+const Compressorparts = lazy(() => import('./Pages/ControlsandAutomation/Compressorparts'));
+const MoreProducts = lazy(() => import('./Pages/ControlsandAutomation/MoreProducts'));
+const Levelandflow = lazy(() => import('./Pages/ControlsandAutomation/Levelandflow'));
+const ShopDetail = lazy(() => import('./Pages/ShopDetail'));
+const ShoppingCart = lazy(() => import('./Pages/ShoppingCart'));
+const Checkout = lazy(() => import('./Pages/Checkout'));
+const Wishlist = lazy(() => import('./Pages/Wishlist'));
+const BlogGrid = lazy(() => import('./Pages/BlogGrid'));
+const BlogList = lazy(() => import('./Pages/BlogList'));
+const BlogPost = lazy(() => import('./Pages/BlogPost'));
+const PricingPlan = lazy(() => import('./Pages/PricingPlan'));
+const IconFont = lazy(() => import('./Pages/IconFont'));
+const Team = lazy(() => import('./Pages/Team'));
+const TeamSingle = lazy(() => import('./Pages/TeamSingle'));
+const Faq = lazy(() => import('./Pages/Faq'));
+const Error403 = lazy(() => import('./Pages/Error403'));
+const Error404 = lazy(() => import('./Pages/Error404'));
+const Error405 = lazy(() => import('./Pages/Error405'));
+const ContactUs = lazy(() => import('./Pages/ContactUs'));
+
+
+const RequestForm = lazy(() => import('./Pages/ControlsandAutomation/RequestForm'));
+const Clients = lazy(() => import('./Pages/Clients/ClientsContainer'));
+
 
 class Components extends React.Component {
   render() {
     return (
       <BrowserRouter basename="/">
+        <Suspense fallback={<div>Loading...</div>}>
         <div className="page-wraper">
           <Switch>
             <Route path="/" exact component={Home2} />
@@ -185,7 +189,8 @@ class Components extends React.Component {
 
             <Route component={Error} />
           </Switch>
-        </div>
+          </div>
+          </Suspense>
       </BrowserRouter>
     );
   }

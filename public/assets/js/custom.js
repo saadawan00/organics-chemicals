@@ -536,7 +536,7 @@ $.fn.owlFilter = function(data, callback) {
 /*--------------------------------------------------------------------------------------------
 	Window Load START
 ---------------------------------------------------------------------------------------------*/
-jQuery(window).on('load', function () {
+jQuery(document).ready(function() {
 	// Bootstrap Select box function by  = bootstrap-select.min.js
 	 Bootstrap_Select(),		
 	// > masonry function function by = isotope.pkgd.min.js		
@@ -631,6 +631,7 @@ jQuery(window).on('load', function () {
 	// Mobile side drawer function by = custom.js
 	function mobile_side_drawer(){
 		jQuery('body').on('click','#mobile-side-drawer', function () { 
+			console.log("hellooo")
 			jQuery(".sub-menu").parent('li').addClass('has-child');
 			jQuery("<div class='fa fa-angle-right submenu-toogle'></div>").insertAfter(".has-child > a");															   
 			jQuery('.mobile-sider-drawer-menu').toggleClass('active');
