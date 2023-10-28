@@ -8,7 +8,7 @@ import { sidebarItems } from '.';
 import { NavLink } from "react-router-dom";
 import { BrandsImagesSlider } from "./../../Parts/BrandsImagesSlider/BrandsImagesSlider";
 
-var bnrimg = require("./../../../images/banner/2.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 const GlasswareCard = ({ label, imageName }) => {
   return (
@@ -66,7 +66,7 @@ export class Glassware extends React.Component {
           <Banner
             title="Glassware"
             pagename="Glassware"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <BrandsImagesSlider />

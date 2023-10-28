@@ -6,7 +6,7 @@ class Banner extends React.Component {
         return (
             <>
                 <div className="wt-bnr-inr overlay-wraper bg-center" style={{ backgroundImage: 'url(' + this.props.bgimage + ')' }}>
-                    <div className="overlay-main custom-primary opacity-07" />
+                    <div className="overlay-main opacity-07" />
                     <div className="container">
                         <div className="wt-bnr-inr-entry">
                             <div className="banner-title-outer">
@@ -17,7 +17,7 @@ class Banner extends React.Component {
                             {/* BREADCRUMB ROW */}
                             <div>
                                 <ul className="wt-breadcrumb breadcrumb-style-2">
-                                    <li><NavLink to={"./"}>Home</NavLink></li>
+                                    <li><NavLink style={{ color: "#000" }} to={"./"}>Home</NavLink></li>
                                     <li>{this.props.pagename}</li>
                                 </ul>
                             </div>
