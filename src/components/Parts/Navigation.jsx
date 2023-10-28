@@ -27,13 +27,13 @@ class Navigation extends React.Component {
         <div className="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center">
           <ul className=" nav navbar-nav">
             <li>
-              <NavLink to={"./"} style={{ fontSize: "130%" }}>
+              <NavLink to={"./"} style={{ fontSize: "1rem" }}>
                 Home
               </NavLink>
             </li>
 
             <li>
-              <NavLink to={""} style={{ fontSize: "130%" }}>
+              <NavLink to={""} style={{ fontSize: "1rem" }}>
                 Industrial Chemicals
               </NavLink>
               <ul className="sub-menu">
@@ -118,7 +118,7 @@ class Navigation extends React.Component {
               </ul>
             </li>
             <li>
-              <NavLink to={""} style={{ fontSize: "130%" }}>
+              <NavLink to={""} style={{ fontSize: "1rem" }}>
                 Lab Scientific
               </NavLink>
               <ul className="sub-menu">
@@ -176,7 +176,7 @@ class Navigation extends React.Component {
               </ul>
             </li>
             <li>
-              <NavLink to={""} style={{ fontSize: "130%" }}>
+              <NavLink to={""} style={{ fontSize: "1rem" }}>
                 Instrumentation
               </NavLink>
 
@@ -298,7 +298,7 @@ class Navigation extends React.Component {
               </ul>
             </li>
             <li>
-              <NavLink to={""} style={{ fontSize: "130%" }}>
+              <NavLink to={""} style={{ fontSize: "1rem" }}>
                 Services
               </NavLink>
               <ul className="sub-menu">
@@ -315,13 +315,13 @@ class Navigation extends React.Component {
               </ul>
             </li>
             <li>
-              <NavLink to={"/clients"} style={{ fontSize: "130%" }}>
+              <NavLink to={"/clients"} style={{ fontSize: "1rem" }}>
                 Clients
               </NavLink>
             </li>
 
             <li>
-              <NavLink to={"/contactus"} style={{ fontSize: "130%" }}>
+              <NavLink to={"/contactus"} style={{ fontSize: "1rem" }}>
                 Contact us
               </NavLink>
             </li>
