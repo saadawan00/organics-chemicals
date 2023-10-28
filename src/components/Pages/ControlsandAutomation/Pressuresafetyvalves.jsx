@@ -3,6 +3,7 @@ import Header2 from "./../../Parts/Header2"
 import Footer from "./../../Parts/Footer";
 import Banner from "./../../Segments/Banner";
 import Projects22 from "./../ControlsandAutomation/Projects22";
+import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
 var bnrimg = require("./../../../images/banner/8.jpg");
 
@@ -19,6 +20,8 @@ class Pressuresafetyvalves extends React.Component {
             bgimage={bnrimg.default}
           />
           {/* INNER PAGE BANNER END */}
+          <InstrumentationSlider />
+
           <Projects22 />
         </div>
         <Footer />
