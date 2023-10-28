@@ -44,7 +44,8 @@ export const BrandsImagesSlider = () => {
 
     return (
         <div className="m-t30">
-            <ImagesSlider images={images} speed={25000} />
+          <p className="text-center font-22 m-b30">Large variety of stong brands in stock</p>
+          <ImagesSlider images={images} speed={25000} />
         </div>
     );
 };

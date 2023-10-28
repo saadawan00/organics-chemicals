@@ -17,7 +17,7 @@ class Banner extends React.Component {
                             {/* BREADCRUMB ROW */}
                             <div>
                                 <ul className="wt-breadcrumb breadcrumb-style-2">
-                                    <li><NavLink to={"./"}>Home</NavLink></li>
+                                    <li><NavLink style={{ color: "#000" }} to={"./"}>Home</NavLink></li>
                                     <li>{this.props.pagename}</li>
                                 </ul>
                             </div>
