@@ -4,41 +4,42 @@ import { sidebarItems } from './index';
 import Sidebar from '../../Segments/Sidebar';
 
 
-const projects = [
-    {
-        image: require('./../../../images/product_images/Pressure & Temperature/Pressure & Temperature Gauges.jpg'),
-        title: 'Temperature Gauges',
-    },
-    {
-        image: require('./../../../images/product_images/Pressure & Temperature/Pressure & Temperature Panel Meter.jpg'),
-        title: 'Panel Meter',
-    },
-
-    {
-        image: require('./../../../images/product_images/Pressure & Temperature/Pressure & Temperature Switches.jpg'),
-        title: 'Pressure & Temperature Switches',
-    },
-    {
-        image: require('./../../../images/product_images/Pressure & Temperature/Pressure & Temperature Transducers.jpg'),
-        title: 'Temperature Transducers',
-    },
-    {
-        image: require('./../../../images/product_images/Pressure & Temperature/Pressure & Temperature Transmitters.jpg'),
-        title: 'Temperature Transmitters',
-    },
-    {
-        image: require('./../../../images/product_images/Pressure & Temperature/Thermowells and RTDs.jpg'),
-        title: 'Thermowells',
-    },
-    
-   
-];
+const ChemicalsCard = ({ label, imageName }) => {
+  return (
+    <div key={imageName} className="col-lg-3 col-xs-3 p-60 p-r2 p-t10 p-b30">
+      <div className="wt-icon-card shadow d-flex align-items-center flex-column border p-b10 p-t10 p-r4 p-l4 hover-opacity-dim pointer hover-border-blue">
+        <img width={80} src={require(`./../../../images/product_images/Pressure & Temperature/${imageName}.jpg`)} alt="" />
+        <p className="p-t20 text-center" style={{ height: 50, fontSize: 14 }}>{label}</p>
+        <div style={{ position: "absolute", top: 80 }}>
+          <NavLink
+            to={{
+              pathname: "/requestqoute",
+              state: { item:label },
+            }}
+            className="contact-slide-show get-quote-sm-btn m-t10 "
+            style={{ opacity: 0 }}
+          >
+            Get Quote
+          </NavLink>
+        </div>
+      </div>
+    </div>
+  )
+};
 
 class Projects14 extends React.Component {
   
 
    
   render() {
+    const picturesData = [
+      { label: "Temperature Gauges", imageName: "Pressure & Temperature Gauges" },
+      { label: "Panel Meter", imageName: "Pressure & Temperature Panel Meter" },
+      { label: "Pressure & Temperature Switches", imageName: "Pressure & Temperature Switches" },
+      { label: "Temperature Transducers", imageName: "Pressure & Temperature Transducers" },
+      { label: "Temperature Transmitters", imageName: "Pressure & Temperature Transmitters" },
+      { label: "Thermowells", imageName: "Thermowells and RTDs" },
+    ];
         return (
           <>
   {/* Header Component (if any) */}
@@ -59,57 +60,13 @@ class Projects14 extends React.Component {
                 {/* TITLE START (if any) */}
                 {/* TITLE END (if any) */}
 
-                <div className="masonry-wrap mfp-gallery row clearfix d-flex justify-content-center flex-wrap">
-                  {projects.map((item, index) => (
-                    <div
-                      key={index}
-                      className={`${item.filter} masonry-item col-lg-4 col-md-6 col-sm-6 m-b30`}
-                    >
-                      <div className="project-img-effect-1">
-                        <img
-                          src={item.image}
-                          alt=""
-                          style={{
-                            padding: '42px',
-                            background: 'white',
-                          }}
-                        />
-                        <div className="wt-info">
-                          <h3 className="wt-tilte m-b10 m-t0">{item.title}</h3>
-                          <p>{item.description}</p>
-
-                          <button
-                            style={{
-                              backgroundColor: '#1c63b8',
-                              border: '1px',
-                              borderRadius: '5px',
-                              color: 'white',
-                              padding: '15px 32px',
-                              textAlign: 'center',
-                              textDecoration: 'none',
-                              display: 'inline-block',
-                              fontSize: '16px',
-                              margin: '4px 2px',
-                              cursor: 'pointer',
-                              transitionduration: '0.4s',
-                            }}
-                          >
-                            <NavLink
-                              to={{
-                                pathname: '/requestqoute',
-                                state: { item: item.title },
-                              }}
-                              className="site-button-link"
-                              style={{ color: 'white' }}
-                            >
-                              Request For Price
-                            </NavLink>
-                          </button>
+                <div className="container">
+                          <div className="row">
+                            {picturesData.map((item, idx) => (
+                              <ChemicalsCard key={idx} {...item} />
+                            ))}
                         </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                        </div>
               </div>
             </div>
           </div>
