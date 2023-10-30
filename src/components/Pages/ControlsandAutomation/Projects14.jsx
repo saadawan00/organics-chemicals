@@ -35,7 +35,6 @@ class Projects14 extends React.Component {
     const picturesData = [
       { label: "Temperature Gauges", imageName: "Pressure & Temperature Gauges" },
       { label: "Panel Meter", imageName: "Pressure & Temperature Panel Meter" },
-      { label: "Pressure & Temperature Switches", imageName: "Pressure & Temperature Switches" },
       { label: "Temperature Transducers", imageName: "Pressure & Temperature Transducers" },
       { label: "Temperature Transmitters", imageName: "Pressure & Temperature Transmitters" },
       { label: "Thermowells", imageName: "Thermowells and RTDs" },

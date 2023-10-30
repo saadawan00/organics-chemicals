@@ -4,140 +4,93 @@ import { NavLink } from 'react-router-dom';
 import { sidebarItems } from './index';
 import Sidebar from '../../Segments/Sidebar';
 
-const projects = [
-    {
-        image: require('./../../../images/product_images/Compressor Part & Accessories/Gauge and Valves.jpeg'),
-        title: 'Gauge and Valves',
-        
-    },
-    {
-        image: require('./../../../images/product_images/Compressor Part & Accessories/Piston and Bearing Kit.jpeg'),
-        title: 'Piston and Bearing',
-        
-    },
 
-    {
-        image: require('./../../../images/product_images/Compressor Part & Accessories/Seperator Element.jpg'),
-        title: 'Seperator Element',
-        
-    },
-    {
-        image: require('./../../../images/product_images/Compressor Part & Accessories/Shaft Seal Kit.jpg'),
-        title: 'Shaft Seal Kit',
-        
-    },
-    {
-        image: require('./../../../images/product_images/Actuators, Positioners, Valve Monitors/Flue Gas Analyzers.jpg'),
-        title: 'Pressure & Temperature Transmitters',
-        
-    },
-    {
-        image: require('./../../../images/product_images/Actuators, Positioners, Valve Monitors/Flame Safeguard & Combustion Controls.jpg'),
-        title: 'Pressure & Temperature Switches',
-        
-    },
-    {
-        image: require('./../../../images/product_images/Actuators, Positioners, Valve Monitors/Combustible Gas Detection.jpg'),
-        title: 'Pressure & Temperature Transducers',
-        
-    },
-   
-   
-];
+
+const ChemicalsCard = ({ label, imageName }) => {
+  return (
+    <div key={imageName} className="col-lg-3 col-xs-3 p-60 p-r2 p-t10 p-b30">
+      <div className="wt-icon-card shadow d-flex align-items-center flex-column border p-b10 p-t10 p-r4 p-l4 hover-opacity-dim pointer hover-border-blue">
+        <img width={80} src={require(`./../../../images/product_images/Actuators, Positioners, Valve Monitors/${imageName}.jpg`)} alt="" />
+        <p className="p-t20 text-center" style={{ height: 50, fontSize: 14 }}>{label}</p>
+        <div style={{ position: "absolute", top: 80 }}>
+          <NavLink
+            to={{
+              pathname: "/requestqoute",
+              state: { item:label },
+            }}
+            className="contact-slide-show get-quote-sm-btn m-t10 "
+            style={{ opacity: 0 }}
+          >
+            Get Quote
+          </NavLink>
+        </div>
+      </div>
+    </div>
+  )
+};
 
 class Projects31 extends React.Component {
-    
-    render() {
+  
+
+   
+  render() {
+    const picturesData = [
+      { label: "Gauge and Valves", imageName: "Gauge and Valves" },
+      { label: "Piston and Bearing", imageName: "Piston and Bearing Kit" },
+      { label: "Seperator Element", imageName: "Seperator Element" },
+      { label: "Shaft Seal Kit", imageName: "Shaft Seal Kit" },
+      { label: "Pressure & Temperature Transmitters", imageName: "Flue Gas Analyzers" },
+      { label: "Pressure & Temperature Switches", imageName: "Flame Safeguard & Combustion Controls" },
+      { label: "Pressure & Temperature Transducers", imageName: "Combustible Gas Detection" },
+
+    ];
         return (
-            <>
-            {/* Header Component (if any) */}
-          
-            <div className="page-content">
-              {/* INNER PAGE BANNER (if any) */}
-              {/* INNER PAGE BANNER END (if any) */}
-          
-              <div className="section-full small-device p-t80 p-b50 bg-white">
-                <div className="section-content">
-                  <div className="container">
-                    <div className="row">
-                      {/* Sidebar Component */}
-                      <Sidebar navBarItems={sidebarItems} />
-          
-                      <div className="col-lg-8 col-md-12">
-                        <div className="section-content">
-                          {/* TITLE START (if any) */}
-                          {/* TITLE END (if any) */}
-          
-                          <div className="masonry-wrap mfp-gallery row clearfix d-flex justify-content-center flex-wrap">
-                            {projects.map((item, index) => (
-                              <div
-                                key={index}
-                                className={`${item.filter} masonry-item col-lg-4 col-md-6 col-sm-6 m-b30`}
-                              >
-                                <div className="project-img-effect-1">
-                                  <img
-                                    src={item.image}
-                                    alt=""
-                                    style={{
-                                      padding: '42px',
-                                      background: 'white',
-                                    }}
-                                  />
-                                  <div className="wt-info">
-                                    <h3 className="wt-tilte m-b10 m-t0">{item.title}</h3>
-                                    <p>{item.description}</p>
-          
-                                    <button
-                                      style={{
-                                        backgroundColor: '#1c63b8',
-                                        border: '1px',
-                                        borderRadius: '5px',
-                                        color: 'white',
-                                        padding: '15px 32px',
-                                        textAlign: 'center',
-                                        textDecoration: 'none',
-                                        display: 'inline-block',
-                                        fontSize: '16px',
-                                        margin: '4px 2px',
-                                        cursor: 'pointer',
-                                        transitionduration: '0.4s',
-                                      }}
-                                    >
-                                      <NavLink
-                                        to={{
-                                          pathname: '/requestqoute',
-                                          state: { item: item.title },
-                                        }}
-                                        className="site-button-link"
-                                        style={{ color: 'white' }}
-                                      >
-                                        Request For Price
-                                      </NavLink>
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
+          <>
+  {/* Header Component (if any) */}
+
+  <div className="page-content">
+    {/* INNER PAGE BANNER (if any) */}
+    {/* INNER PAGE BANNER END (if any) */}
+
+    <div className="section-full small-device p-t80 p-b50 bg-white">
+      <div className="section-content">
+        <div className="container">
+          <div className="row">
+            {/* Sidebar Component */}
+            <Sidebar navBarItems={sidebarItems} />
+
+            <div className="col-lg-8 col-md-12">
+              <div className="section-content">
+                {/* TITLE START (if any) */}
+                {/* TITLE END (if any) */}
+
+                <div className="container">
+                          <div className="row">
+                            {picturesData.map((item, idx) => (
+                              <ChemicalsCard key={idx} {...item} />
                             ))}
-                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                        </div>
               </div>
             </div>
-          
-            <div className="section-full p-t80 p-b50 bg-white">
-              <div className="container">
-                {/* PAGINATION START (if any) */}
-                {/* PAGINATION END (if any) */}
-                {/* GALLERY CONTENT START (if any) */}
-                {/* GALLERY CONTENT END (if any) */}
-              </div>
-            </div>
-          </>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="section-full p-t80 p-b50 bg-white">
+    <div className="container">
+      {/* PAGINATION START (if any) */}
+      {/* PAGINATION END (if any) */}
+      {/* GALLERY CONTENT START (if any) */}
+      {/* GALLERY CONTENT END (if any) */}
+    </div>
+  </div>
+</>
+            
         );
-    }
+                                      }
 };
 
 export default Projects31;
