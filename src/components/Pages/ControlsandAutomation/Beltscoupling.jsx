@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects24 from "./../ControlsandAutomation/Projects24";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class Beltscoupling extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Beltscoupling extends React.Component {
           <Banner
             title="V Belts,Coupling & Bearings"
             pagename="V Belts,Coupling & Bearings"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />

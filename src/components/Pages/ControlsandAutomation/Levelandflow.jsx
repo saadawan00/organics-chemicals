@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects20 from "./../ControlsandAutomation/Projects20";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class Pressureandtemp extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Pressureandtemp extends React.Component {
           <Banner
             title="Controls and Automation"
             pagename="Level and Flow Control"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />

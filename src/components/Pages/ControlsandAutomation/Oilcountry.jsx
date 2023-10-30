@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects33 from "./../ControlsandAutomation/Projects33";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class Oilcountry extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Oilcountry extends React.Component {
           <Banner
             title="More"
             pagename="Oil Country Tubular Goods"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />

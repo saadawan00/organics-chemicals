@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects27 from "./../ControlsandAutomation/Projects27";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class Filterspulsationdampeners extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Filterspulsationdampeners extends React.Component {
           <Banner
             title="Filters & Pulsation Dampeners"
             pagename="Filters & Pulsation Dampeners"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />

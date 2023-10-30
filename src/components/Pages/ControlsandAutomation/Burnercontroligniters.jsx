@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects25 from "./../ControlsandAutomation/Projects25";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class Burnercontroligniters extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Burnercontroligniters extends React.Component {
           <Banner
             title="Gas & Flame Detection"
             pagename="Burner Controls, Igniters"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />

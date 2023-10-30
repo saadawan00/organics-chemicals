@@ -6,7 +6,7 @@ import Projects21 from "./../ControlsandAutomation/Projects21";
 import {InstrumentationSlider} from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 import { BrandsImagesSlider } from "../../Parts/BrandsImagesSlider/BrandsImagesSlider";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class Actuatorspositioner extends React.Component {
   render() {
@@ -18,7 +18,7 @@ class Actuatorspositioner extends React.Component {
           <Banner
             title="Actuators Positioners"
             pagename="Actuators Positioners"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />

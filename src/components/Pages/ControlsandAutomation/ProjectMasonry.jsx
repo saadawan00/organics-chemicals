@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects14 from "./../ControlsandAutomation/Projects14";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../../images/banner/2.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 
 class ProjectMasonry extends React.Component {
@@ -18,7 +18,7 @@ class ProjectMasonry extends React.Component {
           <Banner
             title="Project masonry"
             pagename="Project masonry"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />

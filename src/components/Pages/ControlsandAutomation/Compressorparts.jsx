@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects31 from "./../ControlsandAutomation/Projects31";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class Compressorparts extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Compressorparts extends React.Component {
           <Banner
             title="Generator & Compressors"
             pagename="Compressor Parts and Accessories"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />

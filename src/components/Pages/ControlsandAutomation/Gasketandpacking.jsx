@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects29 from "./../ControlsandAutomation/Projects29";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class Gasketandpacking extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Gasketandpacking extends React.Component {
           <Banner
             title="Gasket & Packing"
             pagename="Gasket and Packing"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />

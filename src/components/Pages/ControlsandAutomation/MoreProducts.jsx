@@ -6,7 +6,7 @@ import Banner from '../../Segments/Banner';
 import Projects32 from './../ControlsandAutomation/Projects32';
 import { InstrumentationSlider } from '../../Parts/BrandsImagesSlider/InstrumentationSlider';
 
-var bnrimg = require('./../../../images/banner/8.jpg');
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class MoreProducts extends React.Component {
     render() {
@@ -15,7 +15,7 @@ class MoreProducts extends React.Component {
                 <Header />
                 <div className="page-content">
                     {/* INNER PAGE BANNER */}
-                    <Banner title="More" pagename="More Products" bgimage={bnrimg.default}/>
+                    <Banner title="More" pagename="More Products" bgimage={bnrimg}/>
                     {/* INNER PAGE BANNER END */}
                     <InstrumentationSlider />
 

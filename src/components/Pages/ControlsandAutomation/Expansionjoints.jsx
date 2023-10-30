@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects35 from "./../ControlsandAutomation/Projects35";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class Expansionjoints extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Expansionjoints extends React.Component {
           <Banner
             title="More"
             pagename="Expansion Joints"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />

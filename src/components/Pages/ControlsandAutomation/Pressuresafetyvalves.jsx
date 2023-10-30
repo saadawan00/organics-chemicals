@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects22 from "./../ControlsandAutomation/Projects22";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class Pressuresafetyvalves extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Pressuresafetyvalves extends React.Component {
           <Banner
             title="Pressure Safety,Valves & Regulators"
             pagename="Pressure Safety,Valves & Regulators"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />

@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects23 from "./../ControlsandAutomation/Projects23";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class Dcsdata extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Dcsdata extends React.Component {
           <Banner
             title="DCS, Data Acquisation"
             pagename="DCS, Data Acquisation"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />

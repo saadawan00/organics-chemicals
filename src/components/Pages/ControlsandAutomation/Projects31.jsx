@@ -10,7 +10,7 @@ const ChemicalsCard = ({ label, imageName }) => {
   return (
     <div key={imageName} className="col-lg-3 col-xs-3 p-60 p-r2 p-t10 p-b30">
       <div className="wt-icon-card shadow d-flex align-items-center flex-column border p-b10 p-t10 p-r4 p-l4 hover-opacity-dim pointer hover-border-blue">
-        <img width={80} src={require(`./../../../images/product_images/Actuators, Positioners, Valve Monitors/${imageName}.jpg`)} alt="" />
+        <img width={80} src={require(`./../../../images/product_images/Compressor Part & Accessories/${imageName}`)} alt="" />
         <p className="p-t20 text-center" style={{ height: 50, fontSize: 14 }}>{label}</p>
         <div style={{ position: "absolute", top: 80 }}>
           <NavLink
@@ -35,13 +35,10 @@ class Projects31 extends React.Component {
    
   render() {
     const picturesData = [
-      { label: "Gauge and Valves", imageName: "Gauge and Valves" },
-      { label: "Piston and Bearing", imageName: "Piston and Bearing Kit" },
-      { label: "Seperator Element", imageName: "Seperator Element" },
-      { label: "Shaft Seal Kit", imageName: "Shaft Seal Kit" },
-      { label: "Pressure & Temperature Transmitters", imageName: "Flue Gas Analyzers" },
-      { label: "Pressure & Temperature Switches", imageName: "Flame Safeguard & Combustion Controls" },
-      { label: "Pressure & Temperature Transducers", imageName: "Combustible Gas Detection" },
+      { label: "Gauge and Valves", imageName: "Gauge and Valves.jpeg" },
+      { label: "Piston and Bearing", imageName: "Piston and Bearing Kit.jpeg" },
+      { label: "Seperator Element", imageName: "Seperator Element.jpg" },
+      { label: "Shaft Seal Kit", imageName: "Shaft Seal Kit.jpg" },
 
     ];
         return (

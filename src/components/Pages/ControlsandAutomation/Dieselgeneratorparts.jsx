@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects30 from "./../ControlsandAutomation/Projects30";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/bg-slider.jpeg');
 
 class Dieselgeneratorparts extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Dieselgeneratorparts extends React.Component {
           <Banner
             title="Generator & Compressors"
             pagename="Diesel Generator Parts"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <InstrumentationSlider />
