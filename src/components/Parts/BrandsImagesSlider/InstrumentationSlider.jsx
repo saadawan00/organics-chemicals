@@ -1,15 +1,19 @@
 import React from "react";
 
-import Picture1 from './../../../images/instrumentssliderimages/1.png'
-import Picture2 from './../../../images/instrumentssliderimages/2.png'
-import Picture3 from './../../../images/instrumentssliderimages/3.png'
-import Picture4 from './../../../images/instrumentssliderimages/4.png'
-import Picture5 from './../../../images/instrumentssliderimages/5.png'
-import Picture6 from './../../../images/instrumentssliderimages/6.png'
-import Picture7 from './../../../images/instrumentssliderimages/7.png'
-import Picture8 from './../../../images/instrumentssliderimages/8.png'
-import Picture9 from './../../../images/instrumentssliderimages/9.png'
-import Picture10 from './../../../images/instrumentssliderimages/10.png'
+import Picture1 from './../../../images/instrumentssliderimages/1.jpg'
+import Picture2 from './../../../images/instrumentssliderimages/2.jpg'
+import Picture3 from './../../../images/instrumentssliderimages/3.jpg'
+import Picture4 from './../../../images/instrumentssliderimages/4.jpg'
+import Picture5 from './../../../images/instrumentssliderimages/5.jpg'
+import Picture6 from './../../../images/instrumentssliderimages/6.jpg'
+import Picture7 from './../../../images/instrumentssliderimages/7.jpg'
+import Picture8 from './../../../images/instrumentssliderimages/8.jpg'
+import Picture9 from './../../../images/instrumentssliderimages/9.jpg'
+import Picture10 from './../../../images/instrumentssliderimages/10.jpg'
+import Picture11 from './../../../images/instrumentssliderimages/11.jpg'
+import Picture12 from './../../../images/instrumentssliderimages/12.jpg'
+import Picture13 from './../../../images/instrumentssliderimages/13.jpg'
+import Picture14 from './../../../images/instrumentssliderimages/14.jpg'
 
 
 import bestPriceIcon from './../../../images/icons/best-price.png';
@@ -29,6 +33,10 @@ export const InstrumentationSlider = () => {
         Picture8,
         Picture9,
         Picture10,
+        Picture11,
+        Picture12,
+        Picture13,
+        Picture14
        
        
       ].map((image) => ({
