@@ -6,7 +6,7 @@ import Projects21 from "./../ControlsandAutomation/Projects21";
 import {InstrumentationSlider} from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 import { BrandsImagesSlider } from "../../Parts/BrandsImagesSlider/BrandsImagesSlider";
 
-var bnrimg = require('./../../../images/bg-slider.jpeg');
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage1.jpg');
 
 class Actuatorspositioner extends React.Component {
   render() {

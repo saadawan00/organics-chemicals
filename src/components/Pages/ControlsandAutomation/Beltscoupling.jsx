@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects24 from "./../ControlsandAutomation/Projects24";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require('./../../../images/bg-slider.jpeg');
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage2.jpeg');
 
 class Beltscoupling extends React.Component {
   render() {

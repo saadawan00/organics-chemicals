@@ -6,7 +6,7 @@ import Banner from '../../Segments/Banner';
 import Projects32 from './../ControlsandAutomation/Projects32';
 import { InstrumentationSlider } from '../../Parts/BrandsImagesSlider/InstrumentationSlider';
 
-var bnrimg = require('./../../../images/bg-slider.jpeg');
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage1.jpg');
 
 class MoreProducts extends React.Component {
     render() {

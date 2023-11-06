@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects23 from "./../ControlsandAutomation/Projects23";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require('./../../../images/bg-slider.jpeg');
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage2.jpeg');
 
 class Dcsdata extends React.Component {
   render() {

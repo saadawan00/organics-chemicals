@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects22 from "./../ControlsandAutomation/Projects22";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require('./../../../images/bg-slider.jpeg');
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage1.jpg');
 
 class Pressuresafetyvalves extends React.Component {
   render() {

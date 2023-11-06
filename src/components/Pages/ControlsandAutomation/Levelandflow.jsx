@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects20 from "./../ControlsandAutomation/Projects20";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require('./../../../images/bg-slider.jpeg');
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage1.jpg');
 
 class Pressureandtemp extends React.Component {
   render() {

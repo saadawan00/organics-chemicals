@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects28 from "./../ControlsandAutomation/Projects28";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require('./../../../images/bg-slider.jpeg');
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage1.jpg');
 
 class Heatexchangeequipment extends React.Component {
   render() {

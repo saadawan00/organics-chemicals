@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects33 from "./../ControlsandAutomation/Projects33";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require('./../../../images/bg-slider.jpeg');
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage1.jpg');
 
 class Oilcountry extends React.Component {
   render() {

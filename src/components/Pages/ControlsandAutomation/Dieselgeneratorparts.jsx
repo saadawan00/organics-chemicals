@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects30 from "./../ControlsandAutomation/Projects30";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require('./../../../images/bg-slider.jpeg');
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage1.jpg');
 
 class Dieselgeneratorparts extends React.Component {
   render() {

@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects26 from "./../ControlsandAutomation/Projects26";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require('./../../../images/bg-slider.jpeg');
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage1.jpg');
 
 class Burners extends React.Component {
   render() {

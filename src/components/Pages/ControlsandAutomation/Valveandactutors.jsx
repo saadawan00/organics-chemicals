@@ -5,7 +5,7 @@ import Banner from "./../Segments/Banner";
 import Projects32 from "./../Segments/Projects32";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage1.jpg');
 
 class Valveandactutors extends React.Component {
   render() {

@@ -5,7 +5,7 @@ import Banner from "./../Segments/Banner";
 import Projects34 from "./../Segments/Projects34";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require("./../../images/banner/8.jpg");
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage1.jpg');
 
 class Wellheadsystem extends React.Component {
   render() {

@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Projects14 from "./../ControlsandAutomation/Projects14";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
 
-var bnrimg = require('./../../../images/bg-slider.jpeg');
+var bnrimg = require('./../../../images/instrumentssliderimages/backgroundimage1.jpg');
 
 
 class ProjectMasonry extends React.Component {
