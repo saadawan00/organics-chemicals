@@ -47,11 +47,14 @@ class Footer2 extends React.Component {
                 <div className="col-lg-5 col-md-12 col-sm-12">
                   <div className="footer-h-left">
                     <div className="widget widget_about">
-                      <div className="logo-footer clearfix">
+
+                      {/* <div className="logo-footer clearfix">
                         <NavLink to={"./"}>
                           <img src={this.currentstate.logo} alt="" />
                         </NavLink>
-                      </div>
+                      </div> */}
+                      <h2 style={{marginTop: '12px'}}>Our Company</h2>
+
                       <p>
                         We invite you to connect with our dedicated team.
                         Whether you are an industrial entity seeking dependable
@@ -73,20 +76,7 @@ class Footer2 extends React.Component {
                           Offshore Office: 188-D, Momdot Block, Whadat Road,
                           Lahore, Pakistan
                         </li>
-                        <li>
-                          <i className="fa fa-envelope" />
-                          info@organics.com.co
-                        </li>
-                        <li>
-                          {" "}
-                          <i className="fa fa-phone" />
-                          +1 (773) 870-1288
-                        </li>
-                        <li>
-                          {" "}
-                          <i className="fa fa-phone" />
-                          +92-423-541-0051-53
-                        </li>
+                        
                       </ul>
                     </div>
                     <ul className="social-icons  wt-social-links footer-social-icon">
@@ -126,72 +116,51 @@ class Footer2 extends React.Component {
                   <div className="row footer-h-right">
                     <div className="col-lg-5 col-md-4">
                       <div className="widget widget_services">
-                        <h3 className="widget-title">Useful links</h3>
+                        <h3 className="widget-title">Site Navigation</h3>
                         <ul>
                           <li>
-                            <NavLink to={"/about-1"}>About 1</NavLink>
+                            <NavLink to={"/#"}>About Us</NavLink>
+                          </li>
+                          
+                          <li>
+                            <NavLink to={"/#"}>CSR</NavLink>
                           </li>
                           <li>
-                            <NavLink to={"/pricing-plan"}>Pricing Plan</NavLink>
+                            <NavLink to={"/#"}>Careers</NavLink>
                           </li>
                           <li>
-                            <NavLink to={"/faq"}>FAQ</NavLink>
+                            <NavLink to={"/#"}>Strong Brands</NavLink>
                           </li>
                           <li>
-                            <NavLink to={"/team-single"}>Our Team</NavLink>
-                          </li>
-                          <li>
-                            <NavLink to={"/services-1"}>Services</NavLink>
+                            <NavLink to={"/#"}>Get Quote</NavLink>
                           </li>
                         </ul>
                       </div>
                     </div>
                     <div className="col-lg-7 col-md-8">
                       <div className="widget widget_services">
-                        <h3 className="widget-title">Our Services</h3>
-                        <ul>
-                          <li>
-                            <NavLink to={"/services-oilgas"}>
-                              Oil &amp; Gas Factory
-                            </NavLink>
-                            <NavLink to={"/services-chemical"}>
-                              Chemical Research
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink to={"/services-chemical"}>
-                              Chemical Research
-                            </NavLink>
-                            <NavLink to={"/services-agricultural"}>
-                              Agricultural
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink to={"/services-mechanical"}>
-                              Mechanical
-                            </NavLink>
-                            <NavLink to={"/services-agricultural"}>
-                              Agricultural
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink to={"/services-automotive"}>
-                              Manufacturing
-                            </NavLink>
-                            <NavLink to={"/services-civil"}>
-                              Civil Engineering
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink to={"/services-mechanical"}>
-                              Mechanical
-                            </NavLink>
-                            <NavLink to={"/services-automotive"}>
-                              Automotive
-                            </NavLink>
-                          </li>
-                        </ul>
+                        <h3 className="widget-title">Our Services  <h4 style={{color: 'white', marginTop: '4px'}}>How can we help you?</h4></h3>
+                        <ul className="widget_address">
+                        
+                        <li>
+                          <i className="fa fa-envelope" />
+                          info@organics.com.co
+                        
+                        </li>
+                        <li>
+                          {" "}
+                          <i className="fa fa-phone" />
+                          +1 (773) 870-1288
+                        </li>
+                        <li>
+                          {" "}
+                          <i className="fa fa-phone" />
+                          +92-423-541-0051-53
+                        </li>
+                      </ul>
                       </div>
+                      <h3>Live Chat</h3>
+                      <p>Mon - Sat : 08:00 - 17:00</p>
                     </div>
                   </div>
                   <div className="widget widget_newsletter">
@@ -229,7 +198,7 @@ class Footer2 extends React.Component {
             <div className="container">
               <div className="wt-footer-bot-left d-flex justify-content-between">
                 <span className="copyrights-text">
-                  Copyright © 2023 <span>Organics</span>
+                  © Organics 2023 &nbsp; |  &nbsp;<span>All rights reserved.</span>
                 </span>
                 <ul className="copyrights-nav">
                   <li>
