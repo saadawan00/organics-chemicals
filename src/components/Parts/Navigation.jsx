@@ -49,7 +49,7 @@ class Navigation extends React.Component {
                 </li> */}
                 <li>
                   <NavLink
-                    to={"/services-agricultural"}
+                    to={"/services-oilgas"}
                     style={{ fontSize: "100%" }}
                   >
                     Power Plants
@@ -58,7 +58,7 @@ class Navigation extends React.Component {
 
                 <li>
                   <NavLink
-                    to={"/services-agricultural"}
+                    to={"/services-chemical"}
                     style={{ fontSize: "100%" }}
                   >
                     Textile Industry
@@ -67,7 +67,7 @@ class Navigation extends React.Component {
 
                 <li>
                   <NavLink
-                    to={"/services-chemical"}
+                    to={"/services-mechanical"}
                     style={{ fontSize: "100%" }}
                   >
                     Sugar Industry
@@ -80,7 +80,7 @@ class Navigation extends React.Component {
                 </li>
 
                 <li>
-                  <NavLink to={"/services-oilgas"} style={{ fontSize: "100%" }}>
+                  <NavLink to={"/services-powerenergy"} style={{ fontSize: "100%" }}>
                     Fertiliser Industry
                   </NavLink>
                 </li>
@@ -103,7 +103,7 @@ class Navigation extends React.Component {
                 </li>
                 <li>
                   <NavLink
-                    to={"/services-mechanical"}
+                    to={"/services-water"}
                     style={{ fontSize: "100%" }}
                   >
                     Water Treatment Chemicals
@@ -304,14 +304,14 @@ class Navigation extends React.Component {
               <ul className="sub-menu">
                 <li>
                   <NavLink to={"/about-1"} style={{ fontSize: "100%" }}>
-                    About 1
+                    Engineering Services
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink to={"/about-2"} style={{ fontSize: "100%" }}>
                     About 2
                   </NavLink>
-                </li>
+                </li> */}
               </ul>
             </li>
             <li>

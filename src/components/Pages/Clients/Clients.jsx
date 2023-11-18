@@ -61,7 +61,7 @@ setImages(images)
           <animated.div
             className="springItem"
             
-            style={{ ...style, backgroundImage: `url(${item.image})` }}
+            style={{ ...style, backgroundImage: `url(${item.image})`, backgroundSize: '50%' }}
           />
         ))}
       </animated.div>

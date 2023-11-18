@@ -1,11 +1,11 @@
 import React from "react";
 import ServicesSidebar from "./../Segments/ServicesSidebar";
 
-class ServiceDetails1 extends React.Component {
+class ServiceDetails2 extends React.Component {
   render() {
     return (
       <>
-        <div className="section-full small-device p-t80 p-b50 bg-white">
+        <div className="section-full small-device  p-t80 p-b50 bg-white">
           <div className="section-content">
             <div className="container">
               <div className="row">
@@ -14,30 +14,24 @@ class ServiceDetails1 extends React.Component {
                   <div className="section-content">
                     {/* TITLE START */}
                     <div className="text-left">
-                      <h2 className="wt-title">Agricultural Automation</h2>
+                      <h2 className="wt-title">Food and Beverage Industry</h2>
                     </div>
                     {/* TITLE END */}
                     <div className="wt-box services-etc m-b30">
                       <p>
-                        Engineering is concerned with the development,
-                        improvement, and implementation of inte grated systems
-                        of people, money, knowledge, information, equipment,
-                        energy, materials, analysis and synthesis, as well as
-                        the mathematical, physical and social sciences together
-                        with the principles and methods of engineering design to
-                        specify, predict, and evaluate the results to be
-                        obtained from such systems or processes.
+                      The food and beverage industry utilizes a wide range of chemicals for various purposes, including
+food processing, preservation, flavoring, and packaging. Here are speciality chemicals we provide:
                       </p>
-                      <div className="wt-media m-b30">
+                      {/* <div className="wt-media m-b30">
                         <img
                           src={
-                            require("./../../images/services/large/pic9.jpg")
+                            require("./../../images/services/large/pic1.jpg")
                               .default
                           }
                           alt=""
                         />
-                      </div>
-                      <div className="wt-info">
+                      </div> */}
+                      {/* <div className="wt-info">
                         <p>
                           Concerned with the development, improvement, and
                           implementation of integrated system of people, money,
@@ -60,34 +54,46 @@ class ServiceDetails1 extends React.Component {
                             <span>Envato Author</span>
                           </div>
                         </blockquote>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="service-provide">
-                      <h2>System Benefits</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam. Lorem
-                        ipsum dolor sit amet, consectetur adipisicing elit, sed
-                        do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit
-                        amet, consectetur adipisicing elit.{" "}
-                      </p>
-                      <div className="row">
-                        <div className="col-md-6">
+                      <h4>Pulping Chemicals</h4>
+                      <div className="row" style={{ marginLeft: "25px" }}>
+                        <div>
                           <ul className="list-angle-right">
-                            <li>
-                              Pitifully thin compared with the size of the rest
-                              of him.
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5> Ascorbic Acid (Vitamin C):</h5>
+                              <span>
+                              Used as an antioxidant and preservative.
+                              </span>
                             </li>
-                            <li>
-                              Raising a heavy muff that covered the whole. muff
-                              that covered the whole of her lower arm
-                              consectetur.
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Sodium Benzoate: </h5>
+                              <span>
+                              A preservative used to inhibit the growth of bacteria, yeasts, and molds
+                              </span>
                             </li>
-                            <li>
-                              Muff that covered the whole of her lower arm
-                              consectetur adipisicing elit
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5> Potassium Sorbate:</h5>
+                              <span>A preservative used to prevent the growth of yeast, molds, and some bacteria.</span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Sulfur Dioxide: </h5>
+                              <span>
+                              Used as a preservative and antioxidant, often in dried fruits and wine.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Nitrites and Nitrates:  </h5>
+                              <span>
+                              Used in cured meats to preserve color and inhibit bacterial growth.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Monosodium Glutamate (MSG):</h5>
+                              <span>
+                              A flavor enhancer used in savory food products.
+                              </span>
                             </li>
                           </ul>
                         </div>
@@ -104,96 +110,213 @@ class ServiceDetails1 extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <div>
-                      <h2>Research</h2>
-                      <div className="wt-accordion acc-bg-gray" id="accordion5">
-                        <div className="panel wt-panel">
-                          <div className="acod-head acc-actives">
-                            <h4 className="acod-title">
-                              <a
-                                data-toggle="collapse"
-                                href="#collapseOne5"
-                                data-parent="#accordion5"
-                              >
-                                What problems we face?
-                                <span className="indicator">
-                                  <i className="fa fa-plus" />
-                                </span>
-                              </a>
-                            </h4>
-                          </div>
-                          <div
-                            id="collapseOne5"
-                            className="acod-body collapse show bg-gray"
-                          >
-                            <div className="acod-content p-a15">
-                              There are many variations of passages of Lorem
-                              Ipsum available, but the majority have suffered
-                              alteration in some form, injected humour, or
-                              randomised words which don't look even slightly
-                              believablThere are many variations of passages.
-                            </div>
-                          </div>
+                    <div className="service-provide">
+                      <h4>Sweeteners and Flavorings:</h4>
+                      <div className="row" style={{ marginLeft: "25px" }}>
+                        <div>
+                          <ul className="list-angle-right">
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5> High Fructose Corn Syrup (HFCS):</h5>
+                              <span>
+                              A sweetener commonly used in processed foods and beverages.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>
+                              Artificial Sweeteners:
+                              </h5>
+                              <span>
+                              Examples include aspartame, saccharin, sucralose, and acesulfame potassium.
+                              </span>
+                            </li>
+
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Vanillin:</h5>
+                              <span>
+                              A synthetic flavor compound used to impart a vanilla flavor.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Ethyl Maltol:</h5>
+                              <span>
+                              A flavor enhancer with a sweet, caramel-like taste.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Food Acids and pH Regulators:</h5>
+                              {/* <span>
+                              A flavor enhancer with a sweet, caramel-like taste.
+                              </span> */}
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Citric Acid: </h5>
+                              <span>
+                              Used as a flavoring agent, pH regulator, and preservative.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Lactic Acid:</h5>
+                              <span>
+                              Used as a flavoring agent, pH regulator, and preservative.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Phosphoric Acid: </h5>
+                              <span>
+                              Used in carbonated beverages to give them a tart taste and adjust acidity.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Tartaric Acid:</h5>
+                              <span>
+                              Used as an acidulant and flavor enhancer, often in wines and fruit jellies.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
-                        <div className="panel wt-panel">
-                          <div className="acod-head">
-                            <h4 className="acod-title">
-                              <a
-                                data-toggle="collapse"
-                                href="#collapseTwo5"
-                                className="collapsed"
-                                data-parent="#accordion5"
-                              >
-                                Was our solution best?
-                                <span className="indicator">
-                                  <i className="fa fa-plus" />
-                                </span>
-                              </a>
-                            </h4>
-                          </div>
-                          <div
-                            id="collapseTwo5"
-                            className="acod-body collapse bg-gray"
-                          >
-                            <div className="acod-content p-a15">
-                              Graphic design lorem Ipsum is simply dummy text of
-                              the printing and type setting industry. Lorem
-                              Ipsum has been the industry's standard dummy text
-                              ever since the when an unknown printer took.
-                            </div>
-                          </div>
-                        </div>
-                        <div className="panel wt-panel">
-                          <div className="acod-head">
-                            <h4 className="acod-title">
-                              <a
-                                data-toggle="collapse"
-                                href="#collapseThree5"
-                                className="collapsed"
-                                data-parent="#accordion5"
-                              >
-                                Was our client satisfy?
-                                <span className="indicator">
-                                  <i className="fa fa-plus" />
-                                </span>
-                              </a>
-                            </h4>
-                          </div>
-                          <div
-                            id="collapseThree5"
-                            className="acod-body collapse bg-gray"
-                          >
-                            <div className="acod-content p-a15">
-                              Developement lorem Ipsum is simply dummy text of
-                              the printing and type has been the industry's
-                              standard dummy text ever since the when an unknown
-                              printer took a galley of type and scrambled it to
-                              make.
-                            </div>
+                        <div className="col-md-6">
+                          <div className="wt-media m-b30">
+                            <img
+                              src={
+                                require("./../../images/gallery/pic3.jpg")
+                                  .default
+                              }
+                              alt=""
+                            />
                           </div>
                         </div>
                       </div>
                     </div>
+                    <div className="service-provide">
+                      <h4>Antioxidants:</h4>
+                      <div className="row" style={{ marginLeft: "25px" }}>
+                        <div>
+                          <ul className="list-angle-right">
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5> Butylated Hydroxyanisole (BHA) and Butylated Hydroxytoluene (BHT): </h5>
+                              <span>
+                              Antioxidants used to prevent
+food spoilage and rancidity.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Tocopherols (Vitamin E): </h5>
+                              <span>
+                              Natural antioxidants used to extend the shelf life of fats and oils.
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="wt-media m-b30">
+                            <img
+                              src={
+                                require("./../../images/gallery/pic3.jpg")
+                                  .default
+                              }
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="service-provide">
+                      <h4>Food Colorings:</h4>
+                      <div className="row" style={{ marginLeft: "25px" }}>
+                        <div>
+                          <ul className="list-angle-right">
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Tartrazine (Yellow 5):</h5>
+                              <span>
+                              A yellow food coloring.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Carmine (Cochineal Extract):  </h5>
+                              <span>
+                              A red food coloring derived from insects.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Caramel Color: </h5>
+                              <span>
+                              Used to give foods and beverages a brown color.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Food Emulsifiers and Stabilizers: </h5>
+                              {/* <span>
+                              Used to give foods and beverages a brown color.
+                              </span> */}
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Lecithin: </h5>
+                              <span>
+                              A natural emulsifier used in various food products.
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Xanthan Gum:  </h5>
+                              <span>
+                              A thickening and stabilizing agent used in sauces, dressings, and bakery products
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Guar Gum:</h5>
+                              <span>
+                              A thickening agent and stabilizer used in ice creams, sauces, and beverages.
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="wt-media m-b30">
+                            <img
+                              src={
+                                require("./../../images/gallery/pic3.jpg")
+                                  .default
+                              }
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="service-provide">
+                      <h4>Packaging and Food Safety:</h4>
+                      <div className="row" style={{ marginLeft: "25px" }}>
+                        <div>
+                          <ul className="list-angle-right">
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Bisphenol A (BPA): </h5>
+                              <span>
+                              A chemical used in the production of certain plastics and resins for food packaging
+                              </span>
+                            </li>
+                            <li style={{ marginBottom: "12px" }}>
+                              <h5>Diethylhexyl Phthalate (DEHP):</h5>
+                              <span>
+                              A plasticizer sometimes used in food packaging materials.
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="wt-media m-b30">
+                            <img
+                              src={
+                                require("./../../images/gallery/pic3.jpg")
+                                  .default
+                              }
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                 
+                    
                   </div>
                 </div>
               </div>
@@ -205,4 +328,4 @@ class ServiceDetails1 extends React.Component {
   }
 }
 
-export default ServiceDetails1;
+export default ServiceDetails2;

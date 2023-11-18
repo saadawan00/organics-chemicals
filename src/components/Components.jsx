@@ -67,6 +67,7 @@ import {
 } from './Pages/LabScientific/index';
 import RequestForm from "./Pages/ControlsandAutomation/RequestForm";
 import Clients from './Pages/Clients/ClientsContainer'
+import ServicesWater from "./Pages/ServicesWater";
 
 class Components extends React.Component {
   render() {
@@ -116,6 +117,11 @@ class Components extends React.Component {
               path="/services-mechanical"
               exact
               component={ServicesMechanical}
+            />
+            <Route
+              path="/services-water"
+              exact
+              component={ServicesWater}
             />
             <Route path="/services-oilgas" exact component={ServicesOilgas} />
             <Route

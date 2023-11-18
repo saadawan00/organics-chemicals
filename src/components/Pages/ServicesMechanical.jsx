@@ -4,7 +4,7 @@ import Footer from "../Parts/Footer";
 import Banner from "./../Segments/Banner";
 import ServiceDetails5 from "./../Segments/ServiceDetails5";
 
-var bnrimg = require("./../../images/banner/2.jpg");
+var bnrimg = require("./../../images/background/bg-5.png");
 
 class ServicesMechanical extends React.Component {
   render() {
@@ -14,9 +14,9 @@ class ServicesMechanical extends React.Component {
         <div className="page-content">
           {/* INNER PAGE BANNER */}
           <Banner
-            title="Service Detail"
-            pagename="Service Detail"
-            bgimage={bnrimg.default}
+            title="Sugar Industry"
+            pagename="Sugar Industry"
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <ServiceDetails5 />
