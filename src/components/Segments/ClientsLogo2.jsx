@@ -70,7 +70,18 @@ class ClientsLogo2 extends React.Component {
             <div className="section-content">
               {/* TESTIMONIAL 4 START ON BACKGROUND */}
               <div className="section-content">
+             
                 <div className="section-content p-tb30 owl-btn-vertical-center">
+                <div className="section-head center wt-small-separator-outer text-center text-white">
+              <div className="wt-small-separator site-text-primary">
+                <div className="sep-leaf-left" />
+                <div style={{ fontSize: "50px" }}>Companies We Serve</div>
+                <div className="sep-leaf-right" />
+              </div>
+              <h2 style={{ marginTop: "15px", color: "black", fontSize: "32px" }}>
+                Discovered the bussiness and orgnizations that make our valued clientele
+              </h2>
+            </div>
                   <OwlCarousel
                     className="owl-carousel home-client-carousel-2"
                     {...options}

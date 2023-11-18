@@ -616,7 +616,7 @@ class Slider2 extends React.Component {
                   data-easein="default"
                   data-easeout="default"
                   data-masterspeed="default"
-                  data-thumb="images/main-slider/slider2/slide2.jpg"
+                  data-thumb="images/bg-slider.jpeg"
                   data-rotate={0}
                   data-fstransition="fade"
                   data-fsmasterspeed={300}
@@ -638,9 +638,9 @@ class Slider2 extends React.Component {
                   {/* MAIN IMAGE */}
                   {/* <div className=""> */}
                   <img
-                    src={require("./../../images/main-slider/slider2/slide2.jpg")}
+                    src={require("./../../images/bg-slider.jpeg")}
                     alt=""
-                    data-lazyload={require("./../../images/main-slider/slider2/slide2.jpg")}
+                    data-lazyload={require("./../../images/bg-slider.jpeg")}
                     data-bgposition="center center"
                     data-bgfit="cover"
                     data-bgparallax={4}

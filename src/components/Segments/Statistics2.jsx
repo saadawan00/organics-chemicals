@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 import ModalVideo from "react-modal-video";
 import "../../../node_modules/react-modal-video/css/modal-video.min.css";
 
-var bnr1 = require("./../../images/background/bg-128.jpg");
+var bnr1 = require("./../../images/background/bg-128-o.jpg");
 
 class Statistics2 extends React.Component {
   constructor() {
@@ -25,7 +25,7 @@ class Statistics2 extends React.Component {
           className="section-full video2-counter-section p-t80 p-b40  overlay-wraper bg-cover bg-no-repeat"
           style={{ backgroundImage: `url(${bnr1})` }}
         >
-          <div className="overlay-main bg-black opacity-02" />
+          <div className="overlay-main bg-black opacity-01" />
           <div className="container">
             {/* TITLE START*/}
             <div className="section-head center wt-small-separator-outer text-center text-white">
@@ -34,7 +34,7 @@ class Statistics2 extends React.Component {
                 <div style={{ fontSize: "58px" }}>Why Us?</div>
                 <div className="sep-leaf-right" />
               </div>
-              <h2 style={{ marginTop: "15px" }}>
+              <h2 style={{ marginTop: "15px", color: "#1c63b8" }}>
                 Unlocking Industrial Solution With Organics
               </h2>
             </div>
@@ -47,6 +47,8 @@ class Statistics2 extends React.Component {
                     borderRadius: "35px",
                     border: "3px solid",
                     borderColor: "#004597",
+                     transition: "border-color 0.3s ease",
+                     WebkitTransition: "border-color 0.3s ease",
                   }}
                 >
                   <h3 className="wt-tilte mt-3 site-text-secondry">
@@ -62,7 +64,7 @@ class Statistics2 extends React.Component {
                   }}
                 >
                   <h3 className="wt-tilte mt-3 site-text-secondry">
-                    Timely Delivery, Everytime
+                    Timely Delivery
                   </h3>
                 </div>
                 <div
@@ -86,7 +88,7 @@ class Statistics2 extends React.Component {
                   }}
                 >
                   <h3 className="wt-tilte mt-3 site-text-secondry">
-                    Customer Centric Commitment
+                    Customer Centric
                   </h3>
                 </div>
                 <div
@@ -171,7 +173,7 @@ class Statistics2 extends React.Component {
                       <h2 className="counter site-text-primary">
                         <CountUp end={4000} duration={5} />
                       </h2>
-                      <span className="site-text-white title-style-2">
+                      <span className="site-text-black title-style-2">
                         Projects Completed
                       </span>
                     </div>
@@ -181,7 +183,7 @@ class Statistics2 extends React.Component {
                       <h2 className="counter site-text-primary">
                         <CountUp end={15000} duration={5} />
                       </h2>
-                      <span className="site-text-white title-style-2">
+                      <span className="site-text-black title-style-2">
                         B2B Products
                       </span>
                     </div>
@@ -189,9 +191,9 @@ class Statistics2 extends React.Component {
                   <div className="col-lg-3 col-md-6 col-sm-6 m-b30">
                     <div className="wt-icon-box-wraper center">
                       <h2 className="counter site-text-primary">
-                        <CountUp end={2000} duration={5} />
+                        <CountUp end={400} duration={5} />
                       </h2>
-                      <span className="site-text-white title-style-2">
+                      <span className="site-text-black title-style-2">
                         Happy Clients
                       </span>
                     </div>

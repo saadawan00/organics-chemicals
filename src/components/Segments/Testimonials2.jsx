@@ -27,7 +27,7 @@ const testimonials = [
   },
 ];
 
-var bnr1 = require("./../../images/background/bg-127.jpg");
+var bnr1 = require("./../../images/background/bg-128.png");
 
 class Testimonials2 extends React.Component {
   render() {
@@ -53,8 +53,8 @@ class Testimonials2 extends React.Component {
     return (
       <>
         <div
-          className="section-full  p-t80 p-b50 bg-white testimonial-2-outer bg-bottom-right bg-no-repeat"
-          style={{ backgroundImage: `url(${bnr1})`, backgroundSize: "100%" }}
+          className="section-full  p-t80 p-b50 bg-white testimonial-2-outer bg-no-repeat"
+          style={{ backgroundImage: `url(${bnr1})`, backgroundSize: "90%" }}
         >
           <div className="container">
             <div className="row d-flex justify-content-center">
@@ -187,7 +187,7 @@ class Testimonials2 extends React.Component {
             </div>
           </div>
           <div className="hilite-large-title title-style-2">
-            <span style={{ color: "#5b98e1" }}>Testimonials</span>
+            <span style={{ color: "black" }}>Testimonials</span>
           </div>
         </div>
       </>
