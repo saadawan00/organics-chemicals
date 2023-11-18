@@ -40,13 +40,13 @@ class ServicesSidebar extends React.Component {
                 </NavLink>
               </li>
               <li>
-                <NavLink to={"/services-mechanical"}>
+                <NavLink to={"/services-water"}>
                   Water Treatment Chemicals
                 </NavLink>
               </li>
             </ul>
           </div>
-          <div className="service-side-btn m-b30 site-bg-secondry p-a20 text-white">
+          {/* <div className="service-side-btn m-b30 site-bg-secondry p-a20 text-white">
             <h2 className="wt-title">Brochures</h2>
             <p>
               View our 2020 financial prospectus brochure for an easy to read
@@ -83,7 +83,7 @@ class ServicesSidebar extends React.Component {
                 </strong>
               </NavLink>
             </div>
-          </div>
+          </div> */}
         </div>
       </>
     );

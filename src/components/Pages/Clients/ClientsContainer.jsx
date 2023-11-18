@@ -19,7 +19,7 @@ class ClientsContainer extends React.Component {
             pagename="Clients"
             bgimage={bnrimg.default}
           />
-          <ClientsTitle />
+          {/* <ClientsTitle /> */}
           {/* INNER PAGE BANNER END */}
           <Clients />
         </div>

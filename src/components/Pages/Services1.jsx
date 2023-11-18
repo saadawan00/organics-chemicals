@@ -7,7 +7,7 @@ import Plans3 from "./../Segments/Plans3";
 import Testimonials11 from "./../Segments/Testimonials11";
 import Video2 from "./../Segments/Video2";
 
-var bnrimg = require("./../../images/banner/2.jpg");
+var bnrimg = require("./../../images/background/bg-5.png");
 
 class Services1 extends React.Component {
   render() {
@@ -17,15 +17,15 @@ class Services1 extends React.Component {
         <div className="page-content">
           {/* INNER PAGE BANNER */}
           <Banner
-            title="Services 1"
-            pagename="Services 1"
-            bgimage={bnrimg.default}
+            title="Industrial Chemical"
+            pagename="Industrial Chemical"
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           <Services13 />
-          <Plans3 />
+          {/* <Plans3 />
           <Testimonials11 />
-          <Video2 />
+          <Video2 /> */}
         </div>
         <Footer />
       </>

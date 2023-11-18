@@ -140,7 +140,8 @@ class Footer2 extends React.Component {
                     <div className="col-lg-7 col-md-8">
                       <div className="widget widget_services">
                         <h3 className="widget-title">Our Services  <h4 style={{color: 'white', marginTop: '4px'}}>How can we help you?</h4></h3>
-                        <ul className="widget_address">
+                        <div className="widget recent-posts-entry">
+                      <ul className="widget_address">
                         
                         <li>
                           <i className="fa fa-envelope" />
@@ -158,6 +159,7 @@ class Footer2 extends React.Component {
                           +92-423-541-0051-53
                         </li>
                       </ul>
+                      </div>
                       </div>
                       <h3>Live Chat</h3>
                       <p>Mon - Sat : 08:00 - 17:00</p>

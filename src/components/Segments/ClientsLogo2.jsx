@@ -91,7 +91,7 @@ class ClientsLogo2 extends React.Component {
                         <div className="ow-client-logo">
                           <div
                             className="client-logo client-logo-media"
-                            style={{ height: "155px" }}
+                            style={{ height: "155px", border: 'none' }}
                           >
                             <NavLink to={"#"}>
                               <img

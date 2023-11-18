@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 const services = [
     {
         count: '01',
+        url: '/services-1',
         title1: 'Industrial',
         title2: 'Chemicals',
         flaticon: 'flaticon-industry',
@@ -11,6 +12,7 @@ const services = [
     },
     {
         count: '02',
+        url: '/chemicals',
         title1: 'Lab Scientific',
         title2: 'Products',
         flaticon: 'flaticon-conveyor',
@@ -18,6 +20,7 @@ const services = [
     },
     {
         count: '03',
+        url: '/actuatorspositioner',
         title1: 'Industrial',
         title2: 'Instrumentation',
         flaticon: 'flaticon-robotic-arm',
@@ -45,7 +48,7 @@ class Services2 extends React.Component {
                                                     </div>
                                                     <div className="service-box-content">
                                                         <p>{item.description}</p>
-                                                        <NavLink to="/about-1" className="site-button-link">Read More</NavLink>
+                                                        <NavLink to={item.url} className="site-button-link">Read More</NavLink>
                                                     </div>
                                                     <div className="wt-icon-box-wraper">
                                                         <div className="wt-icon-box-md site-bg-primary">

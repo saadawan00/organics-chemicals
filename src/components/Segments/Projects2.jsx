@@ -18,42 +18,50 @@ const filters = [
 const projects = [
   {
     image: require("./../../images/project/square/1.jpg"),
-    title: "Oil & Gas",
+    title: "Sugar Industry",
+    url: '/services-mechanical',
     filter: "cat-1",
   },
   {
     image: require("./../../images/project/square/2.jpg"),
     title: "Food & Beverages",
+    url: '/services-agricultural',
     filter: "cat-2",
   },
   {
     image: require("./../../images/project/square/3.jpg"),
     title: "Cement Industry",
+    url: '/services-civil',
     filter: "cat-2",
   },
   {
     image: require("./../../images/project/square/4.jpg"),
     title: "Textile Industry",
+    url: '/services-chemical',
     filter: "cat-4",
   },
   {
     image: require("./../../images/project/square/5.jpg"),
     title: "Pulp & Paper",
+    url: '/services-automotive',
     filter: "cat-5",
   },
   {
     image: require("./../../images/project/square/6.jpg"),
     title: "Power Plants",
+    url: '/services-oilgas',
     filter: "cat-6",
   },
   {
     image: require("./../../images/project/square/7.jpg"),
     title: "Fertilizer Industry",
+    url: '/services-powerenergy',
     filter: "cat-7",
   },
   {
     image: require("./../../images/project/square/8.jpg"),
     title: "Chemical Industry",
+    url: '/services-water',
     filter: "cat-8",
   },
 ];
@@ -134,7 +142,7 @@ class Projects2 extends React.Component {
                       </div>
                       <div className="wt-info">
                         <h4 className="wt-title m-b0 m-t15">
-                          <NavLink to={"/project-detail"}>{item.title}</NavLink>
+                          <NavLink to={item.url}>{item.title}</NavLink>
                         </h4>
                       </div>
                     </div>
