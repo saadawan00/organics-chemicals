@@ -1,9 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
-import { sidebarItems } from './index';
-import Sidebar from '../../Segments/Sidebar';
-
+import SidebarLabScientific from './SidebarInstrumentation';
 
 const ChemicalsCard = ({ label, imageName }) => {
   return (
@@ -55,7 +52,7 @@ class Projects23 extends React.Component {
         <div className="container">
           <div className="row">
             {/* Sidebar Component */}
-            <Sidebar navBarItems={sidebarItems} />
+            <SidebarLabScientific />
 
             <div className="col-lg-8 col-md-12">
               <div className="section-content">

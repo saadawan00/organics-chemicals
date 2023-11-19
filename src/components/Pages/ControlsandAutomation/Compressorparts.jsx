@@ -1,6 +1,6 @@
 import React from "react";
 import Header2 from "./../../Parts/Header2"
-import Footer from "./../../Parts/Footer";
+import Footer from "./../../Parts/Footer2";
 import Banner from "./../../Segments/Banner";
 import Projects31 from "./../ControlsandAutomation/Projects31";
 import { InstrumentationSlider } from "../../Parts/BrandsImagesSlider/InstrumentationSlider";
@@ -24,7 +24,7 @@ class Compressorparts extends React.Component {
 
           <Projects31 />
         </div>
-        <Footer />
+        <Footer showBanner={true} />
       </>
     );
   }
