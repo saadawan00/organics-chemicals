@@ -1,109 +1,49 @@
 import React from "react";
-import Header2 from "../../Parts/Header2";
-import Footer from "../../Parts/Footer";
-import Banner from "./../../Segments/Banner";
-import Sidebar from "./../../Segments/Sidebar";
-import { sidebarItems } from '.';
-import { NavLink } from "react-router-dom";
-import { BrandsImagesSlider } from "./../../Parts/BrandsImagesSlider/BrandsImagesSlider";
-
-var bnrimg = require('./../../../images/bg-slider.jpeg');
-
-const InstrumentCard = ({ label, imageName }) => {
-  return (
-    <div key={imageName} className="col-lg-3 col-xs-3 p-60 p-r2 p-t10 p-b30">
-      <div className="wt-icon-card shadow d-flex align-items-center flex-column border p-b10 p-t10 p-r4 p-l4 hover-opacity-dim pointer hover-border-blue">
-        <img width={80} src={require(`./../../../images/lab-scientific/instruments/${imageName}.jpg`)} alt="" />
-        <p className="p-t20 text-center" style={{ height: 50, fontSize: 14 }}>{label}</p>
-        <div style={{ position: "absolute", top: 80 }}>
-          <NavLink
-            to={"#"}
-            className="contact-slide-show get-quote-sm-btn m-t10 "
-            style={{ opacity: 0 }}
-          >
-            Get Quote
-          </NavLink>
-        </div>
-      </div>
-    </div>
-  )
-};
+import LabScientificLayout from "./LabScientificLayout";
 
 export class Instruments extends React.Component {
   render() {
     const picturesData = [
-      { label: "Analytical Balances", imageName: "analytical-balances" },
-      { label: "Autoclave", imageName: "autoclave" },
-      { label: "Bench Scales", imageName: "bench-scales" },
-      { label: "Calibration Weights", imageName: "calibration-weights" },
-      { label: "Centrifuges", imageName: "centrifuges" },
-      { label: "clamps", imageName: "clamps" },
-      { label: "Desiccators", imageName: "desiccators" },
-      { label: "Digital Microscope", imageName: "digital-microscope" },
-      { label: "Dry Block Heaters", imageName: "dry-block-heaters" },
-      { label: "Dry Block Heaters Accessories", imageName: "dry-block-heater-accessories" },
-      { label: "Glove Boxes", imageName: "glove-boxes" },
-      { label: "Heating Mantles", imageName: "heating-mantles" },
-      { label: "Hotplate Stirrers", imageName: "hotplate-stirrers" },
-      { label: "Incubators", imageName: "incubators" },
-      { label: "Indicators", imageName: "indicators" },
-      { label: "Magnetic Stirrers", imageName: "magnetic-stirrers" },
-      { label: "Melting Point", imageName: "melting-point" },
-      { label: "Microscope Camera", imageName: "microscope-camera" },
-      { label: "Microscope Filters", imageName: "microscope-filters" },
-      { label: "Moisture Analyzers", imageName: "moisture-analyzers" },
-      { label: "SDI Kits", imageName: "sdi-kits" },
-      { label: "Suction System", imageName: "suction-system" },
-      { label: "Test Chambers", imageName: "test-chambers" },
-      { label: "Vacuum Pumps", imageName: "vacuum-pumps" },
-      { label: "Visual Measurements", imageName: "visual-measurements" },
-      { label: "Vortex Mixers", imageName: "vortex-mixers" },
-      { label: "Water Analysis Accessories", imageName: "water-analysis-accessories" },
-      { label: "Water Analysis Meter Electrode", imageName: "water-analysis-meter-electrode" },
+      { label: "Analytical Balances", imageName: "analytical-balances.jpg" },
+      { label: "Autoclave", imageName: "autoclave.jpg" },
+      { label: "Bench Scales", imageName: "bench-scales.jpg" },
+      { label: "Calibration Weights", imageName: "calibration-weights.jpg" },
+      { label: "Centrifuges", imageName: "centrifuges.jpg" },
+      { label: "clamps", imageName: "clamps.jpg" },
+      { label: "Desiccators", imageName: "desiccators.jpg" },
+      { label: "Digital Microscope", imageName: "digital-microscope.jpg" },
+      { label: "Dry Block Heaters", imageName: "dry-block-heaters.jpg" },
+      { label: "Dry Block Heaters Accessories", imageName: "dry-block-heater-accessories.jpg" },
+      { label: "Glove Boxes", imageName: "glove-boxes.jpg" },
+      { label: "Heating Mantles", imageName: "heating-mantles.jpg" },
+      { label: "Hotplate Stirrers", imageName: "hotplate-stirrers.jpg" },
+      { label: "Incubators", imageName: "incubators.jpg" },
+      { label: "Indicators", imageName: "indicators.jpg" },
+      { label: "Magnetic Stirrers", imageName: "magnetic-stirrers.jpg" },
+      { label: "Melting Point", imageName: "melting-point.jpg" },
+      { label: "Microscope Camera", imageName: "microscope-camera.jpg" },
+      { label: "Microscope Filters", imageName: "microscope-filters.jpg" },
+      { label: "Moisture Analyzers", imageName: "moisture-analyzers.jpg" },
+      { label: "SDI Kits", imageName: "sdi-kits.jpg" },
+      { label: "Suction System", imageName: "suction-system.jpg" },
+      { label: "Test Chambers", imageName: "test-chambers.jpg" },
+      { label: "Vacuum Pumps", imageName: "vacuum-pumps.jpg" },
+      { label: "Visual Measurements", imageName: "visual-measurements.jpg" },
+      { label: "Vortex Mixers", imageName: "vortex-mixers.jpg" },
+      { label: "Water Analysis Accessories", imageName: "water-analysis-accessories.jpg" },
+      { label: "Water Analysis Meter Electrode", imageName: "water-analysis-meter-electrode.jpg" },
     ];
+  
     return (
-      <>
-        <Header2 />
-        <div className="page-content">
-          {/* INNER PAGE BANNER */}
-          <Banner
-            title="Instruments"
-            pagename="Instruments"
-            bgimage={bnrimg}
-          />
-          {/* INNER PAGE BANNER END */}
-          <BrandsImagesSlider />
-          <>
-            <div className="section-full small-device p-t80 p-b50 bg-white">
-              <div className="section-content">
-                <div className="container">
-                  <div className="row">
-                    <Sidebar navBarItems={sidebarItems} />
-                    <div className="col-lg-8 col-md-12">
-                      <div className="section-content">
-                        {/* TITLE START */}
-                        <div className="text-left">
-                          <h2 className="wt-title">Instruments</h2>
-                        </div>
-                        <div className="container">
-                          <div className="row">
-                            {picturesData.map((item, idx) => (
-                              <InstrumentCard key={idx} {...item} />
-                            ))}
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </>
-        </div>
-        <Footer />
-      </>
+      <LabScientificLayout
+        title="Instruments"
+        pagename="Instruments"
+        picturesData={picturesData}
+        folderName="instruments"
+      />
     );
   }
 }
 
 export default Instruments;
+

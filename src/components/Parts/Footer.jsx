@@ -2,10 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Switcher from '../Segments/Switcher';
 
-import bestPriceIcon from './../../images/icons/best-price.png';
-import timelyDelieveryIcon from './../../images/icons/shipping-timed.png';
-import techSupportIcon from './../../images/icons/tech-support.png';
-
 var bgimage = require('./../../images/background/footer-bg.png');
 
 class Footer extends React.Component {
@@ -28,35 +24,8 @@ class Footer extends React.Component {
     updateFooterLogo = (updatedlogo) => { this.currentstate.logo = updatedlogo.default; }
 
     render() {
-
         return (
             <>
-             <div className="section-content bg-gray m-t30">
-        <div className="container">
-          <div className="row">
-            <div className="col-4 bg-gray p-t40 p-b40">
-              <div className="flex-center">
-                <img src={bestPriceIcon} width={25} className="m-r15 m-b5" /> 
-                <h4 className="m-0 text-center">
-                  Competitive Prices
-                </h4>
-              </div>
-            </div>
-            <div className="col-4 bg-gray p-t40 p-b40">
-              <div className="flex-center">
-                <img src={timelyDelieveryIcon} width={25} className="m-r15 m-b5" /> 
-                <h4 className="m-0 text-center">Timely Delivery</h4>
-              </div>
-            </div>
-            <div className="col-4 bg-gray p-t40 p-b40">
-              <div className="flex-center">
-                <img src={techSupportIcon} width={25} className="m-r15 m-b5" /> 
-                <h4 className="m-0 text-center">Free Technical Support</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
                 <footer className="site-footer footer-large footer-dark text-white footer-style1">
                     {/* FOOTER BLOCKES START */}
                     <div className="footer-top bg-no-repeat bg-bottom-right" style={{ backgroundImage: 'url('+bgimage.default+')' }}>

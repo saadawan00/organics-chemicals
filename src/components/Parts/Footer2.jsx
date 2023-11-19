@@ -1,7 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Switcher from "../Segments/Switcher";
-
+import bestPriceIcon from './../../images/icons/best-price.png';
+import timelyDelieveryIcon from './../../images/icons/shipping-timed.png';
+import techSupportIcon from './../../images/icons/tech-support.png';
 var bgimage = require("./../../images/background/footer-bg.png");
 
 class Footer2 extends React.Component {
@@ -36,6 +38,34 @@ class Footer2 extends React.Component {
   render() {
     return (
       <>
+        {this.props.showBanner && (
+          <div className="section-content bg-gray m-t30">
+              <div className="container">
+                  <div className="row">
+                      <div className="col-4 bg-gray p-t40 p-b40">
+                      <div className="flex-center">
+                          <img src={bestPriceIcon} width={25} className="m-r15 m-b5" alt="" /> 
+                          <h4 className="m-0 text-center">
+                          Competitive Prices
+                          </h4>
+                      </div>
+                      </div>
+                      <div className="col-4 bg-gray p-t40 p-b40">
+                      <div className="flex-center">
+                          <img src={timelyDelieveryIcon} width={25} className="m-r15 m-b5" alt="" /> 
+                          <h4 className="m-0 text-center">Timely Delivery</h4>
+                      </div>
+                      </div>
+                      <div className="col-4 bg-gray p-t40 p-b40">
+                      <div className="flex-center">
+                          <img src={techSupportIcon} width={25} className="m-r15 m-b5" alt="" /> 
+                          <h4 className="m-0 text-center">Free Technical Support</h4>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        )}
         <footer className="site-footer footer-large footer-dark text-white footer-style2">
           {/* FOOTER BLOCKES START */}
           <div
@@ -85,17 +115,21 @@ class Footer2 extends React.Component {
                           href={
                             "https://www.google.com/maps/place/ORGANICS/@31.4986581,74.2734893,17z/data=!3m1!4b1!4m6!3m5!1s0x391903b0030320cf:0x5148bfd97758a9c5!8m2!3d31.4986536!4d74.2760642!16s%2Fg%2F11cs6b6mdx?entry=ttu"
                           }
-                          className="fa fa-google"
+                          rel="noreferrer"
                           target="_blank"
-                        />
+                        >
+                          <i className="fa fa-google" />
+                        </a>
                       </li>
 
                       <li>
                         <a
                           href={"https://www.facebook.com/Organics.solutions"}
                           target="_blank"
-                          className="fa fa-facebook"
-                        />
+                          rel="noreferrer"
+                        >
+                          <i className="fa fa-facebook" />
+                        </a>
                       </li>
                       {/* <li>
                         <NavLink to={"#"} className="fa fa-twitter" />
@@ -106,8 +140,10 @@ class Footer2 extends React.Component {
                             "https://www.linkedin.com/company/organicspakllc/"
                           }
                           target="_blank"
-                          className="fa fa-linkedin"
-                        />
+                          rel="noreferrer"
+                        >
+                          <i className="fa fa-linkedin" />
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -145,7 +181,7 @@ class Footer2 extends React.Component {
                         
                         <li>
                           <i className="fa fa-envelope" />
-                          info@organics.com.co
+                          <span>info@organics.com.co</span>
                         
                         </li>
                         <li>

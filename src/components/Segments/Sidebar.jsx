@@ -7,16 +7,14 @@ class Sidebar extends React.Component {
 
     return (
       <>
-        <div className="col-lg-4 col-md-12 rightSidebar">
-          <div className="all_services">
-            <ul>
-              {navBarItems.map(({ label, route }, idx) => (
-                <li key={idx}>
-                  <NavLink to={route}>{label}</NavLink>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="all_services">
+          <ul>
+            {navBarItems.map(({ label, route }, idx) => (
+              <li key={idx}>
+                <NavLink to={route}>{label}</NavLink>
+              </li>
+            ))}
+          </ul>
         </div>
       </>
     );
