@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Header from '../../Parts/Header';
-import Footer from '../../Parts/Footer';
+import Footer from '../../Parts/Footer2';
 import Banner from '../../Segments/Banner';
 import Projects32 from './../ControlsandAutomation/Projects32';
 import { InstrumentationSlider } from '../../Parts/BrandsImagesSlider/InstrumentationSlider';
@@ -21,7 +21,7 @@ class MoreProducts extends React.Component {
 
                     <Projects32 />
                 </div>
-                <Footer />
+                <Footer showBanner={true} />
             </>
         );
     };
