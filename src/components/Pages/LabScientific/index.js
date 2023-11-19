@@ -21,3 +21,4 @@ export * from './Consumables';
 export * from './CorrosionCoupons';
 export * from './Filtration';
 export * from './Plasticware';
+export * from './LabScientificLayout';

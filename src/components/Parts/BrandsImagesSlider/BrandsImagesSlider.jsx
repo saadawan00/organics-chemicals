@@ -71,32 +71,6 @@ export const BrandsImagesSlider = () => {
             <img width={50} src={require('./../../../images/in-stock.png')} alt="" />
           </div>
           <ImagesSlider images={images} speed={25000} />
-          <div className="section-content bg-gray m-t30">
-            <div className="container">
-              <div className="row">
-                <div className="col-4 bg-gray p-t40 p-b40">
-                  <div className="flex-center">
-                    <img src={bestPriceIcon} width={25} className="m-r15 m-b5" /> 
-                    <h4 className="m-0 text-center">
-                      Competitive Prices
-                    </h4>
-                  </div>
-                </div>
-                <div className="col-4 bg-gray p-t40 p-b40">
-                  <div className="flex-center">
-                    <img src={timelyDelieveryIcon} width={25} className="m-r15 m-b5" /> 
-                    <h4 className="m-0 text-center">Timely Delivery</h4>
-                  </div>
-                </div>
-                <div className="col-4 bg-gray p-t40 p-b40">
-                  <div className="flex-center">
-                    <img src={techSupportIcon} width={25} className="m-r15 m-b5" /> 
-                    <h4 className="m-0 text-center">Free Technical Support</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
     );
 };
