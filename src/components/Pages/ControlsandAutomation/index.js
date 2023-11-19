@@ -12,5 +12,4 @@ export const sidebarItems = [
   { label: "Pressure & Temperature", route: "/pressureandtemp" },
   { label: "Level & Flow", route: "/levelandflow" },
   { label: "More", route: "/moreproducts" },
-
 ];
