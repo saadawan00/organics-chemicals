@@ -5,7 +5,7 @@ class About2 extends React.Component {
   render() {
     return (
       <>
-        <div className="section-full welcome-section-outer">
+       <div className="section-full welcome-section-outer">
           <div className="welcome-section-top bg-white p-t80 p-b50">
             <div className="container">
               <div className="row d-flex justify-content-center">
@@ -19,31 +19,20 @@ class About2 extends React.Component {
                         <div className="sep-leaf-right" />
                       </div>
                     </div>
-                    <h2>
-                      Our unwavering mission is to empower diverse industries
-                      with top quality
-                    </h2>
+                    <h3>
+                    We have 10+ years of experience helping our clients meet their engineering, design, project and portfolio management, capital planning, and environmental health & safety needs.
+                    </h3>
                     {/* TITLE END*/}
-                    <ul className="site-list-style-one">
-                      <li>Industrial Chemicals</li>
-                      <li>Lab Scientific Products</li>
-                      <li>Industrial Instruments</li>
-                      <li>Engineering Services</li>
-                    </ul>
+                    
                     <p>
-                      Our journey began in 2008 when we set out to make a
-                      significant impact in the realm of industrial solutions.
-                      Our roots run deep in the heart of the industrial
-                      landscape. Over the years, we've steadfastly grown and
-                      expanded our reach to serve a global audience.
-                    </p>
+                    To learn more</p>
                     <div className="welcom-to-section-bottom d-flex justify-content-between">
                       <div className="welcom-btn-position">
                         <NavLink
                           to={"/about-1"}
                           className="site-button-secondry site-btn-effect"
                         >
-                          More About
+                          Contact Us
                         </NavLink>
                       </div>
                     </div>
