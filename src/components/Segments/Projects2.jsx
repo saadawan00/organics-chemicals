@@ -85,7 +85,7 @@ class Projects2 extends React.Component {
             <div className="section-head center wt-small-separator-outer text-center text-white">
               <div className="wt-small-separator site-text-primary">
                 <div className="sep-leaf-left" />
-                <div style={{ color: "#327ef9", fontSize: "48px" }}>
+                <div style={{ color: "#327ef9", fontSize: "48px", lineHeight: 1.1 }}>
                   Our Products, Your Industry
                 </div>
                 <div className="sep-leaf-right" />
