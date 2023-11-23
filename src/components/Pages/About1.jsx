@@ -1,6 +1,6 @@
 import React from "react";
 import Header2 from "./../Parts/Header2";
-import Footer from "./../Parts/Footer";
+import Footer from "./../Parts/Footer2";
 import Banner from "./../Segments/Banner";
 import About2 from "./../Segments/About2";
 import Services13 from "./../Segments/Services13";
