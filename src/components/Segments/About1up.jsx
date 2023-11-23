@@ -51,7 +51,7 @@ class About1up extends React.Component {
                     </div>
                     <div
                       className="col-lg-6 col-md-12 m-b30"
-                      style={{ margin: "auto", left: "5%" }}
+                      style={{ margin: "auto" }}
                     >
                       <div className="img-colarge2">
                         <div className=" slide-right">
