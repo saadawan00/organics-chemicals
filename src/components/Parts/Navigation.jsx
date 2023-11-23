@@ -33,7 +33,7 @@ class Navigation extends React.Component {
             </li>
 
             <li>
-              <NavLink to={""} style={{ fontSize: "1rem" }}>
+              <NavLink to={"#"} style={{ fontSize: "1rem" }}>
                 Industrial Chemicals
               </NavLink>
               <ul className="sub-menu">
@@ -118,7 +118,7 @@ class Navigation extends React.Component {
               </ul>
             </li>
             <li>
-              <NavLink to={""} style={{ fontSize: "1rem" }}>
+              <NavLink to={"#"} style={{ fontSize: "1rem" }}>
                 Lab Scientific
               </NavLink>
               <ul className="sub-menu">
@@ -216,7 +216,7 @@ class Navigation extends React.Component {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={""} style={{ fontSize: "100%" }}>
+                  <NavLink to={"#"} style={{ fontSize: "100%" }}>
                     Gas & Flame Detection
                   </NavLink>
                   <ul className="sub-menu">
@@ -236,7 +236,7 @@ class Navigation extends React.Component {
                   </ul>
                 </li>
                 <li>
-                  <NavLink to={""} style={{ fontSize: "100%" }}>
+                  <NavLink to={"#"} style={{ fontSize: "100%" }}>
                     Generator & Compressors
                   </NavLink>
                   <ul className="sub-menu">
@@ -267,7 +267,7 @@ class Navigation extends React.Component {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={""} style={{ fontSize: "100%" }}>
+                  <NavLink to={"#"} style={{ fontSize: "100%" }}>
                     Measurement Controls
                   </NavLink>
                   <ul className="sub-menu">
@@ -298,7 +298,7 @@ class Navigation extends React.Component {
               </ul>
             </li>
             <li>
-              <NavLink to={""} style={{ fontSize: "1rem" }}>
+              <NavLink to={"#"} style={{ fontSize: "1rem" }}>
                 Services
               </NavLink>
               <ul className="sub-menu">
