@@ -9,11 +9,8 @@ const ChemicalsCard = ({ label, imageName }) => {
         <img width={80} src={require(`./../../../images/product_images/Gasket & Packing/${imageName}`)} alt="" />
         <p className="p-t20 text-center" style={{ height: 50, fontSize: 14 }}>{label}</p>
         <div style={{ position: "absolute", top: 80 }}>
-          <NavLink
-            to={{
-              pathname: "/requestqoute",
-              state: { item:label },
-            }}
+        <NavLink
+            to={"#"}
             className="contact-slide-show get-quote-sm-btn m-t10 "
             style={{ opacity: 0 }}
           >

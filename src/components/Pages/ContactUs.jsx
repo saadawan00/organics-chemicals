@@ -1,7 +1,7 @@
 import React from "react";
 // import GoogleMaps from "simple-react-google-maps"
 import Header2 from "./../Parts/Header2";
-import Footer from "./../Parts/Footer";
+import Footer from "./../Parts/Footer2";
 import Banner from "./../Segments/Banner";
 
 var bnrimg = require("./../../images/instrumentssliderimages/backgroundimage5.jpeg");
