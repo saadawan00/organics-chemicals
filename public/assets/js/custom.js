@@ -612,19 +612,20 @@ jQuery(window).on('load', function () {
 	
 	// > Nav submenu show hide on mobile by = custom.js
 	function mobile_nav_2(){
-		
-		jQuery('body').on('click','.has-child a+.submenu-toogle',function(ev) {
 
-			jQuery(this).parent().siblings(".has-child ").children(".sub-menu").slideUp(500, function(){
-				jQuery(this).parent().removeClass('nav-active');
+		jQuery('body').on('click', '.has-child > a', function (ev) {
+			var $submenuToggle = jQuery(this).siblings(".submenu-toogle");
+	
+			jQuery(this).parent().siblings(".has-child").children(".sub-menu").slideUp(500, function () {
+					jQuery(this).parent().removeClass('nav-active');
 			});
-
-			jQuery(this).next(jQuery('.sub-menu')).slideToggle(500, function(){
-				jQuery(this).parent().toggleClass('nav-active');
+	
+			$submenuToggle.next(jQuery('.sub-menu')).slideToggle(500, function () {
+					$submenuToggle.parent().toggleClass('nav-active');
 			});
-
+	
 			ev.stopPropagation();
-		});
+	});
 	
 	}	 
 	 
