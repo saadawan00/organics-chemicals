@@ -18,7 +18,7 @@ class About2 extends React.Component {
         <Header2 />
         <div className="page-content">
           <Banner
-            title="About Us"
+            title="About Uss"
             pagename="About 2"
             bgimage={bnrimg.default}
           />

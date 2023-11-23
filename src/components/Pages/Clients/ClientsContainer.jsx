@@ -5,7 +5,7 @@ import Banner from "./../../Segments/Banner";
 import Clients from './Clients'
 import ClientsTitle from "./ClientsTitle";
 
-var bnrimg = require("./../../../images/banner/8.jpg");
+var bnrimg = require("./../../../images/instrumentssliderimages/backgroundimage4.jpeg");
 
 class ClientsContainer extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class ClientsContainer extends React.Component {
           <Banner
             title="Clients"
             pagename="Clients"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* <ClientsTitle /> */}
           {/* INNER PAGE BANNER END */}
