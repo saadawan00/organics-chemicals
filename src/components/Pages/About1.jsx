@@ -4,9 +4,8 @@ import Footer from "./../Parts/Footer";
 import Banner from "./../Segments/Banner";
 import About2 from "./../Segments/About2";
 import Services13 from "./../Segments/Services13";
-import Statistics11 from "./../Segments/Statistics11";
-import Team2 from "./../Segments/Team2";
 import ClientsLogo1 from "./../Segments/ClientsLogo1";
+import Statistics16 from "../Segments/Statistics16";
 
 var bnrimg = require("./../../images/banner/3.jpg");
 
@@ -23,8 +22,8 @@ class About1 extends React.Component {
           />
           <About2 />
           <Services13 />
-          <Statistics11 />
-          <Team2 />
+          <Statistics16 />
+
           <ClientsLogo1 />
         </div>
         <Footer />
