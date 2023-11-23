@@ -25,7 +25,7 @@ class About2 extends React.Component {
                     {/* TITLE END*/}
                     
                     <p>
-                    To learn more</p>
+                    To learn more...</p>
                     <div className="welcom-to-section-bottom d-flex justify-content-between">
                       <div className="welcom-btn-position">
                         <NavLink

@@ -11,6 +11,7 @@ import Team1 from "./../Segments/Team1";
 import Testimonials1 from "./../Segments/Testimonials1";
 import Blog1 from "./../Segments/Blog1";
 import ClientsLogo1 from "./../Segments/ClientsLogo1";
+import About1up from "../Segments/About1up";
 
 class Home1 extends React.Component {
   render() {
@@ -19,7 +20,7 @@ class Home1 extends React.Component {
         <Header2 />
         <div className="page-content">
           <Slider1 />
-          <About1 />
+          <About1up />
           <Services1 />
           <WhatWeDo1 />
           <Statistics1 bgclass="bg-white" />

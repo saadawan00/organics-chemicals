@@ -11,6 +11,7 @@ import Testimonials2 from "./../Segments/Testimonials2";
 import Team2 from "./../Segments/Team2";
 import SelfIntro1 from "./../Segments/SelfIntro1";
 import Blog2 from "./../Segments/Blog2";
+import About1up from "../Segments/About1up";
 
 class Home2 extends React.Component {
   render() {
@@ -21,7 +22,7 @@ class Home2 extends React.Component {
           <Slider2 />
           <Services2 />
           <Projects2 />
-          <About2 />
+          <About1up />
           <Statistics2 />
           <ClientsLogo2 />
           <Testimonials2 />
