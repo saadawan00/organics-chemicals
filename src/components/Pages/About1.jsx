@@ -7,7 +7,8 @@ import Services13 from "./../Segments/Services13";
 import ClientsLogo1 from "./../Segments/ClientsLogo1";
 import Statistics16 from "../Segments/Statistics16";
 
-var bnrimg = require("./../../images/banner/3.jpg");
+var bnrimg = require('./../../images/instrumentssliderimages/backgroundimage3.jpeg');
+
 
 class About1 extends React.Component {
   render() {
@@ -16,9 +17,9 @@ class About1 extends React.Component {
         <Header2 />
         <div className="page-content">
           <Banner
-            title="About Us"
-            pagename="About 1"
-            bgimage={bnrimg.default}
+            title="Engineering Services"
+            pagename="Engineering Services"
+            bgimage={bnrimg}
           />
           <About2 />
           <Services13 />
