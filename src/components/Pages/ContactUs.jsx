@@ -4,7 +4,7 @@ import Header2 from "./../Parts/Header2";
 import Footer from "./../Parts/Footer";
 import Banner from "./../Segments/Banner";
 
-var bnrimg = require("./../../images/banner/5.jpg");
+var bnrimg = require("./../../images/instrumentssliderimages/backgroundimage5.jpeg");
 var bnr1 = require("./../../images/background/bg-7.jpg");
 var bgimg = require("./../../images/background/bg-map2.png");
 
@@ -18,7 +18,7 @@ class ContactUs extends React.Component {
           <Banner
             title="Contact Us"
             pagename="Contact Us"
-            bgimage={bnrimg.default}
+            bgimage={bnrimg}
           />
           {/* INNER PAGE BANNER END */}
           {/* SECTION CONTENTG START */}
