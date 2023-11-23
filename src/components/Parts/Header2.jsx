@@ -55,7 +55,6 @@ class Header2 extends React.Component {
             <div
               style={{
                 width: "100%",
-                margin: "0 1% 0 3%",
               }}
             >
               <div className="d-flex justify-content-between">
