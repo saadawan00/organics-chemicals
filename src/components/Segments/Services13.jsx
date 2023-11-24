@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
+
 
 const services = [
   {
@@ -95,7 +97,18 @@ class Services13 extends React.Component {
                         <div className="service-box-title title-style-2 site-text-secondry">
                           <span className="s-title-one">{item.title1}</span>
                           <span className="s-title-one">{item.title2}</span>
-
+                          <div className="d-flex align-items-center flex-column  p-b10 p-t10 p-r4 p-l4 hover-opacity-dim pointer hover-border-blue">
+        
+        <div style={{ position: "absolute", top: 80 }}>
+        <NavLink
+            to={"#"}
+            className="contact-slide-show get-quote-sm-btn m-t10 "
+            style={{ opacity: 0 }}
+          >
+            Contact Us
+          </NavLink>
+        </div>
+      </div>
                         </div>
                        
                        
@@ -123,17 +136,30 @@ class Services13 extends React.Component {
               
               >
                 {specialitiesArray.map((item, index) => (
+                  
                   <div
                     key={index}
                     className="col-lg-4 col-md-6 col-sm-12 m-b50"
                     
                   >
+                      
                     <div className="service-border-box">
                       <div className="wt-box service-box-1 bg-white">
                         <div className="service-box-title title-style-2 site-text-secondry">
                           <span className="s-title-one">{item.title1}</span>
                           <span className="s-title-one">{item.title2}</span>
-
+      <div className="d-flex align-items-center flex-column  p-b10 p-t10 p-r4 p-l4 hover-opacity-dim pointer hover-border-blue">
+        
+        <div style={{ position: "absolute", top: 80 }}>
+        <NavLink
+            to={"#"}
+            className="contact-slide-show get-quote-sm-btn m-t10 "
+            style={{ opacity: 0 }}
+          >
+            Contact Us
+          </NavLink>
+        </div>
+      </div>
                         </div>
                        
                         
