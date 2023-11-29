@@ -4,7 +4,7 @@ import Footer from "../Parts/Footer";
 import Banner from "./../Segments/Banner";
 import ServiceDetails2 from "./../Segments/ServiceDetails2";
 
-var bnrimg = require("./../../images/background/bg-5.png");
+var bnrimg = require("./../../images/background/bn-99.jpeg");
 
 class ServicesAutomotive extends React.Component {
   render() {

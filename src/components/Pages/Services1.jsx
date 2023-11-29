@@ -7,7 +7,7 @@ import Plans3 from "./../Segments/Plans3";
 import Testimonials11 from "./../Segments/Testimonials11";
 import Video2 from "./../Segments/Video2";
 
-var bnrimg = require("./../../images/background/bg-5.png");
+var bnrimg = require("./../../images/background/bn-99.jpeg");
 
 class Services1 extends React.Component {
   render() {

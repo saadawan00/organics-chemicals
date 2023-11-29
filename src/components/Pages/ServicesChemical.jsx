@@ -4,7 +4,7 @@ import Footer from "../Parts/Footer";
 import Banner from "./../Segments/Banner";
 import ServiceDetails3 from "./../Segments/ServiceDetails3";
 
-var bnrimg = require("./../../images/background/bg-5.png");
+var bnrimg = require("./../../images/background/bn-99.jpeg");
 
 class ServicesChemical extends React.Component {
   render() {

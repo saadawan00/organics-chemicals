@@ -743,8 +743,7 @@ class Slider2 extends React.Component {
                       zIndex: 13,
                       whiteSpace: "normal",
                       fontWeight: 300,
-                      //   color: "#00173c",
-                      color: "white",
+                        color: "#00173c",
                       borderWidth: 0,
                       fontFamily: '"Teko", sans-serif',
                       textTransform: "uppercase",
@@ -784,10 +783,9 @@ class Slider2 extends React.Component {
                       fontFamily: '"Poppins", sans-serif',
                     }}
                   >
-                    <span style={{ color: "#ffffff" }}>We offer a wide</span>{" "}
                     <span style={{ color: "#000000" }}>
                       {" "}
-                      range of chemicals, reagents, consumables, &nbsp;
+                      We offer a wide range of chemicals, reagents, consumables, &nbsp;
                       equipment & instruments...
                     </span>
                   </div>

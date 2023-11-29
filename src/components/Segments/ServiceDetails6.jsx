@@ -239,7 +239,7 @@ class ServiceDetails6 extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <div>
+                    {/* <div>
                       <h2>Research</h2>
                       <div className="wt-accordion acc-bg-gray" id="accordion5">
                         <div className="panel wt-panel">
@@ -328,7 +328,7 @@ class ServiceDetails6 extends React.Component {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
